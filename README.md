@@ -29,4 +29,4 @@ Projenin ilk odak noktası kullanıcıları olup, enerji üretimi için yatırı
 ## Sıkça Sorulan Sorular?
 
 #### SIS verilerini nerden sağlıyor?
-SIS, çeşitli verilerini (DNI,DIF...) NASA ve World Bank çeşitli kurumsal kuruluşlar üzerinden sağlamaktadır. Bu verilerin güvenliği başlıca gereksinimlerinden biridir.
+SIS, çeşitli verilerini (DNI,DIF...) NASA ve World Bank gibi çeşitli kurumsal kuruluşlar üzerinden sağlamaktadır. Bu verilerin güvenliği başlıca gereksinimlerimizden biridir.
