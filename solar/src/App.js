@@ -10,6 +10,7 @@ import { fetchSolarData } from './solarData';
 import { getLocationName } from './getLocationName';
 import Navbar from './navbar';
 import Location from './location';
+import CityLocation from './cityLocation';
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -45,6 +46,21 @@ export default function App() {
     const [showLocation, setShowLocation] = useState(false);
 
     useEffect(() => {
+        if (isLoaded) { // Harita yüklendiyse
+            setMarkers(current => [
+                ...current,
+                {
+                    lat: 36.884804, // Varsayılan konumun enlemi
+                    lng: 30.704044, // Varsayılan konumun boylamı
+                    time: new Date(), // Konumun eklenme zamanı
+                    icon: 'yellow_location.svg',
+                },
+            ]);
+        }
+    }, [isLoaded]);
+
+
+    useEffect(() => {
         if (selected) {
             getLocationName(selected.lat, selected.lng)
                 .then(name => {
@@ -78,7 +94,8 @@ export default function App() {
             lat: event.latLng.lat(),
             lng: event.latLng.lng(),
             time: new Date(),
-        }])
+        },
+        ])
     }, []);
 
   const mapRef = useRef();
@@ -92,27 +109,42 @@ export default function App() {
   return (
       <div>
           <Navbar/>
+          <CityLocation />
         <GoogleMap mapContainerStyle={mapContainerStyle} zoom={5.9} center={center} options={options}
          onClick={onMapClick}
          onLoad={onMapLoad}>
           {markers.map(marker => <Marker key={marker.time.toISOString()} position={{lat: marker.lat,lng: marker.lng }}
+           icon={{
+             url: marker.icon ? marker.icon : 'dark_location.svg', // Özel ikon varsa kullan, yoksa varsayılanı kullan
+             scaledSize: new window.google.maps.Size(40, 40), // İkonun ölçeklendirilmiş boyutu
+           }}
             onClick={() => {
                 setSelected(marker);
                 setShowLocation(true);
             }} />)}
-            {selected ? (
-                <Location
-                    show={showLocation}
-                    setShow={setShowLocation}
-                    locationname={locationName}
-                    lat={selected.lat}
-                    lng={selected.lng}
-                    solarData={solarData ? JSON.stringify(solarData) : 'Loading...'}
-                    time={selected.time}
-                    dniArray={dniArray}
-                    dwnArray={dwnArray}
-                    dıfArray={dıfArray}
-                />) : null}
+            {selected && selected.icon === 'yellow_location.svg'
+                ? (
+                    <CityLocation
+                        show={showLocation}
+                        setShow={setShowLocation}
+                        lat={selected.lat}
+                        lng={selected.lng}
+                    />
+                ) : selected ? (
+                    // Eğer selected var ama ikon 'dark_location.svg' değilse burada başka bir bileşen veya içerik gösterebilirsiniz.
+                    <Location
+                        show={showLocation}
+                        setShow={setShowLocation}
+                        locationname={locationName}
+                        lat={selected.lat}
+                        lng={selected.lng}
+                        solarData={solarData ? JSON.stringify(solarData) : 'Loading...'}
+                        time={selected.time}
+                        dniArray={dniArray}
+                        dwnArray={dwnArray}
+                        dıfArray={dıfArray}
+                    />
+                ) : null}
         </GoogleMap>
       </div>
   );
