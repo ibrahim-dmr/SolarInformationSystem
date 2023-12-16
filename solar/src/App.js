@@ -33,13 +33,14 @@ export default function App() {
     libraries,
   });
 
-  const [markers,setMarkers] = useState([]);
-  const[selected,setSelected] = useState(null);
+    const [markers, setMarkers] = useState([]);
+
+    const[selected,setSelected] = useState(null);
   const [solarData, setSolarData] = useState(null);
   const [locationName, setLocationName] = useState('');
   const [dniArray, setDniArray] = useState([]);
-    const [dwnArray, setDwnArray] = useState([]);
-    const [dıfArray, setDıfArray] = useState([]);
+  const [dwnArray, setDwnArray] = useState([]);
+  const [dıfArray, setDıfArray] = useState([]);
 
     const [showLocation, setShowLocation] = useState(false);
 
@@ -94,7 +95,6 @@ export default function App() {
         <GoogleMap mapContainerStyle={mapContainerStyle} zoom={5.9} center={center} options={options}
          onClick={onMapClick}
          onLoad={onMapLoad}>
-
           {markers.map(marker => <Marker key={marker.time.toISOString()} position={{lat: marker.lat,lng: marker.lng }}
             onClick={() => {
                 setSelected(marker);
