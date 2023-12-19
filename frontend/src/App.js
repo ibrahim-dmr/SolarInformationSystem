@@ -6,10 +6,10 @@ import {
   InfoWindow
 } from "@react-google-maps/api";
 import {formatRelative} from "date-fns";
-import { fetchSolarData } from './solarData';
-import { getLocationName } from './getLocationName';
+import { fetchSolarData } from './components/solarData';
+import { getLocationName } from './components/getLocationName';
 import Navbar from './navbar';
-import Location from './location';
+import Location from './components/location';
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -38,37 +38,36 @@ export default function App() {
   const [solarData, setSolarData] = useState(null);
   const [locationName, setLocationName] = useState('');
   const [dniArray, setDniArray] = useState([]);
-    const [dwnArray, setDwnArray] = useState([]);
-    const [dıfArray, setDıfArray] = useState([]);
-
-    const [showLocation, setShowLocation] = useState(false);
+  const [dwnArray, setDwnArray] = useState([]);
+  const [dıfArray, setDıfArray] = useState([]);
+  const [showLocation, setShowLocation] = useState(false);
 
     useEffect(() => {
-        if (selected) {
-            getLocationName(selected.lat, selected.lng)
-                .then(name => {
-                    setLocationName(name); // Çekilen konum ismini state'e kaydet
-                })
-                .catch(error => console.error('Error fetching location name:', error));
+      if (selected) {
+        getLocationName(selected.lat, selected.lng)
+          .then(name => {
+            setLocationName(name); // Çekilen konum ismini state'e kaydet
+          })
+          .catch(error => console.error('Error fetching location name:', error));
         }
     }, [selected]);
 
     useEffect(() => {
-        if (selected) {
-            fetchSolarData(selected.lat, selected.lng)
-                .then(data => {
-                    setSolarData(data);
-                    if (data && data.dni) {
-                        const dniValues = Object.values(data.dni);
-                        const dwnValues = Object.values(data.swdwn);
-                        const dıfValues = Object.values(data.dıf);
-                        setDniArray(dniValues);
-                        setDwnArray(dwnValues);
-                        setDıfArray(dıfValues);
-                    }
-                })
-                .catch(error => console.error('Error fetching solar data:', error));
-        }
+      if (selected) {
+        fetchSolarData(selected.lat, selected.lng)
+          .then(data => {
+            setSolarData(data);
+            if (data && data.dni) {
+              const dniValues = Object.values(data.dni);
+              const dwnValues = Object.values(data.swdwn);
+              const dıfValues = Object.values(data.dıf);
+              setDniArray(dniValues);
+              setDwnArray(dwnValues);
+              setDıfArray(dıfValues);
+            }
+          })
+          .catch(error => console.error('Error fetching solar data:', error));
+      }
     }, [selected]);
 
 
