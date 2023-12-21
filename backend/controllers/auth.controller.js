@@ -25,18 +25,27 @@ exports.signup = (req, res) => {
           }
         }).then(roles => {
           user.setRoles(roles).then(() => {
-            res.send({ message: "User registered successfully!" });
+            res.send({ 
+              response: true,
+              message: "Kayıt başarılı!" 
+            });
           });
         });
       } else {
         // user role = 1
         user.setRoles([1]).then(() => {
-          res.send({ message: "User registered successfully!" });
+          res.send({ 
+            response: true,
+            message: "Kayıt başarılı!" 
+          });
         });
       }
     })
     .catch(err => {
-      res.status(500).send({ message: err.message });
+      res.status(500).send({ 
+        response:false,
+        message: err.message 
+      });
     });
 };
 
@@ -48,7 +57,10 @@ exports.signin = (req, res) => {
   })
     .then(user => {
       if (!user) {
-        return res.status(404).send({ message: "User Not found." });
+        return res.status(404).send({ 
+          response: false,
+          message: "Geçersiz kullanıcı adı!" 
+        });
       }
 
       var passwordIsValid = bcrypt.compareSync(
@@ -58,8 +70,9 @@ exports.signin = (req, res) => {
 
       if (!passwordIsValid) {
         return res.status(401).send({
+          response: false,
           accessToken: null,
-          message: "Invalid Password!"
+          message: "Geçersiz şifre!"
         });
       }
 
@@ -77,6 +90,7 @@ exports.signin = (req, res) => {
           authorities.push("ROLE_" + roles[i].name.toUpperCase());
         }
         res.status(200).send({
+          response: true,
           id: user.id,
           username: user.username,
           email: user.email,
@@ -86,6 +100,9 @@ exports.signin = (req, res) => {
       });
     })
     .catch(err => {
-      res.status(500).send({ message: err.message });
+      res.status(500).send({ 
+        response: false,
+        message: err.message 
+      });
     });
 };
