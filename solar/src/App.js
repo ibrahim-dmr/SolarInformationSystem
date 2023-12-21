@@ -45,19 +45,29 @@ export default function App() {
 
     const [showLocation, setShowLocation] = useState(false);
 
+    const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
+        { ad: "Ankara", lat: 39.9334, lng: 32.8597, icon: 'sun_location.svg' },
+        { ad: "İstanbul", lat: 41.0082, lng: 28.9784, icon: 'sun_location.svg' },
+        { ad: "İzmir", lat: 38.4192, lng: 27.1287, icon: 'sun_location.svg' },
+        // Diğer şehirler...
+    ];
+
+
     useEffect(() => {
-        if (isLoaded) { // Harita yüklendiyse
+        if (isLoaded) {
             setMarkers(current => [
                 ...current,
-                {
-                    lat: 36.884804, // Varsayılan konumun enlemi
-                    lng: 30.704044, // Varsayılan konumun boylamı
-                    time: new Date(), // Konumun eklenme zamanı
-                    icon: 'yellow_location.svg',
-                },
+                ...turkiyeSehirleri.map(sehir => ({
+                    lat: sehir.lat,
+                    lng: sehir.lng,
+                    time: new Date(), // Her şehir için farklı bir zaman damgası oluşturmalıyız !!!DİKKAT!!!
+                    icon: sehir.icon,
+                    ad: sehir.ad // Şehir adı, isteğe bağlı
+                }))
             ]);
         }
     }, [isLoaded]);
+
 
 
     useEffect(() => {
@@ -122,9 +132,10 @@ export default function App() {
                 setSelected(marker);
                 setShowLocation(true);
             }} />)}
-            {selected && selected.icon === 'yellow_location.svg'
+            {selected && selected.icon === 'sun_location.svg'
                 ? (
                     <CityLocation
+                        ad={selected.ad}
                         show={showLocation}
                         setShow={setShowLocation}
                         lat={selected.lat}
