@@ -15,14 +15,29 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
+<<<<<<< HEAD
 import {GetCityService} from "./getCity.service";
 import Button from "@mui/material/Button";
 import {useState} from "react";
 
 const CityLocation = ({lat, lng, show, setShow, ad, selected}) => {
+=======
+import { GetCityService } from './services/getCity.service';
+
+
+
+
+const CityLocation = ({lat, lng, show, setShow, ad}) => {
+    
+>>>>>>> c986b9414d92a4d18ae33a673ba9b6daa8c2fd84
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
     };
+
+    const handleSunClick = () => {
+        console.log(ad)
+        GetCityService("http://localhost:3001/api/query/city", ad)
+    }
 
     const rows = [
         { data: 'DNI', perDay: '10' },

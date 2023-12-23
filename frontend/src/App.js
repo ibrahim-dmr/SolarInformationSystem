@@ -34,6 +34,11 @@ export default function App() {
     const[selected,setSelected] = useState(null);
     const [showLocation, setShowLocation] = useState(false);
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c986b9414d92a4d18ae33a673ba9b6daa8c2fd84
     const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
         { ad: "Adana", lat: 37.0310, lng: 35.3952, icon: 'sun_location.svg', time: new Date('2023-01-01') },
         { ad: "Adıyaman", lat: 37.7407, lng: 38.2486, icon: 'sun_location.svg',time: new Date('2023-01-02') },

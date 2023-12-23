@@ -16,7 +16,6 @@ exports.getCityInformation = (req, res, next) => {
         },
     }).then(city => {
         if(city){
-            // res.setHeader('Content-Type', 'application/json');
             res.status(200).send({
                 response: true,
                 message: JSON.stringify(city.toJSON())
