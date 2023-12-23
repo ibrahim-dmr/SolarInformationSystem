@@ -11,7 +11,6 @@ import { getLocationName } from './services/getLocationName';
 import Navbar from './components/navbar';
 import Location from './services/location';
 import CityLocation from './services/cityLocation';
-import { GetCityService } from './services/getCity.service';
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -44,13 +43,7 @@ export default function App() {
     const [dıfArray, setDıfArray] = useState([]);
     const [showLocation, setShowLocation] = useState(false);
 
-    const handleSunClick = () => {
-        console.log(selected)
-        console.log(selected.ad)
-        if(selected && selected.icon === 'sun_location.svg'){
-            GetCityService("http://localhost:3001/api/query/city", selected.ad)
-        }
-    }
+
 
     const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
         { ad: "Adana", lat: 37.0310, lng: 35.3952, icon: 'sun_location.svg' },

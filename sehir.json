@@ -1,0 +1,40 @@
+{
+    "dosya" : "Bu dosya şehir bilgilerini içeren JSON dosyasının ana şemasıdır.",
+    "kurallar" : "Bu dosyaya veri eklemek için uyulması gereken kurallar şu şekildedir.",
+    "kural_1": "Veriler sehirler isimli objenin içerisine eklenmelidir.",
+    "kural_2": "Eklenecek olan şehrin baş harfi büyük olmalıdır.",
+    "kural_3": "Eklenecek olan picture değeri şehrin ismi olmalıdır ve küçük harfle başlamalıdır.",
+    "kurak_4": "Şehir resimleri bir klasör altında toplanmalı ve bu klasörün ismi örnek verilen formatta yerine yazılmalıdır.",
+    "kural_5": "Resimlerin boyutları ve dosya uzantısı .jpg olmalıdır.",
+    "kural_6": "Eklenecek olan lokasyon verileri içerisinde yer alan enlem ve boylam değerleri sayı (int, float, double) şeklinde olmalıdır.",
+    "kural_7": "Eklenecek olan ilçe verilerin anahtar sözcükleri i1 i2 i3 i4 i5 şeklinde olmalıdır.",
+    "kural_8": "İlçelerde maksimum 5 ilçe yazılabilmektedir. Eklenecek olan ilçe sayısı 5 ten küçük ise boşta kalacak anahtarları boş bırakınız.",
+    "kural_9": "Eklenecek olan solar_data anahtarının içerisinde yer alan bütün veriler sayı (int, float, double) olmalıdır.",
+    
+    "sehirler":{
+        "sehir_ismi": { 
+                "picture":"./şehir_resimlerinin_olduğu_klasörün_ismi/şehir_ismi.jpg",
+                "location":{
+                    "lat":37.91622,
+                    "lon":40.236354
+                },
+                "ilce":{
+                    "i1":"ilçe1",
+                    "i2":"ilçe2",
+                    "i3":"ilçe3",
+                    "i4":"ilçe4",
+                    "i5":"ilçe5"
+                },
+                "aciklama":"şehir açıklama",
+                "solar_data":{
+                    "pvout":4.54,
+                    "dni":5.69,
+                    "ghi":5.03,
+                    "dif":1.57,
+                    "gti":5.73,
+                    "opta":32,
+                    "temp":16.4
+                }
+            }  
+        }
+}

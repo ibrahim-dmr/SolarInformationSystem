@@ -1,0 +1,31 @@
+{
+    "dosya" : "Bu dosya ilçe bilgilerini içeren JSON dosyasının ana şemasıdır.",
+    "kurallar" : "Bu dosyaya veri eklemek için uyulması gereken kurallar şu şekildedir.",
+    "kural_1": "Veriler ilceler isimli objenin içerisine eklenmelidir.",
+    "kural_2": "Eklenecek olan ilçenin baş harfi büyük olmalıdır.",
+    "kural_3": "Eklenecek olan picture değeri ilçenin ismi olmalıdır ve küçük harfle başlamalıdır.",
+    "kurak_4": "İlçe resimleri bir klasör altında toplanmalı ve bu klasörün ismi örnek verilen formatta yerine yazılmalıdır.",
+    "kural_5": "Resimlerin boyutları ve dosya uzantısı .jpg olmalıdır.",
+    "kural_6": "Eklenecek olan lokasyon verileri içerisinde yer alan enlem ve boylam değerleri sayı (int, float, double) şeklinde olmalıdır.",
+    "kural_7": "Eklenecek olan solar_data anahtarının içerisinde yer alan bütün veriler sayı (int, float, double) olmalıdır.",
+    
+    "ilceler":{
+        "ilce_ismi": { 
+                "picture":"./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+                "location":{
+                    "lat":37.91622,
+                    "lon":40.236354
+                },
+                "aciklama":"ilçe açıklama",
+                "solar_data":{
+                    "pvout":4.54,
+                    "dni":5.69,
+                    "ghi":5.03,
+                    "dif":1.57,
+                    "gti":5.73,
+                    "opta":32,
+                    "temp":16.4
+                }
+            }  
+        }
+}
