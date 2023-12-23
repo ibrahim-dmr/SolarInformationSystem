@@ -1,6 +1,6 @@
 // location.js
 import React, { useEffect, useState, useRef } from 'react';
-import {Paper, Typography, Grid, IconButton, Box, Container, Icon,setShowLocation, show} from '@mui/material';
+import {Paper, Typography, Grid, IconButton, Box, Container, Icon} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import Chart from "chart.js/auto";
 import { Line } from "react-chartjs-2";
@@ -20,8 +20,12 @@ import FormHelperText from '@mui/material/FormHelperText';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
+import {fetchSolarData} from "./solarData";
+import { getLocationName } from './getLocationName';
+import { GetCityService } from './getCity.service';
+import Menu from '@mui/material/Menu';
 
-const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, dıfArray,setShow,show}) => {
+const Location = ({selected, lat, lng,  time, setShow, show}) => {
     // Date nesnesini string'e dönüştürmek
     const formattedTime = time ? time.toLocaleString() : '';
     const getMapImageUrl = (lat, lng, zoom = 19, size = '400x400') => {
@@ -34,11 +38,43 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
     const UTILS = {
         months: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"]
     };
+    const [solarDataa, setSolarDataa] = useState(null);
+    const [dniArrayy, setDniArrayy] = useState([]);
+    const [dwnArrayy, setDwnArrayy] = useState([]);
+    const [dıfArrayy, setDıfArrayy] = useState([]);
+    const [locationNamee, setLocationNamee] = useState('');
 
+    useEffect(() => {
+        if (selected) {
+            fetchSolarData(selected.lat, selected.lng)
+                .then(data => {
+                    setSolarDataa(data);
+                    if (data && data.dni) {
+                        const dniValues = Object.values(data.dni);
+                        const dwnValues = Object.values(data.swdwn);
+                        const dıfValues = Object.values(data.dıf);
+                        setDniArrayy(dniValues);
+                        setDwnArrayy(dwnValues);
+                        setDıfArrayy(dıfValues);
+                    }
+                })
+                .catch(error => console.error('Error fetching solar data:', error));
+        }
+    }, [selected]);
+
+    useEffect(() => {
+        if (selected) {
+            getLocationName(selected.lat, selected.lng)
+                .then(name => {
+                    setLocationNamee(name); // Çekilen konum ismini state'e kaydet
+                })
+                .catch(error => console.error('Error fetching location name:', error));
+        }
+    }, [selected]);
 
     useEffect(() => {
         // DNI ve DWN array verileri mevcutsa Line Chart oluştur
-        if (dniArray && dwnArray && dıfArray) {
+        if (dniArrayy && dwnArrayy && dıfArrayy) {
             // Önce mevcut Chart nesnesini yok et
             if (chartRef.current) {
                 chartRef.current.destroy();
@@ -53,7 +89,7 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                     datasets: [
                         {
                             label: 'DNI Values',
-                            data: Object.values(dniArray),
+                            data: Object.values(dniArrayy),
                             borderColor: 'rgba(255, 68, 68, 1)',
                             borderWidth: 2, // Kalın çizgi
                             fill: false,
@@ -61,7 +97,7 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                         },
                         {
                             label: 'DWN Values',
-                            data: Object.values(dwnArray),
+                            data: Object.values(dwnArrayy),
                             borderColor: 'rgba(51, 153, 255, 1)',
                             borderWidth: 2, // Kalın çizgi
                             fill: false,
@@ -69,7 +105,7 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                         },
                         {
                             label: 'DIF Values',
-                            data: Object.values(dıfArray),
+                            data: Object.values(dıfArrayy),
                             borderColor: 'rgba(0, 255, 153, 1)',
                             borderWidth: 2, // Kalın çizgi
                             fill: false,
@@ -97,33 +133,18 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                 },
             });
         }
-    }, [dniArray, dwnArray, dıfArray]);
+    }, [dniArrayy, dwnArrayy, dıfArrayy]);
 
-
-    const downloadData = () => {
-        const fileName = "solarData.json";
-        const json = JSON.stringify(solarData);
-        const blob = new Blob([json], { type: "application/json" });
-        const href = URL.createObjectURL(blob);
-
-        // Create a link element, use it to download the file and remove it
-        const link = document.createElement('a');
-        link.href = href;
-        link.download = fileName;
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        URL.revokeObjectURL(href);
-    };
 
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
+        handleCloseMenu();
     };
 
     const rows = [
-        { data: 'DNI', yearlyAverage: dniArray[dniArray.length - 1] },
-        { data: 'DWN', yearlyAverage: dwnArray[dwnArray.length - 1] },
-        { data: 'DIF', yearlyAverage: dıfArray[dıfArray.length - 1] },
+        { data: 'DNI', yearlyAverage: dniArrayy[dniArrayy.length - 1] },
+        { data: 'DWN', yearlyAverage: dwnArrayy[dwnArrayy.length - 1] },
+        { data: 'DIF', yearlyAverage: dıfArrayy[dıfArrayy.length - 1] },
         // Daha fazla satır eklenebilir...
     ];
 
@@ -169,7 +190,7 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
     const calculate = () => {
         const panelSize = panelSizes[selectedCurrency] || 0; // Seçilen panel tipine göre boyut
         const panelCount = parseInt(quantity) || 0; // Panel sayısı
-        const G = dniArray[dniArray.length - 1]; // Son DNI değeri
+        const G = dniArrayy[dniArrayy.length - 1]; // Son DNI değeri
 
         // Yıllık enerji üretimi hesaplama
         const yearlyEnergy = panelSize * panelCount * G * PR;
@@ -182,6 +203,96 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
     };
 
 
+
+    const handleSunClick = () => {
+        console.log(selected)
+        console.log(selected.ad)
+        if(selected && selected.icon === 'sun_location.svg'){
+            GetCityService("http://localhost:3001/api/query/city", selected.ad)
+        }
+    }
+
+    // Menu için gerekli state ve fonksiyonlar
+    const [anchorEl, setAnchorEl] = useState(null);
+    const open = Boolean(anchorEl);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+
+    const handleCloseMenu = () => {
+        setAnchorEl(null);
+    };
+
+    // JSON formatında indirme
+    const downloadJSON = (data, fileName) => {
+        const json = JSON.stringify(data);
+        const blob = new Blob([json], { type: "application/json" });
+        downloadBlob(blob, fileName + ".json");
+    };
+
+// CSV formatında indirme (CSV dönüşümü için bir fonksiyon gerekecek)
+    const downloadCSV = (csvString, fileName) => {
+        const blob = new Blob([csvString], { type: "text/csv" });
+        downloadBlob(blob, fileName + ".csv");
+    };
+
+
+
+// Blob olarak indirme işlemini yapan genel fonksiyon
+    const downloadBlob = (blob, fileName) => {
+        const href = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = href;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(href);
+    };
+
+    const convertArraysToCSV = (dniArrayy, dwnArrayy, difArrayy) => {
+        // Üç dizinin de aynı uzunlukta olduğunu varsayıyoruz
+        if (dniArrayy.length !== dwnArrayy.length || dniArrayy.length !== difArrayy.length) {
+            console.error('Dizilerin uzunlukları eşit değil');
+            return '';
+        }
+
+        let csvString = "DNI,DWN,DIF\n"; // Sütun başlıkları
+
+        // Dizileri birleştirerek CSV formatına dönüştürme
+        for (let i = 0; i < dniArrayy.length; i++) {
+            csvString += `${dniArrayy[i]},${dwnArrayy[i]},${difArrayy[i]}\n`;
+        }
+
+        return csvString;
+    };
+
+
+
+
+    const handleDownload = (format) => {
+        const fileName = "solarData"; // Varsayılan dosya adı
+        switch (format) {
+            case 'json':
+                // Birden fazla diziyi bir nesnede birleştirme
+                const jsonData = {
+                    dniData: dniArrayy,
+                    dwnData: dwnArrayy,
+                    difData: dıfArrayy
+                };
+                // JSON olarak indirme
+                downloadJSON(jsonData, fileName);
+                break;
+            case 'csv':
+                const csvData = convertArraysToCSV(dniArrayy, dwnArrayy, dıfArrayy);
+                downloadCSV(csvData, fileName);
+                break;
+            default:
+                console.error('Bilinmeyen format');
+        }
+        handleClose();
+    };
 
 
 
@@ -236,7 +347,7 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                             </Grid>
                             <Grid item>
                         <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>
-                            {locationname}
+                            {locationNamee}
                         </Typography>
                     </Grid>
                     <Grid item>
@@ -247,9 +358,17 @@ const Location = ({lat, lng, solarData, time, locationname, dniArray, dwnArray, 
                     </Grid>
                             <Grid item>
                                 <Typography variant="body1" sx={{ fontStyle: 'italic', color: 'grey',fontSize: '0.8rem' }}>
-                                    <IconButton onClick={downloadData}>
+                                    <IconButton onClick={handleClick}>
                                         <FileDownloadIcon fontSize="small" />
                                     </IconButton>
+                                    <Menu
+                                        anchorEl={anchorEl}
+                                        open={open}
+                                        onClose={handleClose}
+                                    >
+                                        <MenuItem onClick={() => handleDownload('json')}>JSON olarak indir</MenuItem>
+                                        <MenuItem onClick={() => handleDownload('csv')}>CSV olarak indir</MenuItem>
+                                    </Menu>
                                     added at {formattedTime}
                                 </Typography>
                             </Grid>

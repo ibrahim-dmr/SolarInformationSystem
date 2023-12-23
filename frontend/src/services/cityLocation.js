@@ -15,10 +15,11 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
+import {GetCityService} from "./getCity.service";
+import Button from "@mui/material/Button";
+import {useState} from "react";
 
-
-
-const CityLocation = ({lat, lng, show, setShow, ad}) => {
+const CityLocation = ({lat, lng, show, setShow, ad, selected}) => {
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
     };
@@ -26,12 +27,7 @@ const CityLocation = ({lat, lng, show, setShow, ad}) => {
     const rows = [
         { data: 'DNI', perDay: '10' },
         { data: 'DIF', perDay: '20' },
-        { data: 'DNI', perDay: '10' },
-        { data: 'DIF', perDay: '20' },
-        { data: 'DNI', perDay: '10' },
-        { data: 'DIF', perDay: '20' },
-        { data: 'DNI', perDay: '10' },
-        { data: 'DIF', perDay: '20' },
+
         // Daha fazla satır eklenebilir...
     ];
 
@@ -55,7 +51,22 @@ const CityLocation = ({lat, lng, show, setShow, ad}) => {
         return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&maptype=satellite&key=${GOOGLE_API_KEY}`;
     };
 
-        return (
+    const handleSunClick = async () => {
+        if (selected && selected.icon === 'sun_location.svg') {
+            try {
+                const response = await GetCityService("http://localhost:3001/api/query/city", selected.ad);
+                if (response) {
+                   // burda ne yapacağız?
+                }
+            } catch (error) {
+                console.error('Şehir bilgileri alınırken bir hata oluştu:', error);
+            }
+        }
+    };
+
+
+
+    return (
         <Box
             sx={{
                 display: show ? 'block' : 'none', // 'show' değerine bağlı olarak display özelliğini ayarla
@@ -200,6 +211,7 @@ const CityLocation = ({lat, lng, show, setShow, ad}) => {
                             <ListItem>1. Karşıyaka Sahili</ListItem>
                             <ListItem>2. Çeşme Alaçatı</ListItem>
                             <ListItem>3. Foça Yarımadası</ListItem>
+
                         </List>
                     </Box>
                     <Box sx={{
