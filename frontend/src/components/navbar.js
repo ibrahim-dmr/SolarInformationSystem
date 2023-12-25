@@ -90,7 +90,6 @@ const Navbar = () => {
                             <TextField sx={{width: 220}}
                                 id="outlined-select-currency"
                                 select
-                                label="Rolünü Seç"
                                 defaultValue="user"
                                 margin="normal"
                             >
@@ -137,7 +136,6 @@ const Navbar = () => {
                         </>
                     )}
                 </Box>
-
             </Backdrop>
         </AppBar>
     );

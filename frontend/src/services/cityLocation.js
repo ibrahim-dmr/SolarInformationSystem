@@ -1,6 +1,6 @@
 // cityLocation.js
 
-import * as React from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import {Paper, Typography, Grid, IconButton, Box, Container, Icon, List, ListItem} from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 import Chart from "chart.js/auto";
@@ -15,43 +15,83 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
+import {GetCityService} from "./getCity.service";
+import Button from "@mui/material/Button";
 
-const CityLocation = ({lat, lng, show, setShow, ad, apiData}) => {
+const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
 
-    // apiData değişkeni aslında bir JSON bunu JSON.parse yaparak anahtar kelimelerine erişilebilir.
-    // JSON.stringfy işlemi ile stringe çevirilmiş halde buraya geliyor. Gelen verinin içinden gerekli değerleri güncelleyerek CityLocation oluşturulabilir.
-    // şu an şehrin verileri console json olarak, açılan pencerede ise string olarak ekrana basılmaktadır.
 
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
     };
 
+    const getMapImageUrl = (lat, lng, zoom = 12, size = '400x400') => {
+        const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+        return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&maptype=satellite&key=${GOOGLE_API_KEY}`;
+    };
+
+    const [ilce1, setilce1] = useState(''); // ilce1 değerini saklayacak state
+    const [ilce2, setilce2] = useState(''); // ilce2 değerini saklayacak state
+    const [ilce3, setilce3] = useState(''); // ilce3 değerini saklayacak state
+    const [ilce4, setilce4] = useState(''); // ilce4 değerini saklayacak state
+    const [ilce5, setilce5] = useState(''); // ilce5 değerini saklayacak state
+    const [acıklama, setAcıklama] = useState(''); // acıklama değerini saklayacak state
+    const [pvout, setPvout] = useState(); // pvout değerini saklayacak state
+    const [dni, setDni] = useState(); // dni değerini saklayacak state
+    const [ghi, setGhi] = useState(); // ghi değerini saklayacak state
+    const [dif, setDif] = useState(); // dif değerini saklayacak state
+    const [gti, setGti] = useState(); // git değerini saklayacak state
+    const [opta, setOpta] = useState(); // git değerini saklayacak state
+    const [temp, setTemp] = useState(); // git değerini saklayacak state
+
+
+    useEffect(() => {
+        if (apiData) {
+            const jsonData = JSON.parse(apiData); // String'i JSON objesine dönüştür
+            setilce1(jsonData.ilce1); // JSON objesinden ilce1 değerini al ve 'ilce1' state'ine at
+            setilce2(jsonData.ilce2); // ilçe 2 verisini çekiyoruz
+            setilce3(jsonData.ilce3); // ilçe 3 verisini çekiyoruz
+            setilce4(jsonData.ilce4);
+            setilce5(jsonData.ilce5);
+            setAcıklama(jsonData.explanation);
+
+            // Solar Veriler
+            setPvout(jsonData.pvout);
+            setDni(jsonData.dni);
+            setGhi(jsonData.ghi);
+            setDif(jsonData.dif);
+            setGti(jsonData.gti);
+            setOpta(jsonData.opta);
+            setTemp(jsonData.temp);
+        }
+    }, [apiData]); // apiData değiştiğinde useEffect tetiklenir
+
     const rows = [
-        { data: 'DNI', perDay: '10' },
-        { data: 'DIF', perDay: '20' },
+        { data: 'PVOUT', perDay: pvout },
+        { data: 'DNI', perDay: dni },
+        { data: 'GHI', perDay: ghi },
+        { data: 'DIF', perDay: dif },
+        { data: 'GTI', perDay: gti },
+        { data: 'OPTA', perDay: opta },
+        { data: 'TEMP', perDay: temp },
 
         // Daha fazla satır eklenebilir...
     ];
 
 
-        const data = {
-            labels: ['PVOUT', 'DNI', 'GHI', 'DIF', 'GTI', 'OPTA', 'TEMP', 'ELE'],
-            datasets: [
-                {
-                    label: 'Enerji Değerleri',
-                    data: [20, 10, 30, 15, 25, 35, 40, 45], // Örnek veri, gerçek verilerinizle değiştirin
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1,
-                },
-            ],
-        };
-
-
-    const getMapImageUrl = (lat, lng, zoom = 12, size = '400x400') => {
-        const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-        return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&maptype=satellite&key=${GOOGLE_API_KEY}`;
+    const data = {
+        labels: ['PVOUT', 'DNI', 'GHI', 'DIF', 'GTI', 'OPTA', 'TEMP'],
+        datasets: [
+            {
+                label: 'Enerji Değerleri',
+                data: [ pvout, dni, ghi, dif, gti, opta, temp], // Örnek veri, gerçek verilerinizle değiştirin
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1,
+            },
+        ],
     };
+
 
     return (
         <Box
@@ -180,7 +220,7 @@ const CityLocation = ({lat, lng, show, setShow, ad, apiData}) => {
                         <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>{ad}</Typography>
                         <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
                         <Typography variant="body1" sx={{ mt: 2 }}>
-                            {apiData} {/* Yükleme durumunu kontrol et */}
+                            {acıklama}
                         </Typography>
                     </Box>
                     <Box sx={{
@@ -195,9 +235,11 @@ const CityLocation = ({lat, lng, show, setShow, ad, apiData}) => {
                             Potansiyeli En Yüksek
                         </Typography>
                         <List>
-                            <ListItem>1. Karşıyaka Sahili</ListItem>
-                            <ListItem>2. Çeşme Alaçatı</ListItem>
-                            <ListItem>3. Foça Yarımadası</ListItem>
+                            <ListItem>1. {ilce1}</ListItem>
+                            <ListItem>2. {ilce2}</ListItem>
+                            <ListItem>3. {ilce3}</ListItem>
+                            <ListItem>4. {ilce4}</ListItem>
+                            <ListItem>5. {ilce5}</ListItem>
 
                         </List>
                     </Box>

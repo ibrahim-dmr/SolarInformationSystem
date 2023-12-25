@@ -36,6 +36,7 @@ export default function App() {
     const [showLocation, setShowLocation] = useState(false);
     const [cityData, setCityData] = useState(''); // Alınan veriyi saklamak için state
 
+
     const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
         { ad: "Adana", lat: 37.0310, lng: 35.3952, icon: 'sun_location.svg', time: new Date('2023-01-01') },
         { ad: "Adıyaman", lat: 37.7407, lng: 38.2486, icon: 'sun_location.svg',time: new Date('2023-01-02') },
@@ -57,16 +58,6 @@ export default function App() {
         { ad: "Bolu", lat: 40.7395, lng: 31.6111, icon: 'sun_location.svg', time: new Date('2023-01-18')  },
         { ad: "Burdur", lat: 37.7203, lng: 30.2908, icon: 'sun_location.svg', time: new Date('2023-01-19')  },
         { ad: "Bursa", lat: 40.1826, lng: 29.0669, icon: 'sun_location.svg', time: new Date('2023-01-20') },
-        { ad: "Aydın", lat: 37.8450, lng: 27.8450, icon: 'sun_location.svg', time: new Date('2023-01-21')  },
-        { ad: "Balıkesir", lat: 39.6492, lng: 27.8861, icon: 'sun_location.svg', time: new Date('2023-01-22')  },
-        { ad: "Batman", lat: 37.8812, lng: 41.1351, icon: 'sun_location.svg', time: new Date('2023-01-23')  },
-        { ad: "Bayburt", lat: 40.2552, lng: 40.2249, icon: 'sun_location.svg', time: new Date('2023-01-24')  },
-        { ad: "Bilecik", lat: 40.1431, lng: 29.9792, icon: 'sun_location.svg', time: new Date('2023-01-25')  },
-        { ad: "Bingöl", lat: 38.8853, lng: 40.4983, icon: 'sun_location.svg', time: new Date('2023-01-26')  },
-        { ad: "Bitlis", lat: 38.4012, lng: 42.1081, icon: 'sun_location.svg', time: new Date('2023-01-27')  },
-        { ad: "Bolu", lat: 40.7395, lng: 31.6111, icon: 'sun_location.svg', time: new Date('2023-01-28')  },
-        { ad: "Burdur", lat: 37.7203, lng: 30.2908, icon: 'sun_location.svg', time: new Date('2023-01-29')  },
-        { ad: "Bursa", lat: 40.1826, lng: 29.0669, icon: 'sun_location.svg', time: new Date('2023-01-30') },
         // Diğer şehirler...
     ];
 
@@ -84,6 +75,7 @@ export default function App() {
             ]);
         }
     }, [isLoaded]);
+
 
 
     const onMapClick = useCallback((event) => {

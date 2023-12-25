@@ -164,7 +164,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
     ];
 
     //YILLIK ENERJİ HESABI
-    const [selectedCurrency, setSelectedCurrency] = useState('EUR');
+    const [selectedCurrency, setSelectedCurrency] = useState('sml');
     const [quantity, setQuantity] = useState('');
 
     const handleCurrencyChange = (event) => {
