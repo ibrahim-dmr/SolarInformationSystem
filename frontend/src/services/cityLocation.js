@@ -15,29 +15,16 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
-<<<<<<< HEAD
-import {GetCityService} from "./getCity.service";
-import Button from "@mui/material/Button";
-import {useState} from "react";
 
-const CityLocation = ({lat, lng, show, setShow, ad, selected}) => {
-=======
-import { GetCityService } from './services/getCity.service';
+const CityLocation = ({lat, lng, show, setShow, ad, apiData}) => {
 
+    // apiData değişkeni aslında bir JSON bunu JSON.parse yaparak anahtar kelimelerine erişilebilir.
+    // JSON.stringfy işlemi ile stringe çevirilmiş halde buraya geliyor. Gelen verinin içinden gerekli değerleri güncelleyerek CityLocation oluşturulabilir.
+    // şu an şehrin verileri console json olarak, açılan pencerede ise string olarak ekrana basılmaktadır.
 
-
-
-const CityLocation = ({lat, lng, show, setShow, ad}) => {
-    
->>>>>>> c986b9414d92a4d18ae33a673ba9b6daa8c2fd84
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
     };
-
-    const handleSunClick = () => {
-        console.log(ad)
-        GetCityService("http://localhost:3001/api/query/city", ad)
-    }
 
     const rows = [
         { data: 'DNI', perDay: '10' },
@@ -65,21 +52,6 @@ const CityLocation = ({lat, lng, show, setShow, ad}) => {
         const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
         return `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lng}&zoom=${zoom}&size=${size}&maptype=satellite&key=${GOOGLE_API_KEY}`;
     };
-
-    const handleSunClick = async () => {
-        if (selected && selected.icon === 'sun_location.svg') {
-            try {
-                const response = await GetCityService("http://localhost:3001/api/query/city", selected.ad);
-                if (response) {
-                   // burda ne yapacağız?
-                }
-            } catch (error) {
-                console.error('Şehir bilgileri alınırken bir hata oluştu:', error);
-            }
-        }
-    };
-
-
 
     return (
         <Box
@@ -208,7 +180,7 @@ const CityLocation = ({lat, lng, show, setShow, ad}) => {
                         <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>{ad}</Typography>
                         <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
                         <Typography variant="body1" sx={{ mt: 2 }}>
-                            İzmir, Türkiye'nin batı kıyısında yer almasıyla yıl boyunca yüksek güneş ışığı alma avantajına sahiptir. Güneşlenme süresinin fazla olması ve bölgedeki radyasyon değerlerinin yüksekliği, İzmir'i solar enerji üretimi için ideal bir konum haline getirir. Özellikle yaz aylarında güneş ışınlarının dik açıyla düşmesi, fotovoltaik panellerden alınabilecek enerji miktarını maksimize eder. Sürdürülebilir ve temiz enerjiye olan ihtiyaç göz önüne alındığında, İzmir ve çevresi, yenilenebilir enerji kaynaklarından yararlanma konusunda büyük bir potansiyele sahiptir. Bu potansiyelin farkında olan yerel yönetimler ve yatırımcılar, bölgede solar
+                            {apiData} {/* Yükleme durumunu kontrol et */}
                         </Typography>
                     </Box>
                     <Box sx={{

@@ -7,6 +7,7 @@ import {
 import Navbar from './components/navbar';
 import Location from './services/location';
 import CityLocation from './services/cityLocation';
+import { GetCityService } from './services/getCity.service';
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -33,12 +34,8 @@ export default function App() {
     const [markers, setMarkers] = useState([]);
     const[selected,setSelected] = useState(null);
     const [showLocation, setShowLocation] = useState(false);
+    const [cityData, setCityData] = useState(''); // Alınan veriyi saklamak için state
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> c986b9414d92a4d18ae33a673ba9b6daa8c2fd84
     const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
         { ad: "Adana", lat: 37.0310, lng: 35.3952, icon: 'sun_location.svg', time: new Date('2023-01-01') },
         { ad: "Adıyaman", lat: 37.7407, lng: 38.2486, icon: 'sun_location.svg',time: new Date('2023-01-02') },
@@ -73,7 +70,6 @@ export default function App() {
         // Diğer şehirler...
     ];
 
-
     useEffect(() => {
         if (isLoaded) {
             setMarkers(current => [
@@ -84,7 +80,7 @@ export default function App() {
                     time: sehir.time, // Her şehir için farklı bir zaman damgası oluşturmalıyız !!!DİKKAT!!!
                     icon: sehir.icon,
                     ad: sehir.ad // Şehir adı, isteğe bağlı
-                }))
+                })),
             ]);
         }
     }, [isLoaded]);
@@ -119,9 +115,13 @@ export default function App() {
                     url: marker.icon ? marker.icon : 'dark_location.svg', // Özel ikon varsa kullan, yoksa varsayılanı kullan
                     scaledSize: new window.google.maps.Size(40, 40), // İkonun ölçeklendirilmiş boyutu
                 }}
-                onClick={() => {
+                onClick={ async () => {
                     setSelected(marker);
                     setShowLocation(true);
+                    if(marker.icon === 'sun_location.svg'){
+                        const result = await GetCityService("http://localhost:3001/api/query/city", marker.ad);
+                        setCityData(result);
+                    }
                 }} />)}
                 {selected && selected.icon === 'sun_location.svg'
                     ? (
@@ -132,6 +132,7 @@ export default function App() {
                             lat={selected.lat}
                             lng={selected.lng}
                             selected={selected}
+                            apiData={cityData}
                         />
                     ) : selected ? (
                         // Eğer selected var ama ikon 'dark_location.svg' değilse burada başka bir bileşen veya içerik gösterebilirsiniz.
