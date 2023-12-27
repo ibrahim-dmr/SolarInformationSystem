@@ -80,13 +80,13 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
 
 
     const data = {
-        labels: ['PVOUT', 'DNI', 'GHI', 'DIF', 'GTI', 'OPTA', 'TEMP'],
+        labels: ['PVOUT', 'DNI', 'GHI', 'DIF', 'GTI'],
         datasets: [
             {
                 label: 'Enerji Değerleri',
-                data: [ pvout, dni, ghi, dif, gti, opta, temp], // Örnek veri, gerçek verilerinizle değiştirin
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
+                data: [ pvout, dni, ghi, dif, gti], // Örnek veri, gerçek verilerinizle değiştirin
+                backgroundColor: 'rgba(255, 0, 0, 0.2)',
+                borderColor: 'rgba(255, 0, 0, 0.6)',
                 borderWidth: 1,
             },
         ],
@@ -120,9 +120,6 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                 },
             }}
         > {/* Bu satır eklendi */}
-            <IconButton onClick={handleClose} sx={{ left: 570 }}>
-                <CloseIcon fontSize="small" />
-            </IconButton>
             <Grid container spacing={2}>
                 <Grid item xs>
                     <Box sx={{
@@ -156,7 +153,7 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                     <Box sx={{
                         borderRadius: '15px',
                         width: 270,
-                        height: 300,
+                        height: 340,
                         marginTop: 2,
                         p: 1,
                         bgcolor: 'grey.200',
@@ -211,18 +208,38 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                     </Box>
                 </Grid>
                 <Grid item xs>
-                    <Box sx={{
-                        borderRadius: '15px 15px 15px 15px',
-                        width: 270, // Sabit genişlik değeri
-                        height: 530, // Sabit yükseklik değeri
-                    }}
-                        p={1} bgcolor="grey.200">
-                        <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>{ad}</Typography>
-                        <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
+                    <Box
+                        sx={{
+                            borderRadius: '15px 15px 15px 15px',
+                            width: 270, // Sabit genişlik değeri
+                            height: 570, // Sabit yükseklik değeri
+                            display: 'flex',
+                            flexDirection: 'column',
+                            bgcolor: 'grey.200',
+                        }}
+                        p={1}
+                    >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div>
+                                <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>{ad}</Typography>
+                                <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
+                            </div>
+                            <IconButton onClick={handleClose} sx={{
+                                bottom: 10,
+                                left: 0,
+                                backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
+                                '&:hover': {
+                                    backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
+                                }
+                            }}>
+                            <CloseIcon fontSize="small" />
+                            </IconButton>
+                        </div>
                         <Typography variant="body1" sx={{ mt: 2 }}>
                             {acıklama}
                         </Typography>
                     </Box>
+
                     <Box sx={{
                         borderRadius: '15px',
                         width: 270, // Sabit genişlik değeri

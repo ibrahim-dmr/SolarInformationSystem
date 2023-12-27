@@ -323,10 +323,6 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                 },
             }}
         >
-            <IconButton onClick={handleClose} sx={{ left: 570 }}>
-                <CloseIcon fontSize="small" />
-            </IconButton>
-
                 <Grid container spacing={2}>
                     <Grid item xs>
 
@@ -338,13 +334,30 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             p: 1,
                             bgcolor: 'grey.200',
                         }}>
-                            <Grid item>
+                            <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
+                                <IconButton
+                                    onClick={handleClose}
+                                    sx={{
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        zIndex: 100,
+                                        backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
+                                        '&:hover': {
+                                            backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
+                                        }
+                                    }}>
+                                    <CloseIcon fontSize="small" />
+                                </IconButton>
+
+
                                 <img
                                     src={getMapImageUrl(lat, lng)}
                                     alt="Street View"
-                                    style={{ width: '270px', height: '270px', borderRadius: '15px' }} // Inline style kullanarak genişlik ve yükseklik atama
+                                    style={{ width: '100%', height: '100%', borderRadius: '15px' }} // genişlik ve yükseklik %100 olarak ayarlanıyor
                                 />
                             </Grid>
+
                             <Grid item>
                         <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>
                             {locationNamee}

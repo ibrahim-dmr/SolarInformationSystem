@@ -70,7 +70,7 @@ const Navbar = () => {
                     sx={{
                         width: 400,
                         height: 520,
-                        backgroundColor: 'white',
+                        background: 'radial-gradient(circle at bottom, #FFF9C4, #FFF9C4 30%, #FFFFFF 70%, #FFFFFF)', // Güneşin alttan yukarıya doğru doğuşu efekti
                         padding: 3,
                         display: 'flex',
                         flexDirection: 'column',
@@ -85,9 +85,75 @@ const Navbar = () => {
                         // Kayıt formu içeriği
                         <>
                             <Typography variant="h6" sx={{ mb: 2, color: 'grey.800' }}>Kayıt Ol</Typography>
-                            <TextField sx={{width: 220}} label="Kullanıcı Adı" margin="normal" />
-                            <TextField sx={{width: 220}} label="Mail Adresi" margin="normal" />
-                            <TextField sx={{width: 220}}
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Kullanıcı Adı"
+                                margin="normal"
+                            />
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Mail Adresi"
+                                margin="normal"
+                            />
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
                                 id="outlined-select-currency"
                                 select
                                 defaultValue="user"
@@ -99,13 +165,68 @@ const Navbar = () => {
                                     </MenuItem>
                                 ))}
                             </TextField>
-                            <TextField 
-                                    sx={{width: 220}} 
-                                    label="Şifre" 
-                                    type="password" 
-                                    margin="normal" />
-                            <TextField sx={{width: 220}} label="Şifre Onayı" type="password" margin="normal" />
-                            <Button variant="outlined"  sx={{ mt: 2 }} >
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Şifre"
+                                type="password"
+                                margin="normal"
+                            />
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Şifre Onayı"
+                                type="password"
+                                margin="normal"
+                            />
+                            <Button
+                                variant="outlined"
+                                sx={{
+                                    mt: 2,
+                                    color: '#FFD700', // Metin rengi olarak açık sarı
+                                    borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                    '&:hover': {
+                                        backgroundColor: '#FFF9C4', // Üzerine gelindiğinde arka plan rengi olarak soluk sarı
+                                        borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi olarak açık sarı
+                                    },
+                                }}
+                            >
                                 Kayıt Ol
                             </Button>
                             <Button onClick={handleLoginClick} size="small" sx={{marginTop: 2, color: 'grey.800'}}>
@@ -116,18 +237,72 @@ const Navbar = () => {
                         // Giriş formu içeriği
                         <>
                             <Typography variant="h6" sx={{ mb: 2, color: 'grey.800' }}>Giriş Yap</Typography>
-                            <TextField 
-                                    sx={{width: 220}} 
-                                    label="Kullanıcı Adı" 
-                                    margin="normal" 
-                                    onChange={handleUsernameChange}/>
-                            <TextField 
-                                    sx={{width: 220}} 
-                                    label="Şifre" 
-                                    type="password" 
-                                    margin="normal" 
-                                    onChange={handlePasswordChange}/>
-                            <Button  variant="outlined" sx={{ mt: 2 }} onClick={handleLogin}>
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Kullanıcı Adı"
+                                margin="normal"
+                                onChange={handleUsernameChange}
+                            />
+                            <TextField
+                                sx={{
+                                    width: 220,
+                                    '& .MuiOutlinedInput-root': {
+                                        '& fieldset': {
+                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                        },
+                                        '&:hover fieldset': {
+                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
+                                        },
+                                        '&.Mui-focused fieldset': {
+                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
+                                        },
+                                    },
+                                    '& label.Mui-focused': {
+                                        color: 'black', // Odaklandığında etiket rengi
+                                    },
+                                    '& label': {
+                                        color: 'black', // Normal etiket rengi
+                                    },
+                                }}
+                                label="Şifre"
+                                type="password"
+                                margin="normal"
+                                onChange={handlePasswordChange}
+                            />
+
+
+                            <Button
+                                variant="outlined"
+                                sx={{
+                                    mt: 2,
+                                    color: '#FFD700', // Metin rengi olarak açık sarı
+                                    borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
+                                    '&:hover': {
+                                        backgroundColor: '#FFF9C4', // Üzerine gelindiğinde arka plan rengi olarak soluk sarı
+                                        borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi olarak açık sarı
+                                    },
+                                }}
+                                onClick={handleLogin} // onClick olay işleyicisi
+                            >
                                 Giriş
                             </Button>
                             <Button onClick={handleRegisterClick}  size="small" sx={{marginTop: 2, color: 'grey.800'}}>
