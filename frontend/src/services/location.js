@@ -181,7 +181,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
     // Yıllık ortalama değeri hesaplamak için bir fonksiyon (Bu kısım projenize göre değişebilir)
     const panelSizes = {
         sml: 1.5,  // Küçük panel boyutu m²
-        nrm: 6,  // Normal panel boyutu m²
+        nrm: 3.5,  // Normal panel boyutu m²
         big: 6   // Büyük panel boyutu m²
     };
 
@@ -309,6 +309,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                 bgcolor: 'white',
                 borderRadius: '5px 5px 5px 5px',
                 overflow: 'auto', // İçerik kutunun boyutunu aştığında kaydırma çubuğu görünür
+                boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 1)', // Kenarlık gölgesi
                 '&::-webkit-scrollbar': {
                     width: '10px',
                     borderRadius: '5px',
@@ -332,7 +333,11 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             height: 410, // Sabit yükseklik değeri
                             overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
                             p: 1,
-                            bgcolor: 'grey.200',
+                            border: 1, // 1 piksel kenarlık
+                            borderColor: 'grey.200', // Gri kenarlık rengi
+                            '&:hover': {
+                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                            },
                         }}>
                             <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
                                 <IconButton
@@ -395,6 +400,12 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             height: 240,
                             position: 'absolute',
                             overflow: 'auto',
+                            bgcolor: 'background.paper', // Kırık beyaz için
+                            border: 1, // 1 piksel kenarlık
+                            borderColor: 'grey.200', // Gri kenarlık rengi
+                            '&:hover': {
+                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                            },
                             '&::-webkit-scrollbar': {
                                 width: '10px',
                                 borderRadius: '5px',
@@ -408,7 +419,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                                 backgroundColor: `rgba(0, 0, 0, 0.3)`,
                             },
                         }}
-                             p={1} bgcolor="grey.200"
+                             p={1}
                         >
                             <TableContainer>
                                 <Table aria-label="simple table">
@@ -440,11 +451,16 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                     <Grid item xs>
                         <Box sx={{
                             borderRadius: '5px',
-                            width: 270, // Sabit genişlik değeri
+                            width: 269, // Sabit genişlik değeri
                             height: 410, // Sabit yükseklik değeri
                             overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
                             p: 1,
-                            bgcolor: 'grey.200',
+                            bgcolor: 'background.paper', // Kırık beyaz için
+                            border: 1, // 1 piksel kenarlık
+                            borderColor: 'grey.200', // Gri kenarlık rengi
+                            '&:hover': {
+                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                            },
                         }}>
                     <Grid item>
                         <Box sx={{ maxHeight: "390px", maxWidth: "260px" }}> {/* Boyutları iki katına çıkarıldı */}
@@ -455,12 +471,17 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
 
                         <Box sx={{
                             borderRadius: '5px',
-                            width: 270, // Dış Box genişliği
+                            width: 269, // Dış Box genişliği
                             height: 240, // Dış Box yüksekliği
                             marginTop: 2,
                             overflow: 'hidden',
                             p: 1,
-                            bgcolor: 'grey.200',
+                            bgcolor: 'background.paper', // Kırık beyaz için
+                            border: 1, // 1 piksel kenarlık
+                            borderColor: 'grey.200', // Gri kenarlık rengi
+                            '&:hover': {
+                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                            },
                             display: 'flex', // İç Box'ları yan yana getirmek için
                             flexDirection: 'row', // Yatay olarak dizilim
                         }}>

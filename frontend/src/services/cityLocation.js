@@ -105,6 +105,7 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                 height: 575, // Sabit yükseklik değeri
                 bgcolor: 'white',
                 borderRadius: '5px 5px 5px 5px',
+                boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 1)', // Kenarlık gölgesi
                 overflow: 'auto', // İçerik kutunun boyutunu aştığında kaydırma çubuğu görünür
                 '&::-webkit-scrollbar': {
                     width: '10px',
@@ -124,11 +125,16 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                 <Grid item xs>
                     <Box sx={{
                         borderRadius: '15px',
-                        width: 270, // Sabit genişlik değeri
+                        width: 269, // Sabit genişlik değeri
                         height: 200, // Sabit yükseklik değeri
                         overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
                         p: 1,
-                        bgcolor: 'grey.200',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
                     }}>
                         <Typography variant="body1">
                             <img
@@ -152,11 +158,16 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                     </Box>
                     <Box sx={{
                         borderRadius: '15px',
-                        width: 270,
-                        height: 340,
+                        width: 269,
+                        height: 336,
                         marginTop: 2,
                         p: 1,
-                        bgcolor: 'grey.200',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
                     }}>
                         <Typography variant="body1">
                             {/* Radar Grafiği */}
@@ -170,6 +181,12 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                         height: 530,
                         position: 'absolute',
                         overflow: 'auto',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
                         '&::-webkit-scrollbar': {
                             width: '10px',
                             borderRadius: '5px',
@@ -183,7 +200,7 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                             backgroundColor: `rgba(0, 0, 0, 0.3)`,
                         },
                     }}
-                         p={1} bgcolor="grey.200"
+                         p={1}
                     >
                         <TableContainer>
                             <Table aria-label="simple table">
@@ -215,7 +232,12 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                             height: 570, // Sabit yükseklik değeri
                             display: 'flex',
                             flexDirection: 'column',
-                            bgcolor: 'grey.200',
+                            bgcolor: 'background.paper', // Kırık beyaz için
+                            border: 1, // 1 piksel kenarlık
+                            borderColor: 'grey.200', // Gri kenarlık rengi
+                            '&:hover': {
+                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                            },
                         }}
                         p={1}
                     >
@@ -246,7 +268,12 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                         height: 250, // Sabit yükseklik değeri
                         marginTop: 2,
                         p: 1,
-                        bgcolor: 'grey.200',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
                     }}>
                         <Typography variant="h6" gutterBottom>
                             Potansiyeli En Yüksek
@@ -257,16 +284,22 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                             <ListItem>3. {ilce3}</ListItem>
                             <ListItem>4. {ilce4}</ListItem>
                             <ListItem>5. {ilce5}</ListItem>
-
                         </List>
                     </Box>
+
+
                     <Box sx={{
                         borderRadius: '15px',
                         width: 270, // Sabit genişlik değeri
                         height: 250, // Sabit yükseklik değeri
                         marginTop: 2,
                         p: 1,
-                        bgcolor: 'grey.200',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
                     }}>
                         <Grid item>
                             <img
