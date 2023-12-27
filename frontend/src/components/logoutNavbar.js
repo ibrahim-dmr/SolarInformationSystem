@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Backdrop, Box, TextField } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Backdrop, Box } from '@mui/material';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { yellow } from '@mui/material/colors';
-import MenuItem from '@mui/material/MenuItem';
-import { LoginService } from '../services/login.service';
 
 const LogoutNavbar = () => {
     const [open, setOpen] = useState(false);

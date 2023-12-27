@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Backdrop, Box, TextField } from '@mui/material';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { yellow } from '@mui/material/colors';
-import MenuItem from '@mui/material/MenuItem';
-import { LoginService } from '../services/login.service';
+import { LoginAPIService } from '../services/loginAPI.service';
+import { RegisterAPIService } from '../services/registerAPI.service';
 
 const Navbar = () => {
+    const [isRegistering, setIsRegistering] = useState(false);
     const [open, setOpen] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [pwOnay, setPwOnay] = useState('');
+    const [email, setEmail] = useState('');
 
     const handleUsernameChange = (event) => {
         setUsername(event.target.value);
@@ -18,39 +21,58 @@ const Navbar = () => {
         setPassword(event.target.value);
     };
 
+    const handlePwOnayChange = (e) => {
+        setPwOnay(e.target.value);
+    }
+
+    const handleEmailChange = (e) => {
+        setEmail(e.target.value);
+    }
+
     const handleClose = () => {
         setOpen(false);
     };
 
-    const handleLogin = () => {
-        // ENV dosyası içerisinden urller çekilmelidir.
-        if(LoginService("http://localhost:3001/api/auth/signin", username, password)) handleClose()
+    const resetForm = () =>{
+        setUsername("");
+        setPassword("");
+        setPwOnay("");
+        setEmail("");
     }
 
+    const handleLogin = () => {
+        // ENV dosyası içerisinden urller çekilmelidir.
+        if(LoginAPIService("http://localhost:3001/api/auth/signin", username, password)) {
+            resetForm();
+            handleClose();
+        }
+    }
+    
     const handleOpen = () => {
         setOpen(true);
     };
 
-    const [isRegistering, setIsRegistering] = useState(false);
+    const handleSignUp = () => {
+        if(password === pwOnay){
+            if(RegisterAPIService("http://localhost:3001/api/auth/signup", username, password, email)){
+                resetForm();
+                setIsRegistering(false);
+            }
+            console.log(username);
+            console.log(password);
+            console.log(email);
+        }
+    }
+
 
     const handleRegisterClick = () => {
         setIsRegistering(true);
     };
 
     const handleLoginClick = () => {
+        
         setIsRegistering(false);
     };
-
-    const currencies = [
-        {
-            value: 'user',
-            label: 'user',
-        },
-        {
-            value: 'admin',
-            label: 'admin',
-        },
-    ];
 
     return (
         <AppBar position="fixed" color="inherit">
@@ -107,7 +129,9 @@ const Navbar = () => {
                                     },
                                 }}
                                 label="Kullanıcı Adı"
+                                onChange={handleUsernameChange}
                                 margin="normal"
+                                value={username}
                             />
                             <TextField
                                 sx={{
@@ -131,7 +155,10 @@ const Navbar = () => {
                                     },
                                 }}
                                 label="Mail Adresi"
+                                onChange={handleEmailChange}
                                 margin="normal"
+                                value={email}
+                                
                             />
                             <TextField
                                 sx={{
@@ -154,41 +181,11 @@ const Navbar = () => {
                                         color: 'black', // Normal etiket rengi
                                     },
                                 }}
-                                id="outlined-select-currency"
-                                select
-                                defaultValue="user"
-                                margin="normal"
-                            >
-                                {currencies.map((option) => (
-                                    <MenuItem key={option.value} value={option.value}>
-                                        {option.label}
-                                    </MenuItem>
-                                ))}
-                            </TextField>
-                            <TextField
-                                sx={{
-                                    width: 220,
-                                    '& .MuiOutlinedInput-root': {
-                                        '& fieldset': {
-                                            borderColor: '#FFD700', // Kenarlık rengi olarak açık sarı
-                                        },
-                                        '&:hover fieldset': {
-                                            borderColor: '#FFD700', // Üzerine gelindiğinde kenarlık rengi
-                                        },
-                                        '&.Mui-focused fieldset': {
-                                            borderColor: '#FFD700', // Odaklandığında kenarlık rengi
-                                        },
-                                    },
-                                    '& label.Mui-focused': {
-                                        color: 'black', // Odaklandığında etiket rengi
-                                    },
-                                    '& label': {
-                                        color: 'black', // Normal etiket rengi
-                                    },
-                                }}
                                 label="Şifre"
+                                onChange={handlePasswordChange}
                                 type="password"
                                 margin="normal"
+                                value={password}
                             />
                             <TextField
                                 sx={{
@@ -212,11 +209,14 @@ const Navbar = () => {
                                     },
                                 }}
                                 label="Şifre Onayı"
+                                onChange={handlePwOnayChange}
                                 type="password"
                                 margin="normal"
+                                value={pwOnay}
                             />
                             <Button
                                 variant="outlined"
+                                onClick={handleSignUp}
                                 sx={{
                                     mt: 2,
                                     color: '#FFD700', // Metin rengi olarak açık sarı
@@ -261,6 +261,7 @@ const Navbar = () => {
                                 label="Kullanıcı Adı"
                                 margin="normal"
                                 onChange={handleUsernameChange}
+                                value={username}
                             />
                             <TextField
                                 sx={{
@@ -287,6 +288,7 @@ const Navbar = () => {
                                 type="password"
                                 margin="normal"
                                 onChange={handlePasswordChange}
+                                value={password}
                             />
 
 

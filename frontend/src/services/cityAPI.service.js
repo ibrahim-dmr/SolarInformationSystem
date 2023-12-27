@@ -1,6 +1,6 @@
 import { getCookie } from "../common/getCookie.common";
 
-export const GetCityService = async (url, clickedCity) => {
+export const CityAPIService = async (url, clickedCity) => {
     if (getCookie() != null) {
         try {
             const response = await fetch(url, {
@@ -31,6 +31,7 @@ export const GetCityService = async (url, clickedCity) => {
             return false;
         }
     } else {
-        console.error("Authentication Token Eksik!\n" + " Login olduktan sonra tekrar deneyiniz.");
+        window.alert("Authentication Token Eksik!\n\nLogin olduktan sonra tekrar deneyiniz.");
+        return false;
     }
 }

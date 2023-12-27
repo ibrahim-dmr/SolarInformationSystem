@@ -1,6 +1,4 @@
-import { setCookie } from "../common/setCookie.common";
-
-export const LoginService = async (url,id,pw) =>{
+export const RegisterAPIService = async (url,id, pw, email) =>{
     try{
         const response = await fetch(url, {
             method: 'POST',
@@ -11,17 +9,19 @@ export const LoginService = async (url,id,pw) =>{
             },
             body: JSON.stringify({
                 username : id,
-                password : pw
+                password : pw,
+                email : email,
+                roles : ["user"]
             })
         });
         if(response.ok){
             const data = await response.json();
             if(data['response']){
                 console.log(data);
-                setCookie(data["accessToken"]);
+                window.alert("Kayıt Başarılı!");
                 return true;
             } else {
-                throw new Error("Login error: " + data["message"])
+                throw new Error("Register error: " + data["message"])
             }
         } else {
             throw new Error(`${response.status} ${response.statusText} ${response.url}`);

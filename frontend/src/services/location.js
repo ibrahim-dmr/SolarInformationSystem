@@ -22,7 +22,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 import {fetchSolarData} from "./solarData";
 import { getLocationName } from './getLocationName';
-import { GetCityService } from './getCity.service';
 import Menu from '@mui/material/Menu';
 
 const Location = ({selected, lat, lng,  time, setShow, show}) => {
@@ -201,16 +200,6 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
         // Konsola yazdırma (isteğe bağlı)
         console.log(`Panel Tipi: ${selectedCurrency}, Adet: ${quantity}, Yıllık Enerji Üretimi: ${formattedYearlyEnergy}`);
     };
-
-
-
-    const handleSunClick = () => {
-        console.log(selected)
-        console.log(selected.ad)
-        if(selected && selected.icon === 'sun_location.svg'){
-            GetCityService("http://localhost:3001/api/query/city", selected.ad)
-        }
-    }
 
     // Menu için gerekli state ve fonksiyonlar
     const [anchorEl, setAnchorEl] = useState(null);

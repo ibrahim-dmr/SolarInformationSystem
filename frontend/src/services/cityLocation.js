@@ -15,7 +15,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
-import {GetCityService} from "./getCity.service";
+import {GetCityService} from "./cityAPI.service";
 import Button from "@mui/material/Button";
 
 const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {

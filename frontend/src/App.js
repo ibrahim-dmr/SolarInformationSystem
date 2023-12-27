@@ -4,11 +4,12 @@ import {
     useLoadScript,
     Marker
 } from "@react-google-maps/api";
+import NavbarMiddleWare from './middleware/navbar.middleware';
 import Navbar from './components/navbar';
 import LogoutNavbar from './components/logoutNavbar';
 import Location from './services/location';
 import CityLocation from './services/cityLocation';
-import { GetCityService } from './services/getCity.service';
+import { CityAPIService } from './services/cityAPI.service';
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -31,6 +32,8 @@ export default function App() {
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
         libraries,
     });
+
+    const [navbarMiddleware, setNavbarMiddleware] = useState(false);
 
     const [markers, setMarkers] = useState([]);
     const[selected,setSelected] = useState(null);
@@ -77,7 +80,10 @@ export default function App() {
         }
     }, [isLoaded]);
 
-
+    useEffect(() => {
+        setNavbarMiddleware(NavbarMiddleWare());
+        console.log(navbarMiddleware);
+    }, []);
 
     const onMapClick = useCallback((event) => {
         setMarkers(current => [...current, {
@@ -98,7 +104,7 @@ export default function App() {
 
     return (
         <div>
-            <Navbar/>
+            {navbarMiddleware ? ( <Navbar/>  ) : ( <LogoutNavbar/>)}
             <CityLocation />
             <GoogleMap mapContainerStyle={mapContainerStyle} zoom={5.9} center={center} options={options}
                 onClick={onMapClick}
@@ -109,11 +115,13 @@ export default function App() {
                     scaledSize: new window.google.maps.Size(40, 40), // İkonun ölçeklendirilmiş boyutu
                 }}
                 onClick={ async () => {
-                    setSelected(marker);
-                    setShowLocation(true);
                     if(marker.icon === 'sun_location2.svg'){
-                        const result = await GetCityService("http://localhost:3001/api/query/city", marker.ad);
-                        setCityData(result);
+                        const result = await CityAPIService("http://localhost:3001/api/query/city", marker.ad);
+                        if(result !== false){
+                            setShowLocation(true);
+                            setSelected(marker);
+                            setCityData(result);
+                        }
                     }
                 }} />)}
                 {selected && selected.icon === 'sun_location2.svg'
