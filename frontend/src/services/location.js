@@ -23,6 +23,7 @@ import Button from '@mui/material/Button';
 import {fetchSolarData} from "./solarData";
 import { getLocationName } from './getLocationName';
 import Menu from '@mui/material/Menu';
+import ChatIcon from '@mui/icons-material/Chat'; // Chat ikonu
 
 const Location = ({selected, lat, lng,  time, setShow, show}) => {
     // Date nesnesini string'e dönüştürmek
@@ -41,6 +42,8 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
     const [dniArrayy, setDniArrayy] = useState([]);
     const [dwnArrayy, setDwnArrayy] = useState([]);
     const [dıfArrayy, setDıfArrayy] = useState([]);
+    const [albArrayy, setAlbArrayy] = useState([]);
+    const [ktArrayy, setKtArrayy] = useState([]);
     const [locationNamee, setLocationNamee] = useState('');
 
     useEffect(() => {
@@ -48,13 +51,17 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
             fetchSolarData(selected.lat, selected.lng)
                 .then(data => {
                     setSolarDataa(data);
-                    if (data && data.dni) {
+                    if (data ) {
                         const dniValues = Object.values(data.dni);
                         const dwnValues = Object.values(data.swdwn);
-                        const dıfValues = Object.values(data.dıf);
+                        const dıfValues = Object.values(data.diff);
+                        const albValues = Object.values(data.alb);
+                        const ktValues = Object.values(data.kt);
                         setDniArrayy(dniValues);
                         setDwnArrayy(dwnValues);
                         setDıfArrayy(dıfValues);
+                        setAlbArrayy(albValues);
+                        setKtArrayy(ktValues);
                     }
                 })
                 .catch(error => console.error('Error fetching solar data:', error));
@@ -87,7 +94,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                     labels: UTILS.months,
                     datasets: [
                         {
-                            label: 'DNI Values',
+                            label: 'DNI Değeri',
                             data: Object.values(dniArrayy),
                             borderColor: 'rgba(255, 68, 68, 1)',
                             borderWidth: 2, // Kalın çizgi
@@ -95,7 +102,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             tension: 0.4 // Kavisli çizgiler
                         },
                         {
-                            label: 'DWN Values',
+                            label: 'DWN Değeri',
                             data: Object.values(dwnArrayy),
                             borderColor: 'rgba(51, 153, 255, 1)',
                             borderWidth: 2, // Kalın çizgi
@@ -103,9 +110,25 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             tension: 0.4 // Kavisli çizgiler
                         },
                         {
-                            label: 'DIF Values',
+                            label: 'DIF Değeri',
                             data: Object.values(dıfArrayy),
                             borderColor: 'rgba(0, 255, 153, 1)',
+                            borderWidth: 2, // Kalın çizgi
+                            fill: false,
+                            tension: 0.4 // Kavisli çizgiler
+                        },
+                        {
+                            label: 'ALB Değeri',
+                            data: Object.values(albArrayy),
+                            borderColor: 'rgba(153, 0, 255, 1)',
+                            borderWidth: 2, // Kalın çizgi
+                            fill: false,
+                            tension: 0.4 // Kavisli çizgiler
+                        },
+                        {
+                            label: 'KT Değeri',
+                            data: Object.values(ktArrayy),
+                            borderColor: 'rgba(255, 159, 0, 1)',
                             borderWidth: 2, // Kalın çizgi
                             fill: false,
                             tension: 0.4 // Kavisli çizgiler
@@ -117,13 +140,13 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                         x: {
                             title: {
                                 display: true,
-                                text: 'Month',
+                                text: 'Ay',
                             },
                         },
                         y: {
                             title: {
                                 display: true,
-                                text: 'Value',
+                                text: 'Değer',
                             },
                         },
                     },
@@ -132,7 +155,7 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                 },
             });
         }
-    }, [dniArrayy, dwnArrayy, dıfArrayy]);
+    }, [dniArrayy, dwnArrayy, dıfArrayy, albArrayy, ktArrayy]);
 
 
     const handleClose = () => {
@@ -144,21 +167,23 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
         { data: 'DNI', yearlyAverage: dniArrayy[dniArrayy.length - 1] },
         { data: 'DWN', yearlyAverage: dwnArrayy[dwnArrayy.length - 1] },
         { data: 'DIF', yearlyAverage: dıfArrayy[dıfArrayy.length - 1] },
+        { data: 'ALB', yearlyAverage: albArrayy[albArrayy.length - 1] },
+        { data: 'KT', yearlyAverage: ktArrayy[ktArrayy.length - 1] },
         // Daha fazla satır eklenebilir...
     ];
 
     const currencies = [
         {
             value: 'sml',
-            label: 'small',
+            label: 'küçük',
         },
         {
             value: 'nrm',
-            label: 'normal',
+            label: 'orta',
         },
         {
             value: 'big',
-            label: 'big',
+            label: 'büyük',
         },
     ];
 
@@ -258,8 +283,6 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
     };
 
 
-
-
     const handleDownload = (format) => {
         const fileName = "solarData"; // Varsayılan dosya adı
         switch (format) {
@@ -268,13 +291,14 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                 const jsonData = {
                     dniData: dniArrayy,
                     dwnData: dwnArrayy,
-                    difData: dıfArrayy
+                    difData: dıfArrayy,
+                    albData: albArrayy,
                 };
                 // JSON olarak indirme
                 downloadJSON(jsonData, fileName);
                 break;
             case 'csv':
-                const csvData = convertArraysToCSV(dniArrayy, dwnArrayy, dıfArrayy);
+                const csvData = convertArraysToCSV(dniArrayy, dwnArrayy, dıfArrayy, albArrayy);
                 downloadCSV(csvData, fileName);
                 break;
             default:
@@ -313,208 +337,240 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                 },
             }}
         >
-                <Grid container spacing={2}>
-                    <Grid item xs>
+            <Grid container spacing={2}>
+                <Grid item xs>
 
-                        <Box sx={{
-                            borderRadius: '5px',
-                            width: 270, // Sabit genişlik değeri
-                            height: 410, // Sabit yükseklik değeri
-                            overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
-                            p: 1,
-                            border: 1, // 1 piksel kenarlık
-                            borderColor: 'grey.200', // Gri kenarlık rengi
-                            '&:hover': {
-                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                            },
-                        }}>
-                            <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
-                                <IconButton
-                                    onClick={handleClose}
-                                    sx={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        zIndex: 100,
-                                        backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
-                                        '&:hover': {
-                                            backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
-                                        }
-                                    }}>
-                                    <CloseIcon fontSize="small" />
+                    <Box sx={{
+                        borderRadius: '5px',
+                        width: 270, // Sabit genişlik değeri
+                        height: 410, // Sabit yükseklik değeri
+                        overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
+                        p: 1,
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
+                    }}>
+                        <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
+                            <IconButton
+                                onClick={handleClose}
+                                sx={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    zIndex: 100,
+                                    backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
+                                    '&:hover': {
+                                        backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
+                                    }
+                                }}>
+                                <CloseIcon fontSize="small" />
+                            </IconButton>
+                            <img
+                                src={getMapImageUrl(lat, lng)}
+                                alt="Street View"
+                                style={{ width: '100%', height: '100%', borderRadius: '15px' }} // genişlik ve yükseklik %100 olarak ayarlanıyor
+                            />
+                        </Grid>
+
+                        <Grid item>
+                            <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>
+                                {locationNamee}
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">Enlem : <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat}</span></Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1">Boylam : <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lng}</span></Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="body1" sx={{ fontStyle: 'italic', color: 'grey',fontSize: '0.8rem' }}>
+                                <IconButton onClick={handleClick}>
+                                    <FileDownloadIcon fontSize="small" />
                                 </IconButton>
-
-
-                                <img
-                                    src={getMapImageUrl(lat, lng)}
-                                    alt="Street View"
-                                    style={{ width: '100%', height: '100%', borderRadius: '15px' }} // genişlik ve yükseklik %100 olarak ayarlanıyor
-                                />
-                            </Grid>
-
-                            <Grid item>
-                        <Typography variant="body1" sx={{ fontWeight: 'bold', fontSize: 'h6.fontSize', color: 'text.primary' }}>
-                            {locationNamee}
-                        </Typography>
-                    </Grid>
-                    <Grid item>
-                       <Typography variant="body1">Latitude : <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat}</span></Typography>
-                    </Grid>
-                    <Grid item>
-                       <Typography variant="body1">Longitude : <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lng}</span></Typography>
-                    </Grid>
-                            <Grid item>
-                                <Typography variant="body1" sx={{ fontStyle: 'italic', color: 'grey',fontSize: '0.8rem' }}>
-                                    <IconButton onClick={handleClick}>
-                                        <FileDownloadIcon fontSize="small" />
-                                    </IconButton>
-                                    <Menu
-                                        anchorEl={anchorEl}
-                                        open={open}
-                                        onClose={handleClose}
-                                    >
-                                        <MenuItem onClick={() => handleDownload('json')}>JSON olarak indir</MenuItem>
-                                        <MenuItem onClick={() => handleDownload('csv')}>CSV olarak indir</MenuItem>
-                                    </Menu>
-                                    added at {formattedTime}
-                                </Typography>
-                            </Grid>
+                                <Menu
+                                    anchorEl={anchorEl}
+                                    open={open}
+                                    onClose={handleClose}
+                                >
+                                    <MenuItem onClick={() => handleDownload('json')}>JSON olarak indir</MenuItem>
+                                    <MenuItem onClick={() => handleDownload('csv')}>CSV olarak indir</MenuItem>
+                                </Menu>
+                                eklendiği zaman {formattedTime}
+                            </Typography>
+                        </Grid>
                     </Box>
 
 
-                        <Box sx={{
+                    <Box sx={{
+                        borderRadius: '5px',
+                        marginTop: 2,
+                        width: 270,
+                        height: 240,
+                        position: 'absolute',
+                        overflow: 'auto',
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
+                        '&::-webkit-scrollbar': {
+                            width: '10px',
                             borderRadius: '5px',
-                            marginTop: 2,
-                            width: 270,
-                            height: 240,
-                            position: 'absolute',
-                            overflow: 'auto',
-                            bgcolor: 'background.paper', // Kırık beyaz için
-                            border: 1, // 1 piksel kenarlık
-                            borderColor: 'grey.200', // Gri kenarlık rengi
-                            '&:hover': {
-                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                            },
-                            '&::-webkit-scrollbar': {
-                                width: '10px',
-                                borderRadius: '5px',
-                                backgroundColor: `rgba(0, 0, 0, 0.1)`,
-                            },
-                            '&::-webkit-scrollbar-thumb': {
-                                backgroundColor: `rgba(0, 0, 0, 0.2)`,
-                                borderRadius: '5px',
-                            },
-                            '&::-webkit-scrollbar-thumb:hover': {
-                                backgroundColor: `rgba(0, 0, 0, 0.3)`,
-                            },
-                        }}
-                             p={1}
-                        >
-                            <TableContainer>
-                                <Table aria-label="simple table">
-                                    <TableHead>
-                                        <TableRow>
-                                            <TableCell>Data</TableCell>
-                                            <TableCell align="right">Yearly Average</TableCell>
+                            backgroundColor: `rgba(0, 0, 0, 0.1)`,
+                        },
+                        '&::-webkit-scrollbar-thumb': {
+                            backgroundColor: `rgba(0, 0, 0, 0.2)`,
+                            borderRadius: '5px',
+                        },
+                        '&::-webkit-scrollbar-thumb:hover': {
+                            backgroundColor: `rgba(0, 0, 0, 0.3)`,
+                        },
+                    }}
+                         p={1}
+                    >
+                        <TableContainer>
+                            <Table aria-label="simple table">
+                                <TableHead>
+                                    <TableRow>
+                                        <TableCell>Veri</TableCell>
+                                        <TableCell align="right">Günlük Ortalama</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                    {rows.map((row) => (
+                                        <TableRow key={row.data}>
+                                            <TableCell component="th" scope="row">
+                                                {row.data}
+                                            </TableCell>
+                                            <TableCell align="right">
+                                                {/* Eğer veri ALB ise yüzde formatında göster, değilse kWh/m² kullan */}
+                                                { (row.data === 'ALB' || row.data === 'KT') ? `${(row.yearlyAverage * 100).toFixed(2)} %` : `${row.yearlyAverage} kWh/m²` }
+                                            </TableCell>
                                         </TableRow>
-                                    </TableHead>
-                                    <TableBody>
-                                        {rows.map((row) => (
-                                            <TableRow key={row.data}>
-                                                <TableCell component="th" scope="row">
-                                                    {row.data}
-                                                </TableCell>
-                                                <TableCell align="right">{row.yearlyAverage} kWh/m² </TableCell>
-                                            </TableRow>
-                                        ))}
-                                    </TableBody>
-                                </Table>
-                            </TableContainer>
-                        </Box>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+
+                    </Box>
 
 
 
-                    </Grid>
-
-
-                    <Grid item xs>
-                        <Box sx={{
-                            borderRadius: '5px',
-                            width: 269, // Sabit genişlik değeri
-                            height: 410, // Sabit yükseklik değeri
-                            overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
-                            p: 1,
-                            bgcolor: 'background.paper', // Kırık beyaz için
-                            border: 1, // 1 piksel kenarlık
-                            borderColor: 'grey.200', // Gri kenarlık rengi
-                            '&:hover': {
-                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                            },
-                        }}>
-                    <Grid item>
-                        <Box sx={{ maxHeight: "390px", maxWidth: "260px" }}> {/* Boyutları iki katına çıkarıldı */}
-                            <canvas id="dniChart" width="400" height="410"></canvas> {/* Piksel cinsinden genişlik ve yükseklik ayarlandı */}
-                        </Box>
-                    </Grid>
-                        </Box>
-
-                        <Box sx={{
-                            borderRadius: '5px',
-                            width: 269, // Dış Box genişliği
-                            height: 240, // Dış Box yüksekliği
-                            marginTop: 2,
-                            overflow: 'hidden',
-                            p: 1,
-                            bgcolor: 'background.paper', // Kırık beyaz için
-                            border: 1, // 1 piksel kenarlık
-                            borderColor: 'grey.200', // Gri kenarlık rengi
-                            '&:hover': {
-                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                            },
-                            display: 'flex', // İç Box'ları yan yana getirmek için
-                            flexDirection: 'row', // Yatay olarak dizilim
-                        }}>
-                            <Box sx={{ width: '50%', p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                {/* Sol taraftaki içerik */}
-                                <FormControl sx={{ m: 1, width: '13ch' }} variant="outlined">
-                                    <TextField
-                                        id="outlined-select-currency"
-                                        select
-                                        label="Select"
-                                        color="success"
-                                        value={selectedCurrency}
-                                        onChange={handleCurrencyChange}
-                                        sx={{ mb: 2 }}
-                                    >
-                                        {currencies.map((option) => (
-                                            <MenuItem key={option.value} value={option.value}>
-                                                {option.label}
-                                            </MenuItem>
-                                        ))}
-                                    </TextField>
-                                    <OutlinedInput
-                                        id="outlined-adornment-weight"
-                                        value={quantity}
-                                        color="success"
-                                        onChange={handleQuantityChange}
-                                        endAdornment={<InputAdornment position="end">qty</InputAdornment>}
-                                        aria-describedby="outlined-weight-helper-text"
-                                        inputProps={{ 'aria-label': 'weight' }}
-                                        sx={{ mb: 2 }}
-                                    />
-
-                                    <Button variant="outlined" onClick={calculate} color="success">Calculate</Button>
-                                </FormControl>
-                            </Box>
-                            <Box sx={{ width: '50%', p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                {/* "Yıllık Ortalama" Başlığı */}
-                                <Typography variant="h6" sx={{ mb: 2 }}>Annual averages</Typography>
-                                {/* Yıllık Ortalama Değeri */}
-                                <Typography variant="body1">{yearlyAverage} kWh</Typography>
-                            </Box>
-                        </Box>
                 </Grid>
+
+
+                <Grid item xs>
+                    <Box sx={{
+                        borderRadius: '5px',
+                        width: 269, // Sabit genişlik değeri
+                        height: 410, // Sabit yükseklik değeri
+                        overflow: 'hidden', // borderRadius etkisini img üzerinde göstermek için
+                        p: 1,
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
+                    }}>
+                        <Grid item>
+                            <Box sx={{ maxHeight: "390px", maxWidth: "260px" }}> {/* Boyutları iki katına çıkarıldı */}
+                                <canvas id="dniChart" width="400" height="410"></canvas> {/* Piksel cinsinden genişlik ve yükseklik ayarlandı */}
+                            </Box>
+                        </Grid>
+                    </Box>
+
+                    <Box sx={{
+                        borderRadius: '5px',
+                        width: 269, // Dış Box genişliği
+                        height: 240, // Dış Box yüksekliği
+                        marginTop: 2,
+                        overflow: 'hidden',
+                        p: 1,
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
+                        display: 'flex', // İç Box'ları yan yana getirmek için
+                        flexDirection: 'row', // Yatay olarak dizilim
+                    }}>
+                        <Box sx={{ width: '50%', p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            {/* Sol taraftaki içerik */}
+                            <FormControl sx={{ m: 1, width: '13ch' }} variant="outlined">
+                                <TextField
+                                    id="outlined-select-currency"
+                                    select
+                                    label="Seç"
+                                    color="success"
+                                    value={selectedCurrency}
+                                    onChange={handleCurrencyChange}
+                                    sx={{ mb: 2 }}
+                                >
+                                    {currencies.map((option) => (
+                                        <MenuItem key={option.value} value={option.value}>
+                                            {option.label}
+                                        </MenuItem>
+                                    ))}
+                                </TextField>
+                                <OutlinedInput
+                                    id="outlined-adornment-weight"
+                                    value={quantity}
+                                    color="success"
+                                    onChange={handleQuantityChange}
+                                    endAdornment={<InputAdornment position="end">adet</InputAdornment>}
+                                    aria-describedby="outlined-weight-helper-text"
+                                    inputProps={{ 'aria-label': 'weight' }}
+                                    sx={{ mb: 2 }}
+                                />
+
+                                <Button variant="outlined" onClick={calculate} color="success">Hesapla</Button>
+                            </FormControl>
+                        </Box>
+                        <Box sx={{ width: '50%', p: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                            {/* "Yıllık Ortalama" Başlığı */}
+                            <Typography variant="h6" sx={{ mb: 2 }}>Günlük Ortalama</Typography>
+                            {/* Yıllık Ortalama Değeri */}
+                            <Typography variant="body1">{yearlyAverage} kWh</Typography>
+                        </Box>
+                    </Box>
                 </Grid>
+            </Grid>
+            <Box sx={{
+                borderRadius: '5px',
+                width: 573, // Dış Box genişliği
+                marginTop: 2,
+                p: 1,
+                bgcolor: 'background.paper', // Kırık beyaz için
+                border: 1, // 1 piksel kenarlık
+                borderColor: 'grey.200', // Gri kenarlık rengi
+                '&:hover': {
+                    bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                },
+                display: 'flex',
+                flexDirection: 'column', // Dikey olarak dizilim
+            }}>
+                <Typography variant="h6" sx={{ mb: 2 }}>
+                    Profesyonel bir değerlendirmeye mi ihtiyacınız var?
+                </Typography>
+                <Typography variant="body2" sx={{ mb: 2 }}>
+                    Yarattığınız konumun detaylarını - yalnızca boylam ve enlem bilgilerini - girerek, geliştirdiğimiz LLM modelimiz tarafından derinlemesine analizinden faydalanın !
+                </Typography>
+                <Button
+                    variant="outlined"
+                    color="success"
+                    href="https://partyrock.aws/u/batu/7AZyezrqV/Solar-Energy-Analyzer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Solar Energy Analyzer
+                </Button>
+            </Box>
         </Box>
     );
 }

@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Backdrop, Box } from '@mui/material';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { yellow } from '@mui/material/colors';
+import Search from "./search";
 
-const LogoutNavbar = () => {
+const LogoutNavbar = ({panTo}) => {
     const [open, setOpen] = useState(false);
 
     const handleClose = () => {
@@ -22,6 +23,7 @@ const LogoutNavbar = () => {
                 <Typography variant="h6" style={{ flexGrow: 1, marginLeft: 10 }}>
                     SIS <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>Solar Information System</span>
                 </Typography>
+                <Search color="inherit" panTo={panTo}/>
                 <Button color="inherit" onClick={handleOpen}>Logout</Button>
             </Toolbar>
             <Backdrop
