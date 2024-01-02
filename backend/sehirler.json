@@ -1,0 +1,773 @@
+{
+    "sehirler":{
+        "Adana": {
+            "picture":"adana.jpg",
+            "location":{
+                "lat": 37.0310,
+                "lng": 35.3952
+            },
+            "ilce":{
+                "i1":"Çukurova",
+                "i2":"Seyhan",
+                "i3":"Ceyhan",
+                "i4":"Yüreğir",
+                "i5":"Sarıçam"
+            },
+            "aciklama":"Adana, güneş enerjisi potansiyeli yüksek bir il olarak öne çıkar. Akdeniz iklimi ve coğrafi konumu, bölgeyi güneş ışınlarına açık hale getirir. Geniş ve düzlük arazileri, güneş enerjisi projeleri için uygun bir platform sunar. Adana'nın bu doğal avantajı, sürdürülebilir enerji üretimine önemli katkı sağlar, böylece bölgenin enerji ihtiyacını çevre dostu bir şekilde karşılar.",
+            "solar_data":{
+                "pvout":4.43,
+                "dni":4.97,
+                "ghi":4.83,
+                "dif":1.80,
+                "gti":5.55,
+                "opta":33,
+                "temp":19
+            }
+        },
+        "Adıyaman": {
+            "picture":"adıyaman.jpg",
+            "location":{
+                "lat": 37.7407,
+                "lng": 38.2486
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Kahta",
+                "i3":"Besni",
+                "i4":"Çelikhan",
+                "i5":"Gölbaşı"
+            },
+            "aciklama":"Adıyaman, güneş enerjisi açısından zengin bir potansiyele sahip bir ildir. Coğrafi konumu ve sıcak iklimi, bölgenin güneş ışınlarından optimum şekilde yararlanmasını sağlar. Geniş arazisi, güneş enerjisi projeleri için uygun bir zemin sunar. Adıyaman'ın bu doğal avantajı, sürdürülebilir enerji üretimine katkıda bulunarak çevresel sürdürülebilirliği destekler.",
+            "solar_data":{
+                "pvout":4.64,
+                "dni":6.20,
+                "ghi":5.17,
+                "dif":1.43,
+                "gti":5.93,
+                "opta":32,
+                "temp":18
+            }
+        },
+        "Afyonkarahisar": {
+            "picture":"afyonkarahisar.jpg",
+            "location":{
+                "lat": 38.6690,
+                "lng": 30.7337
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Sandıklı",
+                "i3":"Dinar",
+                "i4":"Emirdağ",
+                "i5":"Sinanpaşa"
+            },
+            "aciklama":"Afyonkarahisar, güneş enerjisi potansiyeli yüksek bir il olarak dikkat çeker. İklimi ve coğrafi konumu, bölgeyi güneş ışınlarına açık hale getirir. Geniş arazisi, güneş enerjisi projeleri için elverişli bir platform sunar. Bu potansiyel, Afyonkarahisar'ın sürdürülebilir enerji üretimine katkı sağlamasını sağlar, böylece çevresel dostu enerji projeleri için önemli bir alan oluşturur.",
+            "solar_data":{
+                "pvout":4.32,
+                "dni":4.86,
+                "ghi":4.65,
+                "dif":1.72,
+                "gti":5.34,
+                "opta":33,
+                "temp":13
+            }
+        },
+        "Ağrı": {
+            "picture":"ağrı.jpg",
+            "location":{
+                "lat": 39.7217,
+                "lng": 43.0510
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Patnos",
+                "i3":"Doğubayazıt",
+                "i4":"Diyadin",
+                "i5":"Eleşkirt"
+            },
+            "aciklama":"Ağrı, güneş enerjisi potansiyeli yüksek bir il olarak öne çıkar. Yüksek rakımları ve geniş arazisi, bölgeyi güneş ışınlarına açık hale getirir. Bu doğal avantaj, sürdürülebilir enerji projeleri için ideal bir ortam sunar. Ağrı'nın güneş enerjisi kaynaklarını etkili bir şekilde değerlendirmesi, enerji verimliliğini artırabilir ve çevresel sürdürülebilirliği destekleyebilir.",
+            "solar_data":{
+                "pvout":4.24,
+                "dni":4.80,
+                "ghi":4.58,
+                "dif":1.68,
+                "gti":5.22,
+                "opta":32,
+                "temp":9
+            }
+        },
+        "Aksaray": {
+            "picture":"aksaray.jpg",
+            "location":{
+                "lat": 38.2848,
+                "lng": 33.8497
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Ortaköy",
+                "i3":"Eskil",
+                "i4":"Gülağaç",
+                "i5":"Sultanhanı"
+            },
+            "aciklama":"Aksaray, Türkiye'nin iç kesimlerinde yer alan bir il olup, güneş enerjisi açısından büyük bir potansiyele sahiptir. İklimi ve geniş arazisi, güneş ışınlarına optimal maruziyeti sağlar. Bu doğal avantaj, Aksaray'ın sürdürülebilir enerji üretimine uygun bir zemin oluşturmasına olanak tanır, böylece bölge ekonomisine ve çevresel sürdürülebilirliğe katkı sağlayabilir.",
+            "solar_data":{
+                "pvout":4.59,
+                "dni":5.53,
+                "ghi":4.96,
+                "dif":1.61,
+                "gti":5.71,
+                "opta":34,
+                "temp":14
+            }
+        },
+        "Amasya": {
+            "picture":"amasya.jpg",
+            "location":{
+                "lat": 40.6004,
+                "lng": 35.8353
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Merzifon",
+                "i3":"Suluova",
+                "i4":"Taşova",
+                "i5":"Göynücek"
+            },
+            "aciklama":"Amasya, tarihi ve doğal güzellikleriyle öne çıkan bir ilimizdir. Coğrafi konumu ve iklimi, güneş enerjisi potansiyelini artırır. Amasya'nın geniş ve düzlük arazileri, güneş enerjisi projeleri için uygun bir platform sunar. Bu potansiyel, sürdürülebilir enerji üretimine yönelik gelecek projelerde önemli bir rol oynayabilir.",
+            "solar_data":{
+                "pvout":3.97,
+                "dni":4.19,
+                "ghi":4.28,
+                "dif":1.70,
+                "gti":4.91,
+                "opta":33,
+                "temp":12
+            }
+        },
+        "Ankara": {
+            "picture":"ankara.jpg",
+            "location":{
+                "lat": 39.9257,
+                "lng": 32.8595
+            },
+            "ilce":{
+                "i1":"Çankaya",
+                "i2":"Yenimahalle",
+                "i3":"Sincan",
+                "i4":"Keçiören",
+                "i5":"Mamak"
+            },
+            "aciklama":"Ankara, Türkiye'nin iç kesiminde yer alan bir il olarak, güneş enerjisi potansiyeli yüksek bir bölgedir. İklimi ve coğrafi konumu, güneş ışınlarına optimal maruziyet sağlar. Başkent, güneş enerjisi projeleri için uygun bir ortam sunarak sürdürülebilir enerji üretimine katkı sağlar.",
+            "solar_data":{
+                "pvout":4.21,
+                "dni":4.80,
+                "ghi":4.54,
+                "dif":1.67,
+                "gti":5.20,
+                "opta":32,
+                "temp":13
+            }
+        },
+        "Antalya": {
+            "picture":"antalya.jpg",
+            "location":{
+                "lat": 36.8887,
+                "lng": 30.7079
+            },
+            "ilce":{
+                "i1":"Kepez",
+                "i2":"Aksu",
+                "i3":"Konyaaltı",
+                "i4":"Kemer",
+                "i5":"Kaş"
+            },
+            "aciklama":"Antalya, zengin güneş enerjisi potansiyeli ve sıcak iklimiyle öne çıkar. Bölgede güneş ışınları yıl boyunca yoğun olarak hissedilir, bu da güneş enerjisi projeleri için uygun bir ortam sunar. Antalya'nın güneşle dolu günleri, sürdürülebilir enerji üretimi için ideal bir zemin oluşturur. Bu potansiyel, bölgedeki çevresel dostu enerji girişimleri için büyük bir avantaj sağlar.",
+            "solar_data":{
+                "pvout":4.55,
+                "dni":5.29,
+                "ghi":5.03,
+                "dif":1.78,
+                "gti":5.75,
+                "opta":32,
+                "temp":20
+            }
+        },
+        "Ardahan": {
+            "picture":"ardahan.jpg",
+            "location":{
+                "lat": 41.1082,
+                "lng": 42.6785
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Çıldır",
+                "i3":"Göle",
+                "i4":"Hanak",
+                "i5":"Posof"
+            },
+            "aciklama":"Ardahan ili, coğrafi konumu ve düşük nüfusuyla öne çıkan bir bölgedir. Karasal iklimi ve geniş arazisi, güneş enerjisi potansiyelini artırır. Bu doğal avantaj, sürdürülebilir enerji projeleri için elverişli bir ortam sunar. Ardahan'ın güneş enerjisi kaynaklarını etkin bir şekilde kullanması, enerji verimliliği ve çevresel sürdürülebilirlik açısından önem taşır.",
+            "solar_data":{
+                "pvout":4.12,
+                "dni":4.31,
+                "ghi":4.27,
+                "dif":1.72,
+                "gti":4.95,
+                "opta":35,
+                "temp":6
+            }
+        },
+        "Artvin": {
+            "picture":"artvin.jpg",
+            "location":{
+                "lat": 41.1784,
+                "lng": 41.8162
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Hopa",
+                "i3":"Borçka",
+                "i4":"Arhavi",
+                "i5":"Yusufeli"
+            },
+            "aciklama":"Artvin ili, doğal güzellikleri ve yeşil alanlarıyla dikkat çeken bir bölgedir. İl, coğrafi konumu itibariyle güneş enerjisi potansiyeline sahiptir. Yüksek dağlarından dolayı güneş ışınlarına daha fazla maruz kalma avantajı bulunan Artvin, sürdürülebilir enerji üretiminde önemli bir potansiyele sahiptir. Bu potansiyel, çevresel dostu enerji projelerine olanak tanırken, bölgedeki enerji bağımsızlığını güçlendirebilir.",
+            "solar_data":{
+                "pvout":3.55,
+                "dni":3.26,
+                "ghi":3.83,
+                "dif":1.75,
+                "gti":4.33,
+                "opta":34,
+                "temp":12
+            }
+        },
+        "Aydın": {
+            "picture":"aydın.jpg",
+            "location":{
+                "lat": 37.8450,
+                "lng": 27.8450
+            },
+            "ilce":{
+                "i1":"Yenihisar",
+                "i2":"Soke",
+                "i3":"Germencik",
+                "i4":"Kuşadası",
+                "i5":"Karacasu"
+            },
+            "aciklama":"Aydın, Türkiye'nin güneş enerjisi potansiyeli açısından zengin bölgelerinden biridir. Ege Bölgesi'nde yer alan Aydın, yüksek güneşlenme süresi ve güneş ışınımı değerleri ile dikkat çeker. Yıllık ortalama 2.700 ila 3.000 saat arasında güneşlenme süresine sahip olan Aydın, güneş enerjisi santralleri için ideal bir konumdadır. Bölge, sadece güneşlenme süresiyle değil, aynı zamanda yüksek güneş ışınımı (kWh/m²) değerleriyle de ön plana çıkar. Bu özellikleri sayesinde, Aydın'da kurulan fotovoltaik güneş enerjisi santralleri yüksek verimlilik potansiyeline sahiptir.",
+            "solar_data":{
+                "pvout":4.46,
+                "dni":5.16,
+                "ghi":4.90,
+                "dif":1.68,
+                "gti":5.54,
+                "opta":31,
+                "temp":16
+            }
+        },
+        "Balıkesir": {
+            "picture":"balıkesir.jpg",
+            "location":{
+                "lat":  39.6492,
+                "lng":  27.8861
+            },
+            "ilce":{
+                "i1":"Ayvalık",
+                "i2":"Gomeç",
+                "i3":"Burhaniye",
+                "i4":"Erdemit",
+                "i5":"Havran"
+            },
+            "aciklama":"Balıkesir, Türkiye'nin güneş enerjisi potansiyeli yüksek bölgelerinden biridir. Yıllık ortalama 2.600-2.800 saat güneşlenme süresine sahip olan bu şehir, güneş enerjisi santralleri için elverişli bir konuma sahiptir. Yüksek güneş ışınımı değerleriyle dikkat çeken Balıkesir, yenilenebilir enerji yatırımları için ideal bir bölgedir.",
+            "solar_data":{
+                "pvout":4.04,
+                "dni":4.38,
+                "ghi":4.43,
+                "dif":1.69,
+                "gti":4.99,
+                "opta":30.5,
+                "temp":13.75
+            }
+        },
+        "Bartın": {
+            "picture":"bartın.jpg",
+            "location":{
+                "lat": 41.6344,
+                "lng": 32.3375
+            },
+            "ilce":{
+                "i1":"Karataş",
+                "i2":"Tufanbeyli",
+                "i3":"Saimbeyli",
+                "i4":"Seyhan",
+                "i5":"Kozan"
+            },
+            "aciklama":"Bartın, Türkiye'nin Karadeniz Bölgesi'nde yer almakta ve ortalama güneşlenme süresi açısından orta seviyededir. Yıllık ortalama 2.200 ila 2.400 saat arasında değişen güneşlenme süresine sahiptir. Bu durum, bölgede güneş enerjisi santralleri için sınırlı ancak yine de değerlendirilebilir bir potansiyel sunmaktadır. Bartın'ın iklim koşulları ve güneş ışınımı değerleri, özellikle küçük ölçekli güneş enerjisi projeleri için uygun olabilir.",
+            "solar_data":{
+                "pvout":3.61,
+                "dni":3.66,
+                "ghi":3.92,
+                "dif":1.63,
+                "gti":4.40,
+                "opta":31,
+                "temp":12.1
+            }
+        },
+        "Batman": {
+            "picture":"batman.jpg",
+            "location":{
+                "lat": 37.8812,
+                "lng":  41.1351
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Besiri",
+                "i3":"Gercus",
+                "i4":"Kozluk",
+                "i5":"Sason"
+            },
+            "aciklama":"Batman, Türkiye'nin Güneydoğu Anadolu Bölgesi'nde, güneş enerjisi potansiyeli yüksek bir şehirdir. Yıllık ortalama 2.800 ile 3.000 saat arasında güneşlenme süresiyle dikkat çeker. Bu, bölgeyi güneş enerjisi santralleri için oldukça elverişli kılar. Yüksek güneş ışınım değerleri, Batman'ı yenilenebilir enerji projeleri için cazip bir lokasyon haline getirir",
+            "solar_data":{
+                "pvout":4.43,
+                "dni":5.31,
+                "ghi":4.09,
+                "dif":1.57,
+                "gti":5.53,
+                "opta":32,
+                "temp":13.4
+            }
+        },
+        "Bayburt": {
+            "picture":"batman.jpg",
+            "location":{
+                "lat": 40.2552,
+                "lng":  40.2249
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Aydıntepe",
+                "i3":"Demirözü",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bayburt, Türkiye'nin Doğu Karadeniz Bölgesi'nde yer alan ve ılıman iklim koşullarına sahip bir şehirdir. Güneş enerjisi potansiyeli açısından, yıllık ortalama 2.200-2.500 saat arasında güneşlenme süresi ile orta düzeyde bir potansiyel sunar. Bu durum, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir ortam sağlayabilir. Bayburt'ta güneş enerjisi yatırımları, bölgenin yenilenebilir enerji kaynaklarını daha etkin kullanmasına katkıda bulunabilir.",
+            "solar_data":{
+                "pvout":4.27,
+                "dni":4.79,
+                "ghi":4.48,
+                "dif":1.55,
+                "gti":5.13,
+                "opta":33.5,
+                "temp":4.85
+            }
+        },
+        "Bilecik": {
+            "picture":"bilecik.jpg",
+            "location":{
+                "lat": 40.1431,
+                "lng":  29.9792
+            },
+            "ilce":{
+                "i1":"Bozüyük",
+                "i2":"Söğüt",
+                "i3":"Yenipazar",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bilecik, Türkiye'nin Marmara Bölgesi'nde yer alır ve güneş enerjisi potansiyeli açısından ılımlı bir bölgedir. Yıllık ortalama 2.400 ila 2.600 saat arasında güneşlenme süresine sahiptir, bu da bölgeyi orta düzeyde bir güneş enerjisi kaynağı yapar. Bilecik'te, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için potansiyel bulunmaktadır. Bu durum, bölgenin yenilenebilir enerji kaynaklarından faydalanmasına olanak tanır.",
+            "solar_data":{
+                "pvout":3.89,
+                "dni":4.12,
+                "ghi":4.22,
+                "dif":1.71,
+                "gti":4.76,
+                "opta":31.5,
+                "temp":12.15
+            }
+        },
+        "Bingöl": {
+            "picture":"bingöl.jpg",
+            "location":{
+                "lat": 38.8853,
+                "lng":  40.4983
+            },
+            "ilce":{
+                "i1":"Solhan",
+                "i2":"Karlıova",
+                "i3":"Adaklı",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bingöl, Türkiye'nin Doğu Anadolu Bölgesi'nde yer alır ve güneş enerjisi potansiyeli yüksek bir şehirdir. Yıllık ortalama 2.700 ila 3.000 saat arasında güneşlenme süresiyle, bölge güneş enerjisi santralleri için oldukça uygun bir konuma sahiptir. Yüksek güneş ışınımı değerleri Bingöl'ü, yenilenebilir enerji projeleri için cazip bir lokasyon yapar.",
+            "solar_data":{
+                "pvout":4.38,
+                "dni":5.19,
+                "ghi":4.73,
+                "dif":1.50,
+                "gti":5.35,
+                "opta":32,
+                "temp":8.55
+            }
+        },
+        "Bitlis": {
+            "picture":"bitlis.jpg",
+            "location":{
+                "lat":  38.4012,
+                "lng":  42.1081
+            },
+            "ilce":{
+                "i1":"Adılcevaz",
+                "i2":"Tatvan",
+                "i3":"Ahlat",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bitlis, Türkiye'nin Doğu Anadolu Bölgesi'nde yer alır ve ılıman bir güneş enerjisi potansiyeline sahiptir. Yıllık ortalama 2.400 ila 2.700 saat arasında değişen güneşlenme süresi ile Bitlis, güneş enerjisi santralleri için makul bir seçenek sunar. Bu süre, bölgedeki küçük ve orta ölçekli güneş enerjisi projeleri için yeterli olabilir, bölgenin yenilenebilir enerji kaynaklarından faydalanmasını sağlayarak ekonomik ve çevresel faydalar sunar.",
+            "solar_data":{
+                "pvout":4.47,
+                "dni":5.36,
+                "ghi":4.87,
+                "dif":1.53,
+                "gti":5.49,
+                "opta":31,
+                "temp":8.45
+            }
+        },
+        "Bolu": {
+            "picture":"bolu.jpg",
+            "location":{
+                "lat":  40.7395,
+                "lng":  31.6111
+            },
+            "ilce":{
+                "i1":"Seben",
+                "i2":"Kıbrıscık",
+                "i3":"Gerede",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bolu, Türkiye'nin Batı Karadeniz Bölgesi'nde yer almakta ve güneş enerjisi potansiyeli açısından orta düzeyde bir bölge olarak değerlendirilebilir. Yıllık ortalama 2.200 ila 2.500 saat arasında güneşlenme süresi ile Bolu, küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir konumdadır. Bu potansiyel, Bolu'nun yenilenebilir enerji kaynaklarını etkin bir şekilde kullanmasına olanak tanır.",
+            "solar_data":{
+                "pvout":3.75,
+                "dni":3.91,
+                "ghi":4.04,
+                "dif":1.65,
+                "gti":4.55,
+                "opta":32,
+                "temp":10.1
+            }
+        },
+        "Burdur": {
+            "picture":"burdur.jpg",
+            "location":{
+                "lat":  37.7203,
+                "lng":  30.2908
+            },
+            "ilce":{
+                "i1":"Tefenni",
+                "i2":"Kemer",
+                "i3":"Merkez",
+                "i4":"Çavdır",
+                "i5":"Altınyayla"
+            },
+            "aciklama":"Burdur, Türkiye'nin Akdeniz Bölgesi'nde yer alır ve güneş enerjisi potansiyeli oldukça yüksek bir şehirdir. Yıllık ortalama 2.800 ila 3.000 saat arasında güneşlenme süresiyle dikkat çeker, bu da bölgeyi güneş enerjisi santralleri için çok elverişli bir konuma getirir. Burdur'daki yüksek güneş ışınımı değerleri, özellikle büyük ölçekli güneş enerjisi projeleri için idealdir, bölgeyi yenilenebilir enerji kaynaklarından maksimum fayda sağlama konusunda önemli bir lokasyon haline getirir.",
+            "solar_data":{
+                "pvout":4.50,
+                "dni":5.28,
+                "ghi":4.88,
+                "dif":1.64,
+                "gti":5.57,
+                "opta":31.5,
+                "temp":12.1
+            }
+        },
+        "Bursa": {
+            "picture":"bursa.jpg",
+            "location":{
+                "lat":  40.1826,
+                "lng":  29.0669
+            },
+            "ilce":{
+                "i1":"Keleş",
+                "i2":"Osmangazi",
+                "i3":"Orhaneli",
+                "i4":"Büyükorhan",
+                "i5":"Harmancık"
+            },
+            "aciklama":"Bursa, Türkiye'nin Marmara Bölgesi'nde bulunur ve ılıman bir güneş enerjisi potansiyeline sahiptir. Yıllık ortalama 2.500 ila 2.800 saat güneşlenme süresi ile Bursa, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir bölge olarak kabul edilir. Bu süre, bölgenin yenilenebilir enerji kaynaklarından etkin şekilde yararlanmasını sağlar ve ekonomik ve çevresel faydalar sunar.",
+            "solar_data":{
+                "pvout":3.89,
+                "dni":4.10,
+                "ghi":4.22,
+                "dif":1.70,
+                "gti":4.76,
+                "opta":30.5,
+                "temp":12.7
+            }
+        },
+    
+        "Aydın": {
+            "picture":"aydın.jpg",
+            "location":{
+                "lat": 37.8450,
+                "lng": 27.8450
+            },
+            "ilce":{
+                "i1":"Yenihisar",
+                "i2":"Soke",
+                "i3":"Germencik",
+                "i4":"Kuşadası",
+                "i5":"Karacasu"
+            },
+            "aciklama":"Aydın, Türkiye'nin güneş enerjisi potansiyeli açısından zengin bölgelerinden biridir. Ege Bölgesi'nde yer alan Aydın, yüksek güneşlenme süresi ve güneş ışınımı değerleri ile dikkat çeker. Yıllık ortalama 2.700 ila 3.000 saat arasında güneşlenme süresine sahip olan Aydın, güneş enerjisi santralleri için ideal bir konumdadır. Bölge, sadece güneşlenme süresiyle değil, aynı zamanda yüksek güneş ışınımı (kWh/m²) değerleriyle de ön plana çıkar. Bu özellikleri sayesinde, Aydın'da kurulan fotovoltaik güneş enerjisi santralleri yüksek verimlilik potansiyeline sahiptir.",
+            "solar_data":{
+                "pvout":4.46,
+                "dni":5.16,
+                "ghi":4.9,
+                "dif":1.68,
+                "gti":5.54,
+                "opta":31,
+                "temp":16
+            }
+        },
+        "Balıkesir": {
+            "picture":"balıkesir.jpg",
+            "location":{
+                "lat":  39.6492,
+                "lng":  27.8861
+            },
+            "ilce":{
+                "i1":"Ayvalık",
+                "i2":"Gomeç",
+                "i3":"Burhaniye",
+                "i4":"Erdemit",
+                "i5":"Havran"
+            },
+            "aciklama":"Balıkesir, Türkiye'nin güneş enerjisi potansiyeli yüksek bölgelerinden biridir. Yıllık ortalama 2.600-2.800 saat güneşlenme süresine sahip olan bu şehir, güneş enerjisi santralleri için elverişli bir konuma sahiptir. Yüksek güneş ışınımı değerleriyle dikkat çeken Balıkesir, yenilenebilir enerji yatırımları için ideal bir bölgedir.",
+            "solar_data":{
+                "pvout":4.04,
+                "dni":4.38,
+                "ghi":4.43,
+                "dif":1.69,
+                "gti":4.99,
+                "opta":30.5,
+                "temp":13.75
+            }
+        },
+        "Bartın": {
+            "picture":"bartın.jpg",
+            "location":{
+                "lat": 41.6344,
+                "lng": 32.3375
+            },
+            "ilce":{
+                "i1":"Karataş",
+                "i2":"Tufanbeyli",
+                "i3":"Saimbeyli",
+                "i4":"Seyhan",
+                "i5":"Kozan"
+            },
+            "aciklama":"Bartın, Türkiye'nin Karadeniz Bölgesi'nde yer almakta ve ortalama güneşlenme süresi açısından orta seviyededir. Yıllık ortalama 2.200 ila 2.400 saat arasında değişen güneşlenme süresine sahiptir. Bu durum, bölgede güneş enerjisi santralleri için sınırlı ancak yine de değerlendirilebilir bir potansiyel sunmaktadır. Bartın'ın iklim koşulları ve güneş ışınımı değerleri, özellikle küçük ölçekli güneş enerjisi projeleri için uygun olabilir.",
+            "solar_data":{
+                "pvout":3.61,
+                "dni":3.66,
+                "ghi":3.92,
+                "dif":1.63,
+                "gti":4.40,
+                "opta":31,
+                "temp":12.1
+            }
+        },
+        "Batman": {
+            "picture":"batman.jpg",
+            "location":{
+                "lat": 37.8812,
+                "lng":  41.1351
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Besiri",
+                "i3":"Gercus",
+                "i4":"Kozluk",
+                "i5":"Sason"
+            },
+            "aciklama":"Batman, Türkiye'nin Güneydoğu Anadolu Bölgesi'nde, güneş enerjisi potansiyeli yüksek bir şehirdir. Yıllık ortalama 2.800 ile 3.000 saat arasında güneşlenme süresiyle dikkat çeker. Bu, bölgeyi güneş enerjisi santralleri için oldukça elverişli kılar. Yüksek güneş ışınım değerleri, Batman'ı yenilenebilir enerji projeleri için cazip bir lokasyon haline getirir",
+            "solar_data":{
+                "pvout":4.43,
+                "dni":5.31,
+                "ghi":4.09,
+                "dif":1.57,
+                "gti":5.53,
+                "opta":32,
+                "temp":13.4
+            }
+        },
+        "Bayburt": {
+            "picture":"batman.jpg",
+            "location":{
+                "lat": 40.2552,
+                "lng":  40.2249
+            },
+            "ilce":{
+                "i1":"Merkez",
+                "i2":"Aydıntepe",
+                "i3":"Demirözü",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bayburt, Türkiye'nin Doğu Karadeniz Bölgesi'nde yer alan ve ılıman iklim koşullarına sahip bir şehirdir. Güneş enerjisi potansiyeli açısından, yıllık ortalama 2.200-2.500 saat arasında güneşlenme süresi ile orta düzeyde bir potansiyel sunar. Bu durum, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir ortam sağlayabilir. Bayburt'ta güneş enerjisi yatırımları, bölgenin yenilenebilir enerji kaynaklarını daha etkin kullanmasına katkıda bulunabilir.",
+            "solar_data":{
+                "pvout":4.27,
+                "dni":4.79,
+                "ghi":4.48,
+                "dif":1.55,
+                "gti":5.13,
+                "opta":33.5,
+                "temp":4.85
+            }
+        },
+        "Bilecik": {
+            "picture":"bilecik.jpg",
+            "location":{
+                "lat": 40.1431,
+                "lng":  29.9792
+            },
+            "ilce":{
+                "i1":"Bozüyük",
+                "i2":"Söğüt",
+                "i3":"Yenipazar",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bilecik, Türkiye'nin Marmara Bölgesi'nde yer alır ve güneş enerjisi potansiyeli açısından ılımlı bir bölgedir. Yıllık ortalama 2.400 ila 2.600 saat arasında güneşlenme süresine sahiptir, bu da bölgeyi orta düzeyde bir güneş enerjisi kaynağı yapar. Bilecik'te, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için potansiyel bulunmaktadır. Bu durum, bölgenin yenilenebilir enerji kaynaklarından faydalanmasına olanak tanır.",
+            "solar_data":{
+                "pvout":3.89,
+                "dni":4.12,
+                "ghi":4.22,
+                "dif":1.71,
+                "gti":4.76,
+                "opta":31.5,
+                "temp":12.15
+            }
+        },
+        "Bingöl": {
+            "picture":"bingöl.jpg",
+            "location":{
+                "lat": 38.8853,
+                "lng":  40.4983
+            },
+            "ilce":{
+                "i1":"Solhan",
+                "i2":"Karlıova",
+                "i3":"Adaklı",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bingöl, Türkiye'nin Doğu Anadolu Bölgesi'nde yer alır ve güneş enerjisi potansiyeli yüksek bir şehirdir. Yıllık ortalama 2.700 ila 3.000 saat arasında güneşlenme süresiyle, bölge güneş enerjisi santralleri için oldukça uygun bir konuma sahiptir. Yüksek güneş ışınımı değerleri Bingöl'ü, yenilenebilir enerji projeleri için cazip bir lokasyon yapar.",
+            "solar_data":{
+                "pvout":4.38,
+                "dni":5.19,
+                "ghi":4.73,
+                "dif":1.50,
+                "gti":5.35,
+                "opta":32,
+                "temp":8.55
+            }
+        },
+        "Bitlis": {
+            "picture":"bitlis.jpg",
+            "location":{
+                "lat":  38.4012,
+                "lng":  42.1081
+            },
+            "ilce":{
+                "i1":"Adılcevaz",
+                "i2":"Tatvan",
+                "i3":"Ahlat",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bitlis, Türkiye'nin Doğu Anadolu Bölgesi'nde yer alır ve ılıman bir güneş enerjisi potansiyeline sahiptir. Yıllık ortalama 2.400 ila 2.700 saat arasında değişen güneşlenme süresi ile Bitlis, güneş enerjisi santralleri için makul bir seçenek sunar. Bu süre, bölgedeki küçük ve orta ölçekli güneş enerjisi projeleri için yeterli olabilir, bölgenin yenilenebilir enerji kaynaklarından faydalanmasını sağlayarak ekonomik ve çevresel faydalar sunar.",
+            "solar_data":{
+                "pvout":4.47,
+                "dni":5.36,
+                "ghi":4.87,
+                "dif":1.53,
+                "gti":5.49,
+                "opta":31,
+                "temp":8.45
+            }
+        },
+        "Bolu": {
+            "picture":"bolu.jpg",
+            "location":{
+                "lat":  40.7395,
+                "lng":  31.6111
+            },
+            "ilce":{
+                "i1":"Seben",
+                "i2":"Kıbrıscık",
+                "i3":"Gerede",
+                "i4":"",
+                "i5":""
+            },
+            "aciklama":"Bolu, Türkiye'nin Batı Karadeniz Bölgesi'nde yer almakta ve güneş enerjisi potansiyeli açısından orta düzeyde bir bölge olarak değerlendirilebilir. Yıllık ortalama 2.200 ila 2.500 saat arasında güneşlenme süresi ile Bolu, küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir konumdadır. Bu potansiyel, Bolu'nun yenilenebilir enerji kaynaklarını etkin bir şekilde kullanmasına olanak tanır.",
+            "solar_data":{
+                "pvout":3.75,
+                "dni":3.91,
+                "ghi":4.04,
+                "dif":1.65,
+                "gti":4.55,
+                "opta":32,
+                "temp":10.1
+            }
+        },
+        "Burdur": {
+            "picture":"burdur.jpg",
+            "location":{
+                "lat":  37.7203,
+                "lng":  30.2908
+            },
+            "ilce":{
+                "i1":"Tefenni",
+                "i2":"Kemer",
+                "i3":"Merkez",
+                "i4":"Çavdır",
+                "i5":"Altınyayla"
+            },
+            "aciklama":"Burdur, Türkiye'nin Akdeniz Bölgesi'nde yer alır ve güneş enerjisi potansiyeli oldukça yüksek bir şehirdir. Yıllık ortalama 2.800 ila 3.000 saat arasında güneşlenme süresiyle dikkat çeker, bu da bölgeyi güneş enerjisi santralleri için çok elverişli bir konuma getirir. Burdur'daki yüksek güneş ışınımı değerleri, özellikle büyük ölçekli güneş enerjisi projeleri için idealdir, bölgeyi yenilenebilir enerji kaynaklarından maksimum fayda sağlama konusunda önemli bir lokasyon haline getirir.",
+            "solar_data":{
+                "pvout":4.50,
+                "dni":5.28,
+                "ghi":4.88,
+                "dif":1.64,
+                "gti":5.57,
+                "opta":31.5,
+                "temp":12.1
+            }
+        },
+        "Bursa": {
+            "picture":"bursa.jpg",
+            "location":{
+                "lat":  40.1826,
+                "lng":  29.0669
+            },
+            "ilce":{
+                "i1":"Keleş",
+                "i2":"Osmangazi",
+                "i3":"Orhaneli",
+                "i4":"Büyükorhan",
+                "i5":"Harmancık"
+            },
+            "aciklama":"Bursa, Türkiye'nin Marmara Bölgesi'nde bulunur ve ılıman bir güneş enerjisi potansiyeline sahiptir. Yıllık ortalama 2.500 ila 2.800 saat güneşlenme süresi ile Bursa, özellikle küçük ve orta ölçekli güneş enerjisi projeleri için uygun bir bölge olarak kabul edilir. Bu süre, bölgenin yenilenebilir enerji kaynaklarından etkin şekilde yararlanmasını sağlar ve ekonomik ve çevresel faydalar sunar.",
+            "solar_data":{
+                "pvout":3.89,
+                "dni":4.10,
+                "ghi":4.22,
+                "dif":1.70,
+                "gti":4.76,
+                "opta":30.5,
+                "temp":12.7
+            }
+        }
+    }
+}
