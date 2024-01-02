@@ -142,6 +142,7 @@ export default function App() {
         { ad: "Maden",sehir: 'Elazığ', lat: 38.3924, lng: 39.6757, icon: 'red_location.svg', time: new Date('2023-05-08')  },
         { ad: "Palu",sehir: 'Elazığ', lat: 38.6907, lng: 39.926, icon: 'red_location.svg', time: new Date('2023-05-09')  },
         { ad: "Sivrice",sehir: 'Elazığ', lat: 38.4507, lng: 39.3101, icon: 'red_location.svg', time: new Date('2023-05-10')  },
+        { ad: "Serik",sehir: 'Antalya', lat: 36.9517, lng: 31.1189, icon: 'red_location.svg', time: new Date('2023-05-11')  },
         // Diğer ilçeler...
     ];
 
@@ -157,18 +158,37 @@ export default function App() {
                     icon: sehir.icon,
                     ad: sehir.ad // Şehir adı
                 })),
-                // Sonra ilçeleri ekleyin
-                ...turkiyeİlceleri.map(ilce => ({
-                    lat: ilce.lat,
-                    lng: ilce.lng,
-                    time: ilce.time,
-                    icon: ilce.icon,
-                    sehir: ilce.sehir,
-                    ad: ilce.ad // İlçe adı
-                })),
             ]);
         }
     }, [isLoaded, navbarMiddleware]);
+
+    const [showIlceler, setShowIlceler] = useState(false);
+
+    const handleIlceleriGoster = () => {
+        setShowIlceler(!showIlceler);
+
+        if (!showIlceler) {
+            // İlçeleri göster
+            const ilcelerMarkers = turkiyeİlceleri.filter(ilce =>
+                ilce.sehir === selected.ad
+            ).map(ilce => ({
+                lat: ilce.lat,
+                lng: ilce.lng,
+                ad: ilce.ad,
+                icon: 'red_location.svg', // İlçeler için ikon
+                time: ilce.time // Eğer ilce nesnesinde 'time' özelliği varsa
+            }));
+
+            setMarkers(currentMarkers => [...currentMarkers, ...ilcelerMarkers]);
+        } else {
+            // İlçeleri gizle
+            setMarkers(currentMarkers =>
+                currentMarkers.filter(marker =>
+                    !turkiyeİlceleri.some(ilce => ilce.ad === marker.ad && ilce.sehir === selected.ad)
+                )
+            );
+        }
+    };
 
 
 
@@ -178,6 +198,7 @@ export default function App() {
         console.log(navbarMiddleware);
         }
     }, [isLoaded]);
+
 
     const onMapClick = useCallback((event) => {
         setMarkers(current => [...current, {
@@ -245,6 +266,8 @@ export default function App() {
                             lng={selected.lng}
                             selected={selected}
                             apiData={cityData}
+                            handleIlceleriGoster={handleIlceleriGoster}
+                            showIlceler={showIlceler}
                         />
                     ) : selected && selected.icon === 'red_location.svg'
                         ? (

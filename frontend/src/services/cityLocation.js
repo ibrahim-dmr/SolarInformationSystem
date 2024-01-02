@@ -18,7 +18,7 @@ import { Radar } from 'react-chartjs-2';
 import {GetCityService} from "./cityAPI.service";
 import Button from "@mui/material/Button";
 
-const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
+const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData,handleIlceleriGoster, showIlceler}) => {
 
 
     const handleClose = () => {
@@ -246,8 +246,6 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                                 <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
                             </div>
                             <IconButton onClick={handleClose} sx={{
-                                bottom: 10,
-                                left: 0,
                                 backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
                                 '&:hover': {
                                     backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
@@ -259,7 +257,16 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData}) => {
                         <Typography variant="body1" sx={{ mt: 2 }}>
                             {acıklama}
                         </Typography>
+                        <div style={{ flexGrow: 1 }}></div> {/* Bu boş alan butonu aşağı itecek */}
+                        <Button
+                            variant="outlined"
+                            color="success"
+                            onClick={handleIlceleriGoster}>
+                            {showIlceler ? "İlçeleri Gizle" : "İlçeleri Göster"}
+                        </Button>
                     </Box>
+
+
 
                     <Box sx={{
                         borderRadius: '15px',
