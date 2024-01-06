@@ -1,0 +1,175 @@
+{
+  "ilceler":{
+    "Ağın": {
+      "picture":"./ElazigIlceleri/agin.jpg",
+      "location":{
+        "lat":38.94390,
+        "lon":38.71397
+      },
+      "aciklama":"Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
+      "solar_data":{
+        "pvout":4.440,
+        "dni":5.470,
+        "ghi":4.895,
+        "dif":1.524,
+        "gti":5.586,
+        "opta":33 ,
+        "temp":15.3
+      }
+    },
+  
+    "Alacakaya": {
+      "picture":"./ElazigIlceleri/alacakaya.jpg",
+      "location":{
+        "lat":38.46216,
+        "lon":39.86252
+      },
+      "aciklama":"Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
+      "solar_data":{
+        "pvout":4.471,
+        "dni":5.539,
+        "ghi":4.948,
+        "dif":1.581,
+        "gti":5.641,
+        "opta":32 ,
+        "temp":14.0
+      }
+    },
+  "Arıcak": {
+    "picture":"./ElazigIlceleri/aricak.jpg",
+    "location":{
+      "lat":38.56343,
+      "lon":40.13450
+    },
+    "aciklama":"Elazığ'ın Arıcak ilçesi, tarihi zenginlikleri, doğal güzellikleri ve tarım alanlarıyla bilinen bir yerleşim birimidir. Malatya'ya yakınlığıyla dikkat çeken ilçe, geçmişten günümüze uzanan kültürel mirasıyla önemli tarihi eserlere ev sahipliği yapar. Arıcak, yöresel kültürü ve gelenekleriyle öne çıkan bir Anadolu ilçesidir.",
+    "solar_data":{
+      "pvout":4.471,
+      "dni":5.539,
+      "ghi":4.948,
+      "dif":1.581,
+      "gti":5.641,
+      "opta":32 ,
+      "temp":14.0
+    }
+  },
+  "Baskil": {
+    "picture":"./ElazigIlceleri/baskil.jpg",
+    "location":{
+      "lat":38.56768,
+      "lon":38.82324
+    },
+    "aciklama":"Elazığ'ın Baskil ilçesi, tarihi ve kültürel zenginlikleri, doğal güzellikleri ve tarım alanlarıyla tanınan bir yerleşim birimidir. Fırat Nehri'nin kuzey kıyısında yer alır ve doğal güzelliklere sahip geniş tarım arazileri ile çevrilidir. Tarihi dokusu ve geleneksel mimarisiyle dikkat çeker. Tarım ve hayvancılık, ilçenin ekonomisinde önemli bir yer tutar.",
+    "solar_data":{
+      "pvout":4.525,
+      "dni":5.724,
+      "ghi":4.955,
+      "dif":1.501,
+      "gti":5.650,
+      "opta":32,
+      "temp":13.6
+    }
+  },
+  "Karakoçan": {
+    "picture":"./ElazigIlceleri/karakocan.jpg",
+    "location":{
+      "lat":38.95644,
+      "lon":40.03802
+    },
+    "aciklama":"Elazığ'ın Karakoçan ilçesi, tarihi ve kültürel dokusu, zengin tarım arazileri ve doğal güzellikleri ile ön plana çıkar. Fırat Nehri'nin kuzeyinde konumlanan ilçe, tarihi eserleri, geleneksel mimarisi ve misafirperver insanlarıyla bilinir. Tarım ve hayvancılık, ekonominin temelini oluştururken, ilçe aynı zamanda doğal güzelliklere ev sahipliği yapar.",
+    "solar_data":{
+      "pvout":4.374,
+      "dni":5.333,
+      "ghi":4.824,
+      "dif":1.581,
+      "gti":5.495,
+      "opta":32,
+      "temp":13.1
+    }
+  },
+  "Keban": {
+    "picture":"./ElazigIlceleri/keban.jpg",
+    "location":{
+      "lat":38.79398,
+      "lon":38.73971
+    },
+    "aciklama":"Elazığ'ın Keban ilçesi, tarihî ve doğal güzellikleriyle önemli bir bölgedir. Keban Barajı, ilçenin en bilinen simgesidir ve su kaynaklarıyla tarımı destekler. Tarihi kalıntılar arasında Keban Kalesi öne çıkar. Doğal güzellikleri, göletleri ve yeşil alanlarıyla ziyaretçilere huzurlu bir atmosfer sunar. Ilıman iklimiyle meyve bahçeleri ve tarım arazileriyle ünlüdür.",
+    "solar_data":{
+      "pvout":4.311,
+      "dni":5.229,
+      "ghi":4.839,
+      "dif":1.507,
+      "gti":5.461,
+      "opta":32,
+      "temp":16.5
+    }
+  },
+  "Kovancılar": {
+    "picture":"./ElazigIlceleri/kovancilar.jpg",
+    "location":{
+      "lat":38.71892,
+      "lon":39.86591
+    },
+    "aciklama":"Elazığ'ın Kovancılar ilçesi, tarihî ve kültürel zenginliklere ev sahipliği yapar. Antik dönemlere ait kalıntıları içinde barındıran ilçe, tarihi Kharput kentini de bünyesinde bulundurur. Kovancılar, doğal güzellikleri, tarım alanları ve kültürel mirasıyla bölgenin önemli noktalarından biridir. İlçenin ekonomisi tarım ve hayvancılığa dayalıdır.",
+    "solar_data":{
+      "pvout":4.468,
+      "dni":5.440,
+      "ghi":4.916,
+      "dif":1.595,
+      "gti":5.618,
+      "opta":32,
+      "temp":14.6
+    }
+  },
+  "Maden": {
+    "picture":"./ElazigIlceleri/maden.jpg",
+    "location":{
+      "lat":38.39322,
+      "lon":39.67023
+    },
+    "aciklama":"Elazığ'ın Maden ilçesi, doğal güzellikleri, tarihi zenginlikleri ve tarım alanlarıyla ünlü bir yerleşim yeridir. Göz alıcı dağ manzaralarına sahip olan Maden, aynı zamanda tarihi kalıntıları ile dikkat çeker. İlçe, tarım ve hayvancılık faaliyetleriyle ekonomisini sürdürür. Doğal kaynakları ve sakin atmosferiyle bilinir, yerel kültür ve gelenekleri barındırır.",
+    "solar_data":{
+      "pvout":4.418,
+      "dni":5.356,
+      "ghi":4.914,
+      "dif":1.567,
+      "gti":5.602,
+      "opta":32,
+      "temp":14.8
+    }
+  },
+  "Palu": {
+    "picture":"./ElazigIlceleri/palu.jpg",
+    "location":{
+      "lat":38.69348,
+      "lon":39.92888
+    },
+    "aciklama":"Elazığ'ın Palu ilçesi, Fırat Nehri kıyısında konumlanmış tarihi ve kültürel zenginliklere sahip bir yerleşim yeridir. Doğal güzellikleri, tarihi dokusu ve tarım alanlarıyla ünlüdür. Palu Kalesi, ilçenin simgelerinden biridir. Zengin flora ve fauna, bölgeyi doğa severler için çekici kılar. Geleneksel el sanatları ve yöresel mutfağıyla kültürel bir mirasa ev sahipliği yapar.",
+    "solar_data":{
+      "pvout":4.393,
+      "dni":5.316,
+      "ghi":4.884,
+      "dif":1.599,
+      "gti":5.560,
+      "opta":32,
+      "temp":15.0
+    }
+  },
+  "Sivrice": {
+    "picture":"./ElazigIlceleri/sivrice.jpg",
+    "location":{
+      "lat":38.44741,
+      "lon":39.30826
+    },
+    "aciklama":"Elazığ'ın Sivrice ilçesi, tarihi ve doğal güzellikleriyle dikkat çeken bir yerleşim bölgesidir. Fırat Nehri'nin kenarında konumlanmış olup, etkileyici doğal peyzajları ve tarım alanlarıyla çevrilidir. İlçe, tarih boyunca birçok medeniyetin izlerini taşıyan arkeolojik alanlara ev sahipliği yapar. Sivrice Barajı, bölgenin önemli su kaynaklarından biridir ve sulama amaçlı kullanılmaktadır. Geleneksel el sanatları ve yöresel festivaller, kültürel zenginliği ortaya koyar. Sivrice, doğa severlere huzurlu bir ortam sunar.",
+    "solar_data":{
+      "pvout":4.338,
+      "dni":5.305,
+      "ghi":4.841,
+      "dif":1.578,
+      "gti":5.411,
+      "opta":29 ,
+      "temp":13.3
+    }
+  }
+}
+}
