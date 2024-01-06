@@ -138,14 +138,16 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData,handleIlce
                     }}>
                         <Typography variant="body1">
                             <img
-                                src="./izmir.jpg"
-                                alt="Street View"
+                                src={`/iller/${lat}.jpg`} // 'ad' değişkenini URL uyumlu hale getirme
+                                alt="City Picture"
                                 style={{
                                     width: '100%', // Box'ın genişliğini tamamen kapla
                                     height: '100%', // Box'ın yüksekliğini tamamen kapla
                                     borderRadius: '15px' // Box ile aynı borderRadius'u uygula
                                 }}
                             />
+
+
                         </Typography>
                     </Box>
                     <Box sx={{

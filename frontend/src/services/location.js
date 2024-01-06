@@ -309,6 +309,31 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
 
 
 
+    //Generative AI GOOGLE
+    const { GoogleGenerativeAI } = require("@google/generative-ai");
+
+    // Access your API key as an environment variable (see "Set up your API key" above)
+    const genAI = new GoogleGenerativeAI(process.env.REACT_APP_GOOGLE_GEMINI_API_KEY);
+
+
+    const [geminiResponse, setGeminiResponse] = useState(''); // Durum değişkeni
+
+    async function run(lat, lng) {
+        const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+        // Coğrafi konum bilgilerini alan değer
+        const locationDescription = `Enlem: ${lat}, Boylam: ${lng} .`;
+
+        // sorulacak prompt
+        const prompt = `${locationDescription} Bu değerlere göre konumun güneş enerjisi potansiyeli hakkında bir değerlendirmede bulun.`;
+
+        const result = await model.generateContent(prompt);
+        const response = await result.response;
+        const text = await response.text();
+        setGeminiResponse(text); // API yanıtını durum değişkenine atama
+    }
+
+
     return (
         <Box
             sx={{
@@ -539,39 +564,100 @@ const Location = ({selected, lat, lng,  time, setShow, show}) => {
                             <Typography variant="body1">{yearlyAverage} kWh</Typography>
                         </Box>
                     </Box>
+
                 </Grid>
+                <Box sx={{
+                    borderRadius: '5px',
+                    marginTop: 2,
+                    width: 573, // Dış Box genişliği
+                    height: 390,
+                    marginLeft: 2,
+                    p: 1,
+                    bgcolor: 'background.paper',
+                    border: 1,
+                    borderColor: 'grey.200',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    '&:hover': {
+                        bgcolor: 'grey.50',
+                    },
+                    overflow: 'auto', // Kaydırma çubuğu için
+                    '&::-webkit-scrollbar': {
+                        width: '10px',
+                        borderRadius: '5px',
+                        backgroundColor: `rgba(0, 0, 0, 0.1)`,
+                    },
+                    '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: `rgba(0, 0, 0, 0.2)`,
+                        borderRadius: '5px',
+                    },
+                    '&::-webkit-scrollbar-thumb:hover': {
+                        backgroundColor: `rgba(0, 0, 0, 0.3)`,
+                    },
+                }}>
+                    <Button variant="outlined" color="success" onClick={() => run(selected.lat, selected.lng)}>
+                        Google Gemini değerlendirmesi
+                    </Button>
+                    <Typography sx={{
+                        overflow: 'auto',
+                        maxHeight: '360px',
+                        marginTop: 2,
+                        '&::-webkit-scrollbar': {
+                            width: '10px',
+                            borderRadius: '5px',
+                            backgroundColor: `rgba(0, 0, 0, 0.1)`,
+                        },
+                        '&::-webkit-scrollbar-thumb': {
+                            backgroundColor: `rgba(0, 0, 0, 0.2)`,
+                            borderRadius: '5px',
+                        },
+                        '&::-webkit-scrollbar-thumb:hover': {
+                            backgroundColor: `rgba(0, 0, 0, 0.3)`,
+                        },
+                    }}>
+                        {geminiResponse}
+                    </Typography>
+                </Box>
+
+
+
+
+                <Box sx={{
+                    borderRadius: '5px',
+                    width: 573, // Dış Box genişliği
+                    marginTop: 2,
+                    marginLeft: 2,
+                    p: 1,
+                    bgcolor: 'background.paper', // Kırık beyaz için
+                    border: 1, // 1 piksel kenarlık
+                    borderColor: 'grey.200', // Gri kenarlık rengi
+                    '&:hover': {
+                        bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                    },
+                    display: 'flex',
+                    flexDirection: 'column', // Dikey olarak dizilim
+                }}>
+                    <Typography variant="h6" sx={{ mb: 2 }}>
+                        Profesyonel bir değerlendirmeye mi ihtiyacınız var?
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                        Yarattığınız konumun detaylarını - yalnızca boylam ve enlem bilgilerini - girerek, geliştirdiğimiz LLM modelimiz tarafından derinlemesine analizinden faydalanın !
+                    </Typography>
+                    <Button
+                        variant="outlined"
+                        color="success"
+                        href="https://partyrock.aws/u/batu/7AZyezrqV/Solar-Energy-Analyzer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Solar Energy Analyzer
+                    </Button>
+                </Box>
+
             </Grid>
-            <Box sx={{
-                borderRadius: '5px',
-                width: 573, // Dış Box genişliği
-                marginTop: 2,
-                p: 1,
-                bgcolor: 'background.paper', // Kırık beyaz için
-                border: 1, // 1 piksel kenarlık
-                borderColor: 'grey.200', // Gri kenarlık rengi
-                '&:hover': {
-                    bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                },
-                display: 'flex',
-                flexDirection: 'column', // Dikey olarak dizilim
-            }}>
-                <Typography variant="h6" sx={{ mb: 2 }}>
-                    Profesyonel bir değerlendirmeye mi ihtiyacınız var?
-                </Typography>
-                <Typography variant="body2" sx={{ mb: 2 }}>
-                    Yarattığınız konumun detaylarını - yalnızca boylam ve enlem bilgilerini - girerek, geliştirdiğimiz LLM modelimiz tarafından derinlemesine analizinden faydalanın !
-                </Typography>
-                <Button
-                    variant="outlined"
-                    color="success"
-                    href="https://partyrock.aws/u/batu/7AZyezrqV/Solar-Energy-Analyzer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Solar Energy Analyzer
-                </Button>
-            </Box>
+
         </Box>
+
     );
 }
 

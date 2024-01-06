@@ -108,12 +108,12 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir}) => {
                     }}>
                         <Typography variant="body1">
                             <img
-                                src="./izmir.jpg"
-                                alt="Street View"
+                                src={`/ElazigIlceleri/${lat}.jpg`} // 'ad' değişkenini kullanarak resim yolu belirleme
+                                alt="Town City"
                                 style={{
                                     width: '100%', // Box'ın genişliğini tamamen kapla
                                     height: '100%', // Box'ın yüksekliğini tamamen kapla
-                                    borderRadius: '5px' // Box ile aynı borderRadius'u uygula
+                                    borderRadius: '15px' // Box ile aynı borderRadius'u uygula
                                 }}
                             />
                         </Typography>
