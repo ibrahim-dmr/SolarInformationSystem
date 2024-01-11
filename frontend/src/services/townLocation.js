@@ -125,12 +125,16 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) =
                     }}>
                         <Typography variant="body1">
                             <img
-                                src="./izmir.jpg"
+                                src={`/ElazigIlceleri/${lat}.jpg`}
                                 alt="Street View"
                                 style={{
-                                    width: '100%', // Box'ın genişliğini tamamen kapla
-                                    height: '100%', // Box'ın yüksekliğini tamamen kapla
-                                    borderRadius: '5px' // Box ile aynı borderRadius'u uygula
+                                    width: '100%',
+                                    height: '100%',
+                                    borderRadius: '5px'
+                                }}
+                                onError={(e) => {
+                                    e.target.onerror = null; // sonsuz döngüyü önlemek için
+                                    e.target.src = 'https://via.placeholder.com/500x500'; // Varsayılan resim yolu
                                 }}
                             />
                         </Typography>
