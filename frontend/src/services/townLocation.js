@@ -20,7 +20,6 @@ import Button from "@mui/material/Button";
 
 const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) => {
 
-
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
     };
@@ -41,8 +40,7 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) =
 
     useEffect(() => {
         if (apiData) {
-            const jsonData = JSON.parse(apiData); // String'i JSON objesine dönüştür
-
+            const jsonData = apiData; // String'i JSON objesine dönüştür
             setAcıklama(jsonData.explanation);
 
             // Solar Veriler
@@ -127,53 +125,53 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) =
                     }}>
                         <Typography variant="body1">
                             <img
-                                src={`/ElazigIlceleri/${lat}.jpg`} // 'ad' değişkenini kullanarak resim yolu belirleme
-                                alt="Town City"
+                                src="./izmir.jpg"
+                                alt="Street View"
                                 style={{
                                     width: '100%', // Box'ın genişliğini tamamen kapla
                                     height: '100%', // Box'ın yüksekliğini tamamen kapla
-                                    borderRadius: '15px' // Box ile aynı borderRadius'u uygula
+                                    borderRadius: '5px' // Box ile aynı borderRadius'u uygula
                                 }}
                             />
                         </Typography>
                     </Box>
                 </Grid>
-                    <Grid item xs>
-                        <Box sx={{
-                            borderRadius: '5px',
-                            width: 270, // Sabit genişlik değeri
-                            height: 268, // Sabit yükseklik değeri
-                            p: 1,
-                            bgcolor: 'background.paper', // Kırık beyaz için
-                            border: 1, // 1 piksel kenarlık
-                            borderColor: 'grey.200', // Gri kenarlık rengi
-                            '&:hover': {
-                                bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
-                            },
-                        }}>
-                            <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
-                                <IconButton
-                                    onClick={handleClose}
-                                    sx={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        right: 0, // Sağ üst köşe için bu özelliği kullanın
-                                        zIndex: 100,
-                                        backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
-                                        '&:hover': {
-                                            backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
-                                        }
-                                    }}>
-                                    <CloseIcon fontSize="small" />
-                                </IconButton>
-                                <img
-                                    src={getMapImageUrl(lat, lng)}
-                                    alt="Street View"
-                                    style={{ width: '270px', height: '270px', borderRadius: '15px'}} // Inline style kullanarak genişlik ve yükseklik atama
-                                />
-                            </Grid>
-                        </Box>
-                    </Grid>
+                <Grid item xs>
+                    <Box sx={{
+                        borderRadius: '5px',
+                        width: 270, // Sabit genişlik değeri
+                        height: 268, // Sabit yükseklik değeri
+                        p: 1,
+                        bgcolor: 'background.paper', // Kırık beyaz için
+                        border: 1, // 1 piksel kenarlık
+                        borderColor: 'grey.200', // Gri kenarlık rengi
+                        '&:hover': {
+                            bgcolor: 'grey.50', // Hover durumunda daha koyu kırık beyaz
+                        },
+                    }}>
+                        <Grid item sx={{ position: 'relative', width: '270px', height: '270px' }}>
+                            <IconButton
+                                onClick={handleClose}
+                                sx={{
+                                    position: 'absolute',
+                                    top: 0,
+                                    right: 0, // Sağ üst köşe için bu özelliği kullanın
+                                    zIndex: 100,
+                                    backgroundColor: 'rgba(255, 255, 255, 0.4)', // Şeffaf beyaz arka plan
+                                    '&:hover': {
+                                        backgroundColor: 'rgba(255, 255, 255, 0.6)', // Hover durumunda farklı bir şeffaf beyaz tonu
+                                    }
+                                }}>
+                                <CloseIcon fontSize="small" />
+                            </IconButton>
+                            <img
+                                src={getMapImageUrl(lat, lng)}
+                                alt="Street View"
+                                style={{ width: '270px', height: '270px', borderRadius: '15px'}} // Inline style kullanarak genişlik ve yükseklik atama
+                            />
+                        </Grid>
+                    </Box>
+                </Grid>
                 <Box sx={{
                     borderRadius: '5px',
                     width: 577, // Dış Box genişliği
@@ -278,7 +276,7 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) =
                     </Box>
                 </Grid>
 
-                </Grid>
+            </Grid>
         </Box>
     );
 }

@@ -196,15 +196,16 @@ export default function App() {
 
     useEffect(() => {
         if(isLoaded){
-        setNavbarMiddleware(NavbarMiddleWare());
-        console.log(navbarMiddleware);
+            setNavbarMiddleware(NavbarMiddleWare());
+            console.log(navbarMiddleware);
         }
     }, [isLoaded]);
 
     useEffect(() => {
-        // navbar kendi kendine yenileme
-        // navbarMiddleware state'inde değişiklik olduğunda tetiklenecek işlemlerde eklenebilir.
+        // navbar otomatik güncelleme (umuyorum)
+        // navbarMiddleware state'inde değişiklik olduğunda tetiklenecek işlemleri de ekleyebiliriz.
     }, [navbarMiddleware]);
+
 
     const onMapClick = useCallback((event) => {
         setMarkers(current => [...current, {
@@ -230,8 +231,6 @@ export default function App() {
 
     if (loadError) return "Error loading Maps";
     if (!isLoaded) return "Loading Maps";
-
-
 
     return (
         <div>

@@ -1,175 +1,1500 @@
 {
-  "ilceler":{
+  "ilceler": {
     "Ağın": {
-      "picture":"./ElazigIlceleri/agin.jpg",
-      "location":{
-        "lat":38.94390,
-        "lon":38.71397
+      "picture": "./ElazigIlceleri/agin.jpg",
+      "location": {
+        "lat": 38.9439,
+        "lon": 38.71397
       },
-      "aciklama":"Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
-      "solar_data":{
-        "pvout":4.440,
-        "dni":5.470,
-        "ghi":4.895,
-        "dif":1.524,
-        "gti":5.586,
-        "opta":33 ,
-        "temp":15.3
+      "aciklama": "Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
+      "solar_data": {
+        "pvout": 4.44,
+        "dni": 5.47,
+        "ghi": 4.895,
+        "dif": 1.524,
+        "gti": 5.586,
+        "opta": 33,
+        "temp": 15.3
       }
     },
-  
     "Alacakaya": {
-      "picture":"./ElazigIlceleri/alacakaya.jpg",
-      "location":{
-        "lat":38.46216,
-        "lon":39.86252
+      "picture": "./ElazigIlceleri/alacakaya.jpg",
+      "location": {
+        "lat": 38.46216,
+        "lon": 39.86252
       },
-      "aciklama":"Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
-      "solar_data":{
-        "pvout":4.471,
-        "dni":5.539,
-        "ghi":4.948,
-        "dif":1.581,
-        "gti":5.641,
-        "opta":32 ,
-        "temp":14.0
+      "aciklama": "Elazığ'ın Ağın ilçesi, tarihi ve kültürel zenginlikleriyle öne çıkan bir yerleşim birimidir. Ağın, Elazığ'ın kuzeybatısında yer alır ve doğal güzelliklere sahiptir. İlçe, tarihi medrese ve camileriyle dikkat çekerken, tarım ve hayvancılık da önemli geçim kaynakları arasındadır. Doğu Anadolu'nun mistik atmosferini hissettiren Ağın, yerel halkın geleneksel yaşam tarzını yansıtarak ziyaretçilere benzersiz bir deneyim sunar.",
+      "solar_data": {
+        "pvout": 4.471,
+        "dni": 5.539,
+        "ghi": 4.948,
+        "dif": 1.581,
+        "gti": 5.641,
+        "opta": 32,
+        "temp": 14.0
       }
     },
-  "Arıcak": {
-    "picture":"./ElazigIlceleri/aricak.jpg",
-    "location":{
-      "lat":38.56343,
-      "lon":40.13450
+    "Arıcak": {
+      "picture": "./ElazigIlceleri/aricak.jpg",
+      "location": {
+        "lat": 38.56343,
+        "lon": 40.1345
+      },
+      "aciklama": "Elazığ'ın Arıcak ilçesi, tarihi zenginlikleri, doğal güzellikleri ve tarım alanlarıyla bilinen bir yerleşim birimidir. Malatya'ya yakınlığıyla dikkat çeken ilçe, geçmişten günümüze uzanan kültürel mirasıyla önemli tarihi eserlere ev sahipliği yapar. Arıcak, yöresel kültürü ve gelenekleriyle öne çıkan bir Anadolu ilçesidir.",
+      "solar_data": {
+        "pvout": 4.471,
+        "dni": 5.539,
+        "ghi": 4.948,
+        "dif": 1.581,
+        "gti": 5.641,
+        "opta": 32,
+        "temp": 14.0
+      }
     },
-    "aciklama":"Elazığ'ın Arıcak ilçesi, tarihi zenginlikleri, doğal güzellikleri ve tarım alanlarıyla bilinen bir yerleşim birimidir. Malatya'ya yakınlığıyla dikkat çeken ilçe, geçmişten günümüze uzanan kültürel mirasıyla önemli tarihi eserlere ev sahipliği yapar. Arıcak, yöresel kültürü ve gelenekleriyle öne çıkan bir Anadolu ilçesidir.",
-    "solar_data":{
-      "pvout":4.471,
-      "dni":5.539,
-      "ghi":4.948,
-      "dif":1.581,
-      "gti":5.641,
-      "opta":32 ,
-      "temp":14.0
-    }
-  },
-  "Baskil": {
-    "picture":"./ElazigIlceleri/baskil.jpg",
-    "location":{
-      "lat":38.56768,
-      "lon":38.82324
+    "Baskil": {
+      "picture": "./ElazigIlceleri/baskil.jpg",
+      "location": {
+        "lat": 38.56768,
+        "lon": 38.82324
+      },
+      "aciklama": "Elazığ'ın Baskil ilçesi, tarihi ve kültürel zenginlikleri, doğal güzellikleri ve tarım alanlarıyla tanınan bir yerleşim birimidir. Fırat Nehri'nin kuzey kıyısında yer alır ve doğal güzelliklere sahip geniş tarım arazileri ile çevrilidir. Tarihi dokusu ve geleneksel mimarisiyle dikkat çeker. Tarım ve hayvancılık, ilçenin ekonomisinde önemli bir yer tutar.",
+      "solar_data": {
+        "pvout": 4.525,
+        "dni": 5.724,
+        "ghi": 4.955,
+        "dif": 1.501,
+        "gti": 5.65,
+        "opta": 32,
+        "temp": 13.6
+      }
     },
-    "aciklama":"Elazığ'ın Baskil ilçesi, tarihi ve kültürel zenginlikleri, doğal güzellikleri ve tarım alanlarıyla tanınan bir yerleşim birimidir. Fırat Nehri'nin kuzey kıyısında yer alır ve doğal güzelliklere sahip geniş tarım arazileri ile çevrilidir. Tarihi dokusu ve geleneksel mimarisiyle dikkat çeker. Tarım ve hayvancılık, ilçenin ekonomisinde önemli bir yer tutar.",
-    "solar_data":{
-      "pvout":4.525,
-      "dni":5.724,
-      "ghi":4.955,
-      "dif":1.501,
-      "gti":5.650,
-      "opta":32,
-      "temp":13.6
-    }
-  },
-  "Karakoçan": {
-    "picture":"./ElazigIlceleri/karakocan.jpg",
-    "location":{
-      "lat":38.95644,
-      "lon":40.03802
+    "Karakoçan": {
+      "picture": "./ElazigIlceleri/karakocan.jpg",
+      "location": {
+        "lat": 38.95644,
+        "lon": 40.03802
+      },
+      "aciklama": "Elazığ'ın Karakoçan ilçesi, tarihi ve kültürel dokusu, zengin tarım arazileri ve doğal güzellikleri ile ön plana çıkar. Fırat Nehri'nin kuzeyinde konumlanan ilçe, tarihi eserleri, geleneksel mimarisi ve misafirperver insanlarıyla bilinir. Tarım ve hayvancılık, ekonominin temelini oluştururken, ilçe aynı zamanda doğal güzelliklere ev sahipliği yapar.",
+      "solar_data": {
+        "pvout": 4.374,
+        "dni": 5.333,
+        "ghi": 4.824,
+        "dif": 1.581,
+        "gti": 5.495,
+        "opta": 32,
+        "temp": 13.1
+      }
     },
-    "aciklama":"Elazığ'ın Karakoçan ilçesi, tarihi ve kültürel dokusu, zengin tarım arazileri ve doğal güzellikleri ile ön plana çıkar. Fırat Nehri'nin kuzeyinde konumlanan ilçe, tarihi eserleri, geleneksel mimarisi ve misafirperver insanlarıyla bilinir. Tarım ve hayvancılık, ekonominin temelini oluştururken, ilçe aynı zamanda doğal güzelliklere ev sahipliği yapar.",
-    "solar_data":{
-      "pvout":4.374,
-      "dni":5.333,
-      "ghi":4.824,
-      "dif":1.581,
-      "gti":5.495,
-      "opta":32,
-      "temp":13.1
-    }
-  },
-  "Keban": {
-    "picture":"./ElazigIlceleri/keban.jpg",
-    "location":{
-      "lat":38.79398,
-      "lon":38.73971
+    "Keban": {
+      "picture": "./ElazigIlceleri/keban.jpg",
+      "location": {
+        "lat": 38.79398,
+        "lon": 38.73971
+      },
+      "aciklama": "Elazığ'ın Keban ilçesi, tarihî ve doğal güzellikleriyle önemli bir bölgedir. Keban Barajı, ilçenin en bilinen simgesidir ve su kaynaklarıyla tarımı destekler. Tarihi kalıntılar arasında Keban Kalesi öne çıkar. Doğal güzellikleri, göletleri ve yeşil alanlarıyla ziyaretçilere huzurlu bir atmosfer sunar. Ilıman iklimiyle meyve bahçeleri ve tarım arazileriyle ünlüdür.",
+      "solar_data": {
+        "pvout": 4.311,
+        "dni": 5.229,
+        "ghi": 4.839,
+        "dif": 1.507,
+        "gti": 5.461,
+        "opta": 32,
+        "temp": 16.5
+      }
     },
-    "aciklama":"Elazığ'ın Keban ilçesi, tarihî ve doğal güzellikleriyle önemli bir bölgedir. Keban Barajı, ilçenin en bilinen simgesidir ve su kaynaklarıyla tarımı destekler. Tarihi kalıntılar arasında Keban Kalesi öne çıkar. Doğal güzellikleri, göletleri ve yeşil alanlarıyla ziyaretçilere huzurlu bir atmosfer sunar. Ilıman iklimiyle meyve bahçeleri ve tarım arazileriyle ünlüdür.",
-    "solar_data":{
-      "pvout":4.311,
-      "dni":5.229,
-      "ghi":4.839,
-      "dif":1.507,
-      "gti":5.461,
-      "opta":32,
-      "temp":16.5
-    }
-  },
-  "Kovancılar": {
-    "picture":"./ElazigIlceleri/kovancilar.jpg",
-    "location":{
-      "lat":38.71892,
-      "lon":39.86591
+    "Kovancılar": {
+      "picture": "./ElazigIlceleri/kovancilar.jpg",
+      "location": {
+        "lat": 38.71892,
+        "lon": 39.86591
+      },
+      "aciklama": "Elazığ'ın Kovancılar ilçesi, tarihî ve kültürel zenginliklere ev sahipliği yapar. Antik dönemlere ait kalıntıları içinde barındıran ilçe, tarihi Kharput kentini de bünyesinde bulundurur. Kovancılar, doğal güzellikleri, tarım alanları ve kültürel mirasıyla bölgenin önemli noktalarından biridir. İlçenin ekonomisi tarım ve hayvancılığa dayalıdır.",
+      "solar_data": {
+        "pvout": 4.468,
+        "dni": 5.44,
+        "ghi": 4.916,
+        "dif": 1.595,
+        "gti": 5.618,
+        "opta": 32,
+        "temp": 14.6
+      }
     },
-    "aciklama":"Elazığ'ın Kovancılar ilçesi, tarihî ve kültürel zenginliklere ev sahipliği yapar. Antik dönemlere ait kalıntıları içinde barındıran ilçe, tarihi Kharput kentini de bünyesinde bulundurur. Kovancılar, doğal güzellikleri, tarım alanları ve kültürel mirasıyla bölgenin önemli noktalarından biridir. İlçenin ekonomisi tarım ve hayvancılığa dayalıdır.",
-    "solar_data":{
-      "pvout":4.468,
-      "dni":5.440,
-      "ghi":4.916,
-      "dif":1.595,
-      "gti":5.618,
-      "opta":32,
-      "temp":14.6
-    }
-  },
-  "Maden": {
-    "picture":"./ElazigIlceleri/maden.jpg",
-    "location":{
-      "lat":38.39322,
-      "lon":39.67023
+    "Maden": {
+      "picture": "./ElazigIlceleri/maden.jpg",
+      "location": {
+        "lat": 38.39322,
+        "lon": 39.67023
+      },
+      "aciklama": "Elazığ'ın Maden ilçesi, doğal güzellikleri, tarihi zenginlikleri ve tarım alanlarıyla ünlü bir yerleşim yeridir. Göz alıcı dağ manzaralarına sahip olan Maden, aynı zamanda tarihi kalıntıları ile dikkat çeker. İlçe, tarım ve hayvancılık faaliyetleriyle ekonomisini sürdürür. Doğal kaynakları ve sakin atmosferiyle bilinir, yerel kültür ve gelenekleri barındırır.",
+      "solar_data": {
+        "pvout": 4.418,
+        "dni": 5.356,
+        "ghi": 4.914,
+        "dif": 1.567,
+        "gti": 5.602,
+        "opta": 32,
+        "temp": 14.8
+      }
     },
-    "aciklama":"Elazığ'ın Maden ilçesi, doğal güzellikleri, tarihi zenginlikleri ve tarım alanlarıyla ünlü bir yerleşim yeridir. Göz alıcı dağ manzaralarına sahip olan Maden, aynı zamanda tarihi kalıntıları ile dikkat çeker. İlçe, tarım ve hayvancılık faaliyetleriyle ekonomisini sürdürür. Doğal kaynakları ve sakin atmosferiyle bilinir, yerel kültür ve gelenekleri barındırır.",
-    "solar_data":{
-      "pvout":4.418,
-      "dni":5.356,
-      "ghi":4.914,
-      "dif":1.567,
-      "gti":5.602,
-      "opta":32,
-      "temp":14.8
-    }
-  },
-  "Palu": {
-    "picture":"./ElazigIlceleri/palu.jpg",
-    "location":{
-      "lat":38.69348,
-      "lon":39.92888
+    "Palu": {
+      "picture": "./ElazigIlceleri/palu.jpg",
+      "location": {
+        "lat": 38.69348,
+        "lon": 39.92888
+      },
+      "aciklama": "Elazığ'ın Palu ilçesi, Fırat Nehri kıyısında konumlanmış tarihi ve kültürel zenginliklere sahip bir yerleşim yeridir. Doğal güzellikleri, tarihi dokusu ve tarım alanlarıyla ünlüdür. Palu Kalesi, ilçenin simgelerinden biridir. Zengin flora ve fauna, bölgeyi doğa severler için çekici kılar. Geleneksel el sanatları ve yöresel mutfağıyla kültürel bir mirasa ev sahipliği yapar.",
+      "solar_data": {
+        "pvout": 4.393,
+        "dni": 5.316,
+        "ghi": 4.884,
+        "dif": 1.599,
+        "gti": 5.56,
+        "opta": 32,
+        "temp": 15.0
+      }
     },
-    "aciklama":"Elazığ'ın Palu ilçesi, Fırat Nehri kıyısında konumlanmış tarihi ve kültürel zenginliklere sahip bir yerleşim yeridir. Doğal güzellikleri, tarihi dokusu ve tarım alanlarıyla ünlüdür. Palu Kalesi, ilçenin simgelerinden biridir. Zengin flora ve fauna, bölgeyi doğa severler için çekici kılar. Geleneksel el sanatları ve yöresel mutfağıyla kültürel bir mirasa ev sahipliği yapar.",
-    "solar_data":{
-      "pvout":4.393,
-      "dni":5.316,
-      "ghi":4.884,
-      "dif":1.599,
-      "gti":5.560,
-      "opta":32,
-      "temp":15.0
-    }
-  },
-  "Sivrice": {
-    "picture":"./ElazigIlceleri/sivrice.jpg",
-    "location":{
-      "lat":38.44741,
-      "lon":39.30826
+    "Sivrice": {
+      "picture": "./ElazigIlceleri/sivrice.jpg",
+      "location": {
+        "lat": 38.44741,
+        "lon": 39.30826
+      },
+      "aciklama": "Elazığ'ın Sivrice ilçesi, tarihi ve doğal güzellikleriyle dikkat çeken bir yerleşim bölgesidir. Fırat Nehri'nin kenarında konumlanmış olup, etkileyici doğal peyzajları ve tarım alanlarıyla çevrilidir. İlçe, tarih boyunca birçok medeniyetin izlerini taşıyan arkeolojik alanlara ev sahipliği yapar. Sivrice Barajı, bölgenin önemli su kaynaklarından biridir ve sulama amaçlı kullanılmaktadır. Geleneksel el sanatları ve yöresel festivaller, kültürel zenginliği ortaya koyar. Sivrice, doğa severlere huzurlu bir ortam sunar.",
+      "solar_data": {
+        "pvout": 4.338,
+        "dni": 5.305,
+        "ghi": 4.841,
+        "dif": 1.578,
+        "gti": 5.411,
+        "opta": 29,
+        "temp": 13.3
+      }
     },
-    "aciklama":"Elazığ'ın Sivrice ilçesi, tarihi ve doğal güzellikleriyle dikkat çeken bir yerleşim bölgesidir. Fırat Nehri'nin kenarında konumlanmış olup, etkileyici doğal peyzajları ve tarım alanlarıyla çevrilidir. İlçe, tarih boyunca birçok medeniyetin izlerini taşıyan arkeolojik alanlara ev sahipliği yapar. Sivrice Barajı, bölgenin önemli su kaynaklarından biridir ve sulama amaçlı kullanılmaktadır. Geleneksel el sanatları ve yöresel festivaller, kültürel zenginliği ortaya koyar. Sivrice, doğa severlere huzurlu bir ortam sunar.",
-    "solar_data":{
-      "pvout":4.338,
-      "dni":5.305,
-      "ghi":4.841,
-      "dif":1.578,
-      "gti":5.411,
-      "opta":29 ,
-      "temp":13.3
+    "Seyhan": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.9838,
+        "lon": 35.298
+      },
+      "aciklama": "Adana, Seyhan ilçesi güneş enerjisi potansiyeli açısından oldukça avantajlı bir konumda bulunmaktadır. İlçe genelinde yıl boyunca yoğun güneş ışığı alımı gözlemlenir, bu da yüksek güneş enerjisi üretim potansiyelini beraberinde getirir. Seyhan, yenilenebilir enerji projeleri için uygun bir alan olarak değerlendirilebilir, bu da sürdürülebilir enerji üretimi açısından önemli bir avantaj sağlar.",
+      "solar_data": {
+        "pvout": 4.39,
+        "dni": 5.04,
+        "ghi": 4.87,
+        "dif": 1.8,
+        "gti": 5.57,
+        "opta": 32,
+        "temp": 19.6
+      }
+    },
+    "Besni": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.6853,
+        "lon": 37.825
+      },
+      "aciklama": "Adıyaman'ın güneş enerjisi hazinesi olarak öne çıkan Besni ilçesi, benzersiz coğrafi konumuyla dikkat çekiyor. Bol güneş ışığına maruz kalan ilçe, yüksek enerji üretim potansiyeli taşıyor. Besni, bu özellikleriyle sürdürülebilir enerji projeleri için ideal bir zemin sunuyor, çevre dostu ve ekonomik açıdan verimli güneş enerjisi çözümleri için uygun bir alan olarak öne çıkıyor.",
+      "solar_data": {
+        "pvout": 4.67,
+        "dni": 6.15,
+        "ghi": 5.17,
+        "dif": 1.43,
+        "gti": 5.92,
+        "opta": 32,
+        "temp": 16.3
+      }
+    },
+    "Emirdağ": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.0098,
+        "lon": 31.1463
+      },
+      "aciklama": "Afyonkarahisar'ın Emirdağ ilçesi, güneş enerjisi potansiyeli bakımından zengin bir bölge olarak öne çıkıyor. Yüksek güneşlenme süreleri ve düşük bulut örtüsü, ilçenin güneş enerjisi üretimi için ideal bir ortam sağlıyor. Emirdağ, bu avantajını kullanarak sürdürülebilir enerji projelerine uygun bir alan oluşturuyor, çevre dostu enerji üretimine katkıda bulunuyor.",
+      "solar_data": {
+        "pvout": 4.27,
+        "dni": 4.83,
+        "ghi": 4.56,
+        "dif": 1.72,
+        "gti": 5.26,
+        "opta": 33,
+        "temp": 12.5
+      }
+    },
+    "Doğubayazıd": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.5396,
+        "lon": 44.018
+      },
+      "aciklama": "Ağrı'nın Doğubeyazıt ilçesi, güneş enerjisi potansiyeli bakımından önemli bir konumda bulunuyor. Bol güneş ışığına maruz kalan ilçe, yüksek enerji üretim potansiyeli taşıyor. Doğubeyazıt, bu özelliğiyle yenilenebilir enerji projelerine uygun bir alan oluşturuyor. Yatırımlar, çevreci enerji üretimi ve ekonomik avantajlar sağlayarak bölgenin sürdürülebilir kalkınmasına katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.25,
+        "dni": 4.36,
+        "ghi": 4.46,
+        "dif": 1.76,
+        "gti": 5.16,
+        "opta": 33,
+        "temp": 5.6
+      }
+    },
+    "Eskil": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.3086,
+        "lon": 33.3592
+      },
+      "aciklama": "Aksaray'ın Eskil ilçesi, güneş enerjisi potansiyeliyle dikkat çeken bir bölgedir. Bol güneşli gün sayısı ve düşük bulut örtüsü, ilçenin yüksek verimli güneş enerjisi üretimine olanak tanır. Eskil, sürdürülebilir enerji projeleri için uygun bir zemine sahiptir, bu da çevre dostu enerji üretimi ve ekonomik kalkınma açısından olumlu bir perspektif sunar.",
+      "solar_data": {
+        "pvout": 4.56,
+        "dni": 5.31,
+        "ghi": 4.93,
+        "dif": 1.64,
+        "gti": 5.64,
+        "opta": 33,
+        "temp": 13.8
+      }
+    },
+    "Taşova": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.7581,
+        "lon": 36.3442
+      },
+      "aciklama": "Amasya'nın Taşova ilçesi, güneş enerjisi potansiyeliyle öne çıkan bir bölgedir. Yüksek güneşlenme süreleri ve düşük bulut örtüsü, ilçenin verimli güneş enerjisi üretimi için elverişli koşullar sunar. Bu potansiyel, Taşova'yı yenilenebilir enerji projeleri için ideal bir alan haline getirir, çevre dostu enerji üretimine katkıda bulunur ve ekonomik açıdan avantaj sağlar.",
+      "solar_data": {
+        "pvout": 3.65,
+        "dni": 3.57,
+        "ghi": 3.86,
+        "dif": 1.7,
+        "gti": 4.39,
+        "opta": 32.5,
+        "temp": 11.3
+      }
+    },
+    "Sincan": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.7581,
+        "lon": 36.3442
+      },
+      "aciklama": "Ankara'nın Sincan ilçesi, güneş enerjisi potansiyeliyle öne çıkan bir bölgedir. Bölge, geniş düzlükleri ve düşük bulut örtüsü ile yıl boyunca yoğun güneş ışığına maruz kalmaktadır. Bu durum, Sincan'ı yüksek verimli güneş enerjisi üretimi için ideal kılar. İlçenin sanayi bölgeleri, enerji talebini arttırarak bölgeye güneş enerjisi projelerinin ekonomik olarak entegre edilmesine olanak tanır. Sincan, sürdürülebilir enerji çözümleri ve çevre dostu teknolojiyi teşvik eden bir merkez olma potansiyeli taşır.",
+      "solar_data": {
+        "pvout": 4.28,
+        "dni": 4.79,
+        "ghi": 4.58,
+        "dif": 1.67,
+        "gti": 5.27,
+        "opta": 33.5,
+        "temp": 12.7
+      }
+    },
+    "Serik": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.9517,
+        "lon": 31.1189
+      },
+      "aciklama": "Antalya'nın Serik ilçesi, güneş enerjisi potansiyeli yüksek olan bir bölgedir. İlçe, Akdeniz ikliminin etkisi altında olup, bol güneş ışığı alır. Bu durum, Serik'i güneş enerjisi üretimi için elverişli kılar. Tarım alanlarının yanı sıra seraların ve turistik tesislerin enerji ihtiyaçları için güneş enerjisi projeleri, bölgenin sürdürülebilir kalkınmasına katkı sağlayabilir. Yüksek turistik potansiyeliyle birleşen bu enerji avantajı, Serik'i çevre dostu ve ekonomik enerji çözümleri için bir merkez haline getirebilir.",
+      "solar_data": {
+        "pvout": 4.47,
+        "dni": 5.18,
+        "ghi": 4.83,
+        "dif": 1.69,
+        "gti": 5.62,
+        "opta": 31,
+        "temp": 17.1
+      }
+    },
+    "Damal": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.3394,
+        "lon": 42.8558
+      },
+      "aciklama": "Ardahan'ın Damal ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Doğu Anadolu'nun etkisi altında olan ilçe, kış aylarında sert iklimine rağmen yaz aylarında geniş güneşlenme sürelerine sahiptir. Yüksek rakımı ve düşük bulut örtüsü, Damal'ı güneş enerjisi üretimi için elverişli kılar. Bölgedeki enerji ihtiyaçlarının karşılanmasında yenilenebilir enerji projelerinin kullanımı, çevresel sürdürülebilirlik ve ekonomik kalkınma açısından önemli bir rol oynayabilir. Damal, bu potansiyeliyle sürdürülebilir enerji çözümlerine katkı sağlayarak bölgenin kalkınmasını destekleyebilir.",
+      "solar_data": {
+        "pvout": 4.27,
+        "dni": 4.35,
+        "ghi": 4.23,
+        "dif": 1.83,
+        "gti": 4.93,
+        "opta": 36.5,
+        "temp": 5.1
+      }
+    },
+    "Hopa": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.4065,
+        "lon": 41.433
+      },
+      "aciklama": "Artvin'in Hopa ilçesi, güneş enerjisi potansiyeli açısından dikkat çekici bir bölgedir. Karadeniz ikliminin etkisiyle yağışlı geçen kış ayları, yaz aylarında ise geniş güneşlenme süreleriyle birleşir. Bu durum, Hopa'nın güneş enerjisi üretimi için uygun bir zemin sunduğunu gösterir. Doğal güzellikleriyle bilinen Hopa, çevre dostu enerji projeleriyle ekoturizm ve sürdürülebilir kalkınma amacına hizmet edebilir. Bölgedeki enerji ihtiyaçlarının karşılanması için güneş enerjisi projeleri, çevre bilincini artırarak ekonomik ve ekolojik açıdan olumlu katkılar sağlayabilir.",
+      "solar_data": {
+        "pvout": 2.67,
+        "dni": 2.26,
+        "ghi": 3.11,
+        "dif": 1.65,
+        "gti": 3.34,
+        "opta": 33,
+        "temp": 13.2
+      }
+    },
+    "Söke": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.7049,
+        "lon": 27.3827
+      },
+      "aciklama": "Aydın'ın Söke ilçesi, güneş enerjisi potansiyeliyle öne çıkan bir bölgedir. Akdeniz ikliminin etkisi altında olan ilçe, yüksek güneşlenme süreleri ve sıcak yaz aylarıyla dikkat çeker. Tarım ve turizmin yoğun olduğu bölgede, güneş enerjisi projeleri çevre dostu enerji üretimine katkı sağlar. Söke'nin ekonomik çeşitliliği, güneş enerjisi ile desteklenerek bölgenin sürdürülebilir kalkınmasına önemli bir güç katar. Bu potansiyel, çevresel etkileri azaltarak ekonomik büyümeyi destekleme konusunda büyük bir fırsat sunar.",
+      "solar_data": {
+        "pvout": 4.52,
+        "dni": 5.23,
+        "ghi": 4.92,
+        "dif": 1.64,
+        "gti": 5.53,
+        "opta": 31,
+        "temp": 17.2
+      }
+    },
+    "Ayvalık": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.3113,
+        "lon": 26.6861
+      },
+      "aciklama": "Balıkesir'in Ayvalık ilçesi, güneş enerjisi potansiyeliyle öne çıkan bir bölgedir. Ege Bölgesi'nin etkisi altında olan ilçe, bol güneş ışığı ve ılıman iklimiyle dikkat çeker. Tarım, turizm ve zeytin üretimiyle bilinen Ayvalık, güneş enerjisi projeleriyle sürdürülebilir enerjiye önemli bir katkı sunabilir. İlçenin doğal güzellikleriyle uyumlu olarak planlanan güneş enerjisi çözümleri, çevresel sürdürülebilirliği artırabilir ve ekonomik kalkınmaya destek sağlayabilir. Ayvalık'ın bu potansiyeli, bölgeyi çevre dostu enerji üretiminin öncüsü yapma noktasında önemli bir rol oynayabilir.",
+      "solar_data": {
+        "pvout": 4.45,
+        "dni": 5.05,
+        "ghi": 4.78,
+        "dif": 1.69,
+        "gti": 5.45,
+        "opta": 31,
+        "temp": 16.2
+      }
+    },
+    "Ulus": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.3113,
+        "lon": 26.6861
+      },
+      "aciklama": "Bartın'ın Ulus ilçesi, güneş enerjisi potansiyeli bakımından önemli bir konumda bulunmaktadır. İlçe, Karadeniz ikliminin etkisi altında olup, genellikle yeşilliklerle çevrilidir. Ancak, yıl boyunca belirli dönemlerde güneşli günler de gözlemlenir. Bu durum, Ulus'un güneş enerjisi projeleri için bir potansiyel taşıdığını gösterir. Yenilenebilir enerji kaynaklarına yönelik yatırımlar, çevre dostu enerji üretimini teşvik edebilir ve bölgenin sürdürülebilir kalkınmasına katkı sağlayabilir. Ulus'un doğal güzellikleriyle uyumlu bir şekilde planlanan güneş enerjisi projeleri, çevresel etkileri minimize ederek enerji ihtiyacını karşılamada önemli bir role sahip olabilir.",
+      "solar_data": {
+        "pvout": 3.65,
+        "dni": 5.72,
+        "ghi": 3.9,
+        "dif": 1.58,
+        "gti": 4.35,
+        "opta": 32.5,
+        "temp": 11.2
+      }
+    },
+    "Kozluk": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.1647,
+        "lon": 41.4869
+      },
+      "aciklama": "Batman'ın Kozluk ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Güneydoğu Anadolu Bölgesi'nin sıcak iklimine sahip olan ilçe, yüksek güneşlenme süreleri ve düşük nem oranlarıyla dikkat çeker. Bu durum, Kozluk'un güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Yenilenebilir enerji kaynaklarına yönelik yatırımlar, bölgenin enerji talebini karşılayarak sürdürülebilir kalkınmaya önemli bir katkı sağlayabilir. Doğal kaynakları etkin bir şekilde kullanarak çevresel etkileri minimize etmeyi hedefleyen güneş enerjisi çözümleri, Kozluk'un enerji ihtiyaçlarını karşılamak için çevre dostu bir seçenek olabilir.",
+      "solar_data": {
+        "pvout": 4.36,
+        "dni": 5.22,
+        "ghi": 4.83,
+        "dif": 1.53,
+        "gti": 5.42,
+        "opta": 32,
+        "temp": 13
+      }
+    },
+    "Demirözü": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.1639,
+        "lon": 39.8858
+      },
+      "aciklama": "Bayburt'un Demirözü ilçesi, güneş enerjisi potansiyeli bakımından önemli bir potansiyele sahip değildir. Yüksek rakımı, sık bulut örtüsü ve genellikle kış aylarında yoğun kar yağışları, güneş enerjisi üretimi için zorlayıcı faktörlerdir. İlçenin iklim koşulları, güneş enerjisi projelerini sınırlayabilir. Ancak, teknolojik gelişmeler ve enerji verimliliği arttıkça, gelecekte ilçenin güneş enerjisi kullanımı konusunda potansiyelini artırma şansı olabilir.",
+      "solar_data": {
+        "pvout": 4.31,
+        "dni": 4.94,
+        "ghi": 4.52,
+        "dif": 1.54,
+        "gti": 5.22,
+        "opta": 34,
+        "temp": 5.9
+      }
+    },
+    "Söğüt": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.0205,
+        "lon": 30.185
+      },
+      "aciklama": "Bilecik'in Söğüt ilçesi, güneş enerjisi potansiyeli bakımından uygun bir bölgedir. Marmara Bölgesi'nin etkisi altında olan ilçe, genellikle güneşli günlerle karakterizedir. Yüksek güneşlenme süreleri, düşük bulut örtüsü ve ılıman iklim, Söğüt'ü güneş enerjisi projeleri için elverişli kılar. Bölgedeki tarım ve hayvancılık faaliyetleriyle birlikte, güneş enerjisi çözümleri ilçenin enerji ihtiyaçlarını karşılamak ve sürdürülebilir kalkınmaya katkı sağlamak adına önemli bir fırsat sunabilir. Yenilenebilir enerji projeleri, çevre dostu enerji üretimine odaklanarak Söğüt'ün ekonomik ve çevresel sürdürülebilirliğine olumlu etki edebilir.",
+      "solar_data": {
+        "pvout": 3.91,
+        "dni": 4.12,
+        "ghi": 4.26,
+        "dif": 1.71,
+        "gti": 4.84,
+        "opta": 31.5,
+        "temp": 12.4
+      }
+    },
+    "Genç": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.7616,
+        "lon": 40.5577
+      },
+      "aciklama": "Bingöl'ün Genç ilçesi, güneş enerjisi potansiyeli açısından olumlu bir bölgeye sahiptir. Doğu Anadolu Bölgesi'ndeki yüksek rakımı ve genellikle az bulutlu günleri, ilçeyi güneş enerjisi projeleri için elverişli kılar. Yıl boyunca yoğun güneş ışığı alımı, Genç'in sürdürülebilir enerji üretimi için önemli bir avantajdır. Yenilenebilir enerji projeleri, bölgenin enerji talebini karşılayabilir ve çevre dostu enerji üretimi konusunda önemli bir rol oynayabilir. Genç ilçesi, güneş enerjisi çözümleriyle ekonomik kalkınmaya destek sağlayabilir ve bölgenin enerji ihtiyacını çevre dostu bir şekilde karşılamada potansiyel taşır.",
+      "solar_data": {
+        "pvout": 4.25,
+        "dni": 5.03,
+        "ghi": 4.73,
+        "dif": 1.5,
+        "gti": 5.34,
+        "opta": 31,
+        "temp": 9.4
+      }
+    },
+    "Ahlat": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.7486,
+        "lon": 42.475
+      },
+      "aciklama": "Bitlis'in Ahlat ilçesi, güneş enerjisi potansiyeli bakımından dikkat çekici bir bölgedir. Yüksek rakımı ve genellikle güneşli günleri, ilçenin güneş enerjisi projeleri için uygun bir ortam sunmasını sağlar. Doğu Anadolu'nun iklim şartlarına rağmen, Ahlat'ın sıcak yaz ayları güneş enerjisi üretimine katkı sağlayabilir. Bu potansiyel, ilçenin enerji ihtiyaçlarını karşılamak ve çevresel sürdürülebilirliğe katkıda bulunmak adına önemli bir fırsat sunar. Yenilenebilir enerji projeleri, Ahlat'ın ekonomik kalkınmasına destek olabilir, aynı zamanda çevre dostu enerji üretimi ile bölgenin çevresel dengeye katkı sağlamasına yardımcı olabilir.",
+      "solar_data": {
+        "pvout": 4.52,
+        "dni": 5.43,
+        "ghi": 4.84,
+        "dif": 1.54,
+        "gti": 5.52,
+        "opta": 32,
+        "temp": 8.2
+      }
+    },
+    "Seben": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.4088,
+        "lon": 31.573
+      },
+      "aciklama": "Bolu'nun Seben ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Karadeniz ikliminin etkisiyle yaz aylarında genellikle güneşli günler yaşanır. Yüksek rakımı ve düşük bulut örtüsü, ilçenin güneş enerjisi projeleri için elverişli koşullar sunar. Seben, tarım ve hayvancılıkla geçimini sağlayan bir bölge olmasına rağmen, güneş enerjisi projeleri ile sürdürülebilir enerji üretimine katkı sağlayabilir. Yenilenebilir enerji çözümleri, Seben'in enerji bağımsızlığını artırabilir ve çevresel sürdürülebilirliğe katkıda bulunabilir. İlçe, çevre dostu enerji üretimiyle ekonomik kalkınmaya destek olabilir, aynı zamanda bölgenin enerji talebinin karşılanmasında önemli bir rol oynayabilir.",
+      "solar_data": {
+        "pvout": 4.06,
+        "dni": 5.35,
+        "ghi": 4.23,
+        "dif": 1.65,
+        "gti": 4.84,
+        "opta": 32.5,
+        "temp": 10.4
+      }
+    },
+    "Kemer": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.355,
+        "lon": 30.0722
+      },
+      "aciklama": "Burdur'un Kemer ilçesi, güneş enerjisi potansiyeli bakımından dikkat çekici bir bölgedir. Akdeniz ikliminin etkisiyle sıcak ve güneşli günlerin sıkça görüldüğü ilçe, yüksek güneşlenme süreleriyle öne çıkar. Bu durum, Kemer'in güneş enerjisi projeleri için ideal bir ortam sunmasını sağlar. Bölgedeki tarım ve turizm faaliyetleriyle birleşen güneş enerjisi çözümleri, çevre dostu enerji üretimi ve sürdürülebilir kalkınma açısından önemli bir rol oynayabilir. Kemer ilçesi, güneş enerjisi potansiyelini kullanarak enerji bağımsızlığını artırabilir ve ekonomik açıdan sürdürülebilir bir büyüme elde edebilir.",
+      "solar_data": {
+        "pvout": 4.56,
+        "dni": 5.32,
+        "ghi": 4.86,
+        "dif": 1.59,
+        "gti": 5.55,
+        "opta": 32,
+        "temp": 10.2
+      }
+    },
+    "İznik": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.4267,
+        "lon": 29.7302
+      },
+      "aciklama": "Bursa'nın İznik ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Marmara Bölgesi'nin etkisiyle ılıman iklimi ve genellikle güneşli günleriyle öne çıkar. Yüksek güneşlenme süreleri, İznik'in güneş enerjisi projeleri için uygun bir zemin sağlar. Tarım ve turizm faaliyetlerinin yanı sıra, güneş enerjisi çözümleri bölgenin enerji ihtiyaçlarını karşılamak ve çevresel sürdürülebilirlik sağlamak adına önemli bir fırsat sunabilir. İznik ilçesi, güneş enerjisi potansiyelini kullanarak çevre dostu enerji üretimi ile kalkınmaya önemli bir katkıda bulunabilir, aynı zamanda bölgesel ekonomik büyümeyi destekleyebilir.",
+      "solar_data": {
+        "pvout": 3.74,
+        "dni": 3.86,
+        "ghi": 4.1,
+        "dif": 1.72,
+        "gti": 4.63,
+        "opta": 31,
+        "temp": 13.2
+      }
+    },
+    "Çan": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.0161,
+        "lon": 27.0564
+      },
+      "aciklama": "Çanakkale'nin Çan ilçesi, güneş enerjisi potansiyeli açısından avantajlı bir bölgedir. Marmara Bölgesi'nin etkisi altında olan ilçe, genellikle güneşli günlerle ve ılıman iklimle karakterizedir. Bu durum, Çan'ın güneş enerjisi projeleri için uygun bir ortam sunmasını sağlar. Tarım ve hayvancılıkla geçim sağlayan ilçe, güneş enerjisi çözümleri ile sürdürülebilir enerji üretimine katkıda bulunabilir. Bölgenin tarihî ve doğal zenginlikleriyle uyumlu olarak planlanan güneş enerjisi projeleri, Çan'ın ekonomik kalkınmasına ve çevresel sürdürülebilirliğine önemli katkılarda bulunabilir.",
+      "solar_data": {
+        "pvout": 3.82,
+        "dni": 3.96,
+        "ghi": 4.21,
+        "dif": 1.72,
+        "gti": 4.73,
+        "opta": 30.5,
+        "temp": 13.9
+      }
+    },
+    "Ilgaz": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.9156,
+        "lon": 33.6258
+      },
+      "aciklama": "Çankırı'nın Ilgaz ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. İlçenin iklimi ve coğrafi konumu, yüksek güneşlenme süreleri sunar. Bu durum, Ilgaz'ın güneş enerjisi projeleri için elverişli bir zemin sağlamasını destekler. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleri, bölgenin enerji ihtiyaçlarını karşılamak ve çevresel sürdürülebilirlik sağlamak adına önemli bir fırsat sunabilir. Yenilenebilir enerji projeleri, Ilgaz'ın ekonomik kalkınmasına katkıda bulunabilir, aynı zamanda çevre dostu enerji üretimi ile bölgesel kalkınmaya öncülük edebilir.",
+      "solar_data": {
+        "pvout": 3.87,
+        "dni": 4.34,
+        "ghi": 4.21,
+        "dif": 1.59,
+        "gti": 4.74,
+        "opta": 33,
+        "temp": 8.4
+      }
+    },
+    "Laçin": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.7747,
+        "lon": 34.8738
+      },
+      "aciklama": "Çorum'un Laçin ilçesi, güneş enerjisi potansiyeli açısından dikkat çeken bir bölgedir. İlçe, yüksek rakımı ve genellikle az bulutlu günleriyle güneş enerjisi projeleri için uygun koşulları sağlar. Tarım ve hayvancılıkla geçim sağlanan Laçin, güneş enerjisi çözümleri ile sürdürülebilir enerji üretimine önemli bir katkıda bulunabilir. Yenilenebilir enerji projeleri, Laçin'in enerji bağımsızlığını artırabilir ve çevresel sürdürülebilirliğe katkı sağlayabilir. İlçenin doğal zenginlikleri ve tarım alanlarıyla uyumlu olarak planlanan güneş enerjisi projeleri, bölgenin ekonomik kalkınmasına destek olabilir, aynı zamanda çevresel etkileri azaltabilir.",
+      "solar_data": {
+        "pvout": 3.96,
+        "dni": 4.24,
+        "ghi": 4.31,
+        "dif": 1.63,
+        "gti": 4.87,
+        "opta": 32.5,
+        "temp": 12.4
+      }
+    },
+    "Çal": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.0894,
+        "lon": 29.3953
+      },
+      "aciklama": "Denizli'nin Çal ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. İlçe, Akdeniz ikliminin etkisiyle genellikle güneşli günlerle öne çıkar. Yüksek güneşlenme süreleri ve düşük bulut örtüsü, Çal'ın güneş enerjisi projeleri için elverişli bir ortam sağlamaktadır. Tarım ve hayvancılık faaliyetlerinin yoğun olduğu bölge, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Çal ilçesi, ekonomik büyümeyi destekleyen çevre dostu enerji üretimi ile bölgesel kalkınmaya katkı sağlayabilir, aynı zamanda enerji bağımsızlığını artırabilir.",
+      "solar_data": {
+        "pvout": 4.39,
+        "dni": 5.01,
+        "ghi": 4.82,
+        "dif": 1.7,
+        "gti": 5.48,
+        "opta": 32,
+        "temp": 13.6
+      }
+    },
+    "Eğil": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.2506,
+        "lon": 40.0756
+      },
+      "aciklama": "Diyarbakır'ın Eğil ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. Güneydoğu Anadolu'nun sıcak iklimi ve genellikle az bulutlu günleri, ilçenin güneş enerjisi projeleri için uygun bir zemin sunar. Tarımın yaygın olduğu bölge, güneş enerjisi çözümleri ile sürdürülebilir enerji üretimine katkı sağlayabilir. Yüksek güneşlenme süreleri, Eğil'in enerji bağımsızlığını artırabilir ve ekonomik kalkınmaya destek olabilir. Yenilenebilir enerji projeleri, Eğil'in çevresel sürdürülebilirlik hedeflerine ulaşmasına yardımcı olarak, bölgenin enerji ihtiyacını karşılamak adına önemli bir rol oynayabilir.",
+      "solar_data": {
+        "pvout": 4.51,
+        "dni": 5.55,
+        "ghi": 5.01,
+        "dif": 1.58,
+        "gti": 5.72,
+        "opta": 32.5,
+        "temp": 15.7
+      }
+    },
+    "Gölkaya": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.7817,
+        "lon": 31.0186
+      },
+      "aciklama": "Düzce'nin Gökçekaya ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölge değildir. Karadeniz ikliminin etkisi altında olan ilçe genellikle bulutlu ve yağışlı günlerle karakterizedir. Yüksek rakımı ve sık bulut örtüsü, güneş enerjisi projelerini sınırlayabilir. Ancak teknolojik gelişmelerle birlikte, ilçenin güneş enerjisi kullanım potansiyelini artırmak mümkün olabilir. Bu durum, Gökçekaya'nın enerji taleplerini karşılamak ve çevresel sürdürülebilirliği sağlamak adına gelecekteki potansiyelini gösterir.",
+      "solar_data": {
+        "pvout": 3.55,
+        "dni": 3.44,
+        "ghi": 3.78,
+        "dif": 1.65,
+        "gti": 4.26,
+        "opta": 31.5,
+        "temp": 8.8
+      }
+    },
+    "Keşan": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.8378,
+        "lon": 26.6278
+      },
+      "aciklama": "Edirne'nin Keşan ilçesi, güneş enerjisi potansiyeli bakımından olumlu bir bölgedir. Marmara iklimi etkisiyle genellikle güneşli günler gözlemlenir. Bu, ilçenin güneş enerjisi projeleri için elverişli koşullar sunar. Tarım ve turizm faaliyetleriyle öne çıkan Keşan, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına potansiyel taşır. Yüksek güneşlenme süreleri, ilçenin enerji bağımsızlığını artırabilir ve ekonomik kalkınmaya destek olabilir. Keşan, çevre dostu enerji üretimi ile bölgenin sürdürülebilir kalkınmasına katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.02,
+        "dni": 4.12,
+        "ghi": 4.29,
+        "dif": 1.76,
+        "gti": 4.84,
+        "opta": 31,
+        "temp": 15.4
+      }
+    },
+    "İliç": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.4611,
+        "lon": 38.5633
+      },
+      "aciklama": "Erzincan'ın İliç ilçesi, güneş enerjisi potansiyeli açısından dikkat çekici bir bölgedir. Doğu Anadolu'nun etkisi altında olan ilçe, genellikle yüksek güneşlenme sürelerine sahiptir. Bu durum, İliç'in güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına potansiyele sahiptir. Yenilenebilir enerji projeleri, İliç'in enerji bağımsızlığını artırabilir, ekonomik kalkınmaya katkı sağlayabilir ve çevre dostu enerji üretimiyle bölgesel sürdürülebilirliğe destek olabilir.",
+      "solar_data": {
+        "pvout": 4.23,
+        "dni": 4.92,
+        "ghi": 4.57,
+        "dif": 1.49,
+        "gti": 5.24,
+        "opta": 32,
+        "temp": 9.2
+      }
+    },
+    "Çat": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.6058,
+        "lon": 40.975
+      },
+      "aciklama": "Erzurum'un Çat ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Doğu Anadolu Bölgesi'nin etkisi altında olan ilçe, genellikle düşük sıcaklıklara ve karasal iklim koşullarına sahiptir. Ancak, yüksek rakımı ve düşük bulut örtüsü, Çat'ı güneş enerjisi projeleri için potansiyelli kılar. Yıl boyunca yoğun güneş ışığına maruz kalan ilçe, güneş enerjisi sistemlerinin verimliliğini artırabilir. Çat ilçesi, enerji bağımsızlığını artırarak sürdürülebilir enerji üretimine katkıda bulunabilir ve çevre dostu enerji projeleriyle bölgenin kalkınmasına destek sağlayabilir.",
+      "solar_data": {
+        "pvout": 4.36,
+        "dni": 5.16,
+        "ghi": 4.63,
+        "dif": 1.48,
+        "gti": 5.32,
+        "opta": 33,
+        "temp": 5.2
+      }
+    },
+    "Han": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.1553,
+        "lon": 30.8628
+      },
+      "aciklama": "Eskişehir'in Han ilçesi, güneş enerjisi potansiyeli açısından değerlendirildiğinde, iç Anadolu ikliminin etkisiyle sıcak yaz ayları ve genellikle güneşli günlerle dikkat çeker. Yüksek güneşlenme süreleri, ilçenin güneş enerjisi projeleri için olumlu bir zemin sunar. Tarım ve hayvancılıkla geçim sağlanan bölge, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Han ilçesi, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek olabilir ve yenilenebilir enerji projeleriyle bölgenin enerji talebini sürdürülebilir bir şekilde karşılamaya katkı sağlayabilir.",
+      "solar_data": {
+        "pvout": 4.13,
+        "dni": 4.54,
+        "ghi": 4.46,
+        "dif": 1.71,
+        "gti": 5.08,
+        "opta": 32.5,
+        "temp": 10.4
+      }
+    },
+    "Nizip": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.0122,
+        "lon": 37.8628
+      },
+      "aciklama": "Gaziantep'in Nizip ilçesi, güneş enerjisi potansiyeli bakımından öne çıkan bir bölgedir. Akdeniz ikliminin etkisiyle sıcak yaz ayları ve genellikle güneşli günlerle karakterizedir. Yüksek güneşlenme süreleri, ilçenin güneş enerjisi projeleri için uygun bir ortam sunar. Nizip'in tarım ve sanayi faaliyetlerinin yanı sıra, güneş enerjisi çözümleri ile enerji bağımsızlığını artırabilir ve çevre dostu enerji üretimiyle bölgesel kalkınmaya katkı sağlayabilir. Yenilenebilir enerji projeleri, Nizip'in enerji ihtiyacını karşılayabilir, aynı zamanda çevresel sürdürülebilirliği destekleyerek ekonomik büyümeye olumlu bir etki sağlayabilir.",
+      "solar_data": {
+        "pvout": 4.62,
+        "dni": 5.97,
+        "ghi": 5.19,
+        "dif": 1.52,
+        "gti": 5.92,
+        "opta": 32,
+        "temp": 17.4
+      }
+    },
+    "Dereli": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.7378,
+        "lon": 38.4495
+      },
+      "aciklama": "Giresun'un Dereli ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Karadeniz iklimi etkisi altında olan ilçe, genellikle bulutlu ve yağışlı hava şartlarına sahiptir. Yüksek rakımı ve yoğun yağışlar, güneş enerjisi projelerini kısıtlayabilir. Ancak teknolojik gelişmelerle birlikte, ilçenin güneş enerjisi kullanım potansiyelini gelecekte artırma şansı bulunabilir. Bu durum, Dereli'nin enerji ihtiyacını çevre dostu bir şekilde karşılamak ve sürdürülebilir enerji üretimine yönelik potansiyelini değerlendirmek adına önemli bir fırsat olabilir.",
+      "solar_data": {
+        "pvout": 3.32,
+        "dni": 2.94,
+        "ghi": 3.64,
+        "dif": 1.61,
+        "gti": 3.92,
+        "opta": 34,
+        "temp": 7.4
+      }
+    },
+    "Köse": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.2217,
+        "lon": 39.6578
+      },
+      "aciklama": "Gümüşhane'nin Köse ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Karadeniz ikliminin etkisi altında olan ilçe, genellikle bulutlu ve yağışlı günlerle karakterizedir. Yüksek rakımı ve sık bulut örtüsü, güneş enerjisi projeleri için zorlayıcı faktörlerdir. Ancak ilerleyen teknoloji ve enerji verimliliği artışıyla birlikte, gelecekte ilçenin güneş enerjisi potansiyelini artırma şansı bulunabilir. Bu durum, Köse'nin sürdürülebilir enerji projeleri ve çevre dostu enerji üretimi konusundaki çabalarını geliştirme potansiyelini gösterir.",
+      "solar_data": {
+        "pvout": 4.33,
+        "dni": 4.96,
+        "ghi": 4.55,
+        "dif": 1.54,
+        "gti": 5.23,
+        "opta": 34,
+        "temp": 5.5
+      }
+    },
+    "Şemdinli": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.2951,
+        "lon": 44.5819
+      },
+      "aciklama": "Hakkari'nin Şemdinli ilçesi, güneş enerjisi potansiyeli açısından dikkat çeken bir bölge değildir. Doğu Anadolu Bölgesi'nin etkisi altında olan ilçe, yüksek rakımı ve sert iklim koşullarıyla karakterizedir. Sıkça görülen kar yağışları ve bulutlu günler, güneş enerjisi projeleri için zorlu bir ortam oluşturabilir. Ancak ilerleyen teknoloji ve enerji verimliliği artışıyla birlikte, ilçenin güneş enerjisi potansiyelini gelecekte artırma şansı bulunabilir. Şemdinli, bu potansiyeli kullanarak çevresel sürdürülebilirliği artırabilir ve yenilenebilir enerji projeleriyle enerji bağımsızlığını güçlendirebilir.",
+      "solar_data": {
+        "pvout": 4.35,
+        "dni": 4.93,
+        "ghi": 4.82,
+        "dif": 1.59,
+        "gti": 5.37,
+        "opta": 30,
+        "temp": 7.5
+      }
+    },
+    "Belen": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.4889,
+        "lon": 36.2172
+      },
+      "aciklama": "Hatay'ın Belen ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Akdeniz ikliminin etkisiyle sıcak ve genellikle güneşli günlerle karakterizedir. Yüksek güneşlenme süreleri, Belen'in güneş enerjisi projeleri için ideal bir ortam sunar. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleriyle ilçe, enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına potansiyele sahiptir. Yenilenebilir enerji projeleri, Belen'in enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve bölgesel sürdürülebilirliği güçlendirebilir.",
+      "solar_data": {
+        "pvout": 4.42,
+        "dni": 5.01,
+        "ghi": 4.83,
+        "dif": 1.71,
+        "gti": 5.43,
+        "opta": 30,
+        "temp": 15.5
+      }
+    },
+    "Aralık": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.8683,
+        "lon": 44.5117
+      },
+      "aciklama": "Iğdır'ın Aralık ilçesi, güneş enerjisi potansiyeli açısından dikkat çeken bir bölgedir. Doğu Anadolu Bölgesi'nde yer alan ilçe, genellikle az bulutlu günlerle ve yüksek güneşlenme süreleriyle öne çıkar. Bu durum, Aralık'ın güneş enerjisi projeleri için uygun bir zemin sunmasını sağlar. Tarım ve hayvancılık faaliyetlerinin yoğun olduğu bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Aralık ilçesinin ekonomik kalkınmasına katkıda bulunabilir ve çevre dostu enerji üretimiyle bölgesel sürdürülebilirliğe önemli bir destek sağlayabilir.",
+      "solar_data": {
+        "pvout": 4.11,
+        "dni": 4.22,
+        "ghi": 4.33,
+        "dif": 1.85,
+        "gti": 5.13,
+        "opta": 33,
+        "temp": 7.5
+      }
+    },
+    "Eğirdir": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.8377,
+        "lon": 30.872
+      },
+      "aciklama": "Isparta'nın Eğirdir ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Akdeniz ikliminin etkisiyle sıcak ve genellikle güneşli günlerle öne çıkar. Yüksek güneşlenme süreleri, Eğirdir'in güneş enerjisi projeleri için elverişli bir zemin sağlar. Göleti ve doğal güzellikleriyle bilinen ilçe, güneş enerjisi çözümleriyle enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına potansiyele sahiptir. Yenilenebilir enerji projeleri, Eğirdir'in enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile bölgesel kalkınmaya destek sağlayabilir ve doğal güzelliklerini koruyarak sürdürülebilir bir geleceğe katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.45,
+        "dni": 5.17,
+        "ghi": 4.73,
+        "dif": 1.62,
+        "gti": 5.48,
+        "opta": 32,
+        "temp": 11.2
+      }
+    },
+    "Fatih": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.0155,
+        "lon": 28.9601
+      },
+      "aciklama": "İstanbul'un tarihi ve kültürel zenginliklere sahip Fatih ilçesi, güneş enerjisi potansiyeli bakımından kısıtlıdır. Yoğun yapılaşma, tarihi dokunun korunması gerekliliği ve sınırlı arazi kullanımı, güneş enerjisi projelerinin uygulanmasını zorlaştırabilir. Ancak çatı üstü ve cephe entegrasyonu gibi yenilikçi çözümlerle güneş enerjisi kullanımını artırma potansiyeli vardır. Fatih, sürdürülebilir enerji uygulamalarını teşvik ederek çevresel etkileri azaltabilir, ancak tarihi dokunun korunması ön planda olduğundan bu uygulamaların planlanması dikkatli bir şekilde yapılmalıdır.",
+      "solar_data": {
+        "pvout": 3.79,
+        "dni": 3.81,
+        "ghi": 4.09,
+        "dif": 1.79,
+        "gti": 4.62,
+        "opta": 30,
+        "temp": 15.2
+      }
+    },
+    "Buca": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.375,
+        "lon": 27.1953
+      },
+      "aciklama": "İzmir'in Buca ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Ege Bölgesi'nin etkisiyle genellikle güneşli günlerle öne çıkar. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Buca'nın güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Buca'da bulunan tarım arazileri, güneş enerjisi panellerinin entegrasyonu için potansiyel sunar. Yenilenebilir enerji projeleri, Buca'nın enerji ihtiyacını karşılayabilir, çevresel sürdürülebilirliği artırabilir ve bölge ekonomisine katkıda bulunarak sürdürülebilir bir kalkınmaya öncülük edebilir.",
+      "solar_data": {
+        "pvout": 4.47,
+        "dni": 5.16,
+        "ghi": 4.83,
+        "dif": 1.65,
+        "gti": 5.51,
+        "opta": 31.5,
+        "temp": 15.8
+      }
+    },
+    "Afşin": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.2405,
+        "lon": 36.919
+      },
+      "aciklama": "Kahramanmaraş'ın Afşin ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Türkiye'nin en yüksek güneşlenme sürelerine sahip olan ilçe, termal enerji santrallerine de ev sahipliği yapmaktadır. Bu durum, Afşin'in güneş enerjisi projeleri için ideal bir zemin sunduğunu gösterir. Tarım ve enerji sektörlerinin bir arada bulunduğu bölgede, güneş enerjisi çözümleriyle enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Afşin'in enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.57,
+        "dni": 5.63,
+        "ghi": 4.82,
+        "dif": 1.44,
+        "gti": 5.53,
+        "opta": 33,
+        "temp": 9.5
+      }
+    },
+    "Ovacık": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.0778,
+        "lon": 32.91
+      },
+      "aciklama": "Karabük'ün Ovacık ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. İlçe, genellikle karasal iklim koşulları ve sık bulut örtüsü ile karakterizedir. Bu durum, güneş enerjisi projelerini kısıtlayabilir. Ancak ilerleyen teknoloji ve enerji verimliliği artışıyla birlikte, ilçenin güneş enerjisi potansiyelini gelecekte artırma şansı bulunabilir. Ovacık, çevresel sürdürülebilirliği artırmak ve enerji verimliliğini desteklemek adına yenilikçi çözümleri değerlendirebilir. Enerji tasarrufu ve çevreci uygulamalar, Ovacık'ın sürdürülebilir kalkınma hedeflerine ulaşmasına katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 3.84,
+        "dni": 4.05,
+        "ghi": 4.08,
+        "dif": 1.62,
+        "gti": 4.56,
+        "opta": 32.5,
+        "temp": 10.3
+      }
+    },
+    "Ermenek": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.6336,
+        "lon": 32.9075
+      },
+      "aciklama": "Karaman'ın Ermenek ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. İlçe, genellikle karasal iklim şartlarına sahip olup, yüksek güneşlenme süreleriyle öne çıkar. Bu durum, Ermenek'in güneş enerjisi projeleri için elverişli bir zemin sunduğunu gösterir. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Ermenek'in enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilirliğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.72,
+        "dni": 5.76,
+        "ghi": 5.11,
+        "dif": 1.49,
+        "gti": 5.78,
+        "opta": 32,
+        "temp": 11.6
+      }
+    },
+    "Digor": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.3717,
+        "lon": 43.4311
+      },
+      "aciklama": "Kars'ın Digor ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Doğu Anadolu'nun soğuk iklimi ve yüksek rakımı, güneş enerjisi projelerini zorlaştırabilir. Sıkça kar yağışı ve bulutlu günler, güneş enerjisi panellerinin verimliliğini etkileyebilir. Ancak ilerleyen teknoloji ile birlikte, ilçenin güneş enerjisi potansiyelini artırma çabaları gelecekte mümkün olabilir. Digor'un enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına yenilikçi çözümler ve teknolojik gelişmeler göz önünde bulundurulmalıdır.",
+      "solar_data": {
+        "pvout": 4.32,
+        "dni": 4.65,
+        "ghi": 4.51,
+        "dif": 1.71,
+        "gti": 5.21,
+        "opta": 34.5,
+        "temp": 6.6
+      }
+    },
+    "Araç": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.2467,
+        "lon": 33.3306
+      },
+      "aciklama": "Kastamonu'nun Araç ilçesi, güneş enerjisi potansiyeli bakımından sınırlı bir bölgedir. Karasal iklim ve sık bulut örtüsü, güneş enerjisi projeleri için zorluklar yaratabilir. Ancak ilçenin enerji verimliliği artan teknolojiye adapte olması, gelecekte potansiyeli artırabilir. Araç, çevresel sürdürülebilirlik ve enerji bağımsızlığına katkı sağlamak adına yenilenebilir enerji projelerini değerlendirmelidir. İleri teknoloji ve planlama ile Araç, güneş enerjisi entegrasyonu ile çevre dostu enerji üretimine geçişte öncü bir rol üstlenebilir.",
+      "solar_data": {
+        "pvout": 3.81,
+        "dni": 4.11,
+        "ghi": 4.05,
+        "dif": 1.6,
+        "gti": 4.62,
+        "opta": 32.5,
+        "temp": 10.3
+      }
+    },
+    "Develi": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.3744,
+        "lon": 35.4797
+      },
+      "aciklama": "Kayseri'nin Develi ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İlçe, tipik İç Anadolu iklimine sahip olup genellikle güneşli günlerle karakterizedir. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Develi'nin güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılık faaliyetleriyle öne çıkan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Develi'nin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.52,
+        "dni": 5.37,
+        "ghi": 4.78,
+        "dif": 1.52,
+        "gti": 5.52,
+        "opta": 33,
+        "temp": 8.8
+      }
+    },
+    "Delice": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.9406,
+        "lon": 34.0328
+      },
+      "aciklama": "Kırıkkale'nin Delice ilçesi, güneş enerjisi potansiyeli açısından dikkat çeken bir bölge değildir. İlçe, karasal iklim koşullarına sahip olup, güneş enerjisi projeleri için zorlu bir ortam sunabilir. Sıkça değişen hava koşulları ve düşük güneşlenme süreleri, güneş enerjisi verimliliğini olumsuz etkileyebilir. Ancak ilerleyen teknoloji ve enerji verimliliği artışıyla birlikte, ilçenin güneş enerjisi potansiyelini gelecekte artırma şansı bulunabilir. Delice, çevresel sürdürülebilirliği artırmak ve enerji verimliliğini desteklemek adına yenilikçi çözümleri değerlendirmelidir.",
+      "solar_data": {
+        "pvout": 4.21,
+        "dni": 4.75,
+        "ghi": 4.54,
+        "dif": 1.65,
+        "gti": 5.22,
+        "opta": 33,
+        "temp": 12.8
+      }
+    },
+    "Kaman": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.3652,
+        "lon": 33.7064
+      },
+      "aciklama": "Kırşehir'in Kaman ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. İlçe, karasal iklimi ve sık bulut örtüsü nedeniyle güneş enerjisi projeleri için zorlayıcı koşullara sahiptir. Ancak ilerleyen teknoloji ve enerji verimliliği artışı, ilçenin güneş enerjisi potansiyelini gelecekte artırma şansı sunabilir. Kaman, enerji verimliliği konusunda yenilikçi çözümleri değerlendirerek çevresel sürdürülebilirliği artırabilir ve güneş enerjisi projeleriyle enerji bağımsızlığını güçlendirebilir. İlçe, bu potansiyeli kullanarak çevre dostu enerji üretimine katkıda bulunabilir ve sürdürülebilir enerji geleceğine yönelik adımlar atabilir.",
+      "solar_data": {
+        "pvout": 4.34,
+        "dni": 5.13,
+        "ghi": 4.74,
+        "dif": 1.64,
+        "gti": 5.42,
+        "opta": 32,
+        "temp": 12.5
+      }
+    },
+    "Musabeyli": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.885,
+        "lon": 36.9203
+      },
+      "aciklama": "Kilis'in Musabeyli ilçesi, güneş enerjisi potansiyeli açısından dikkat çeken bir bölgedir. Güneşlenme süreleri bakımından zengin olan ilçe, Akdeniz ikliminin etkisiyle genellikle güneşli günlerle öne çıkar. Bu durum, Musabeyli'nin güneş enerjisi projeleri için uygun bir ortam sağladığını gösterir. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Musabeyli'nin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.65,
+        "dni": 5.87,
+        "ghi": 5.14,
+        "dif": 1.49,
+        "gti": 5.83,
+        "opta": 31,
+        "temp": 15.7
+      }
+    },
+    "Gebze": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.823,
+        "lon": 29.4342
+      },
+      "aciklama": "Kocaeli'nin Gebze ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Sanayi alanları, geniş arazi kullanımı ve Akdeniz ikliminin etkisi, ilçenin güneş enerjisi projeleri için ideal bir zemini oluşturur. Yüksek güneşlenme süreleri, Gebze'nin enerji üretimini verimli kılabilir. Sanayi bölgelerinde çatı üstü uygulamalar ve entegrasyon projeleri, ilçenin enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele işaret eder. Gebze, yenilenebilir enerji teknolojileri ile kendi enerjisini üreterek çevresel etkileri azaltabilir, ekonomik kalkınmaya katkıda bulunabilir ve sürdürülebilir bir enerji geleceğine öncülük edebilir.",
+      "solar_data": {
+        "pvout": 3.68,
+        "dni": 3.65,
+        "ghi": 4.02,
+        "dif": 1.77,
+        "gti": 4.49,
+        "opta": 30,
+        "temp": 14.6
+      }
+    },
+    "Ilgın": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.763,
+        "lon": 31.894
+      },
+      "aciklama": "Konya'nın Ilgın ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İlçe, tipik İç Anadolu iklimi ile genellikle güneşli günlerle karakterizedir. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Ilgın'ın güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılık faaliyetleri ile öne çıkan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Ilgın'ın enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.37,
+        "dni": 5.15,
+        "ghi": 4.72,
+        "dif": 1.66,
+        "gti": 5.41,
+        "opta": 32,
+        "temp": 10.9
+      }
+    },
+    "Emet": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.3391,
+        "lon": 29.2713
+      },
+      "aciklama": "Kütahya'nın Emet ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölge değildir. İlçe, genellikle karasal iklim özellikleri gösterir ve yüksek rakımlı bölgeleri içerir. Bu durum, güneş enerjisi projelerini olumsuz etkileyebilir, çünkü düşük sıcaklıklar ve sık kar yağışları güneş panellerinin verimini azaltabilir. Ancak ilerleyen teknoloji ve enerji verimliliği artışıyla birlikte, ilçenin güneş enerjisi potansiyelini gelecekte artırma şansı bulunabilir. Emet, enerji tasarrufu ve çevresel sürdürülebilirlik konularına odaklanarak güneş enerjisi projelerini destekleyebilir ve bölgesel enerji bağımsızlığını güçlendirebilir.",
+      "solar_data": {
+        "pvout": 4.12,
+        "dni": 4.46,
+        "ghi": 4.42,
+        "dif": 1.68,
+        "gti": 4.93,
+        "opta": 32,
+        "temp": 11.7
+      }
+    },
+    "Kale": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.4073,
+        "lon": 38.7507
+      },
+      "aciklama": "Malatya'nın Kale ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İç Anadolu Bölgesi'nin etkisiyle sıcak yazlar ve düşük nem seviyelerine sahip olan ilçe, yüksek güneşlenme süreleriyle öne çıkar. Bu durum, Kale'nin güneş enerjisi projeleri için ideal bir ortam sunduğunu gösterir. Tarım ve hayvancılıkla geçim sağlayan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Kale'nin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli bir katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.34,
+        "dni": 5.34,
+        "ghi": 4.83,
+        "dif": 1.47,
+        "gti": 5.49,
+        "opta": 30,
+        "temp": 12.3
+      }
+    },
+    "Kula": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.5272,
+        "lon": 28.6368
+      },
+      "aciklama": "Manisa'nın Kula ilçesi, güneş enerjisi potansiyeli bakımından dikkate değer bir bölgedir. Akdeniz ikliminin etkisiyle genellikle güneşli günlerle öne çıkar. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Kula'nın güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılık faaliyetlerinin yanı sıra, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına önemli bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Kula'nın enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.37,
+        "dni": 5.12,
+        "ghi": 4.79,
+        "dif": 1.72,
+        "gti": 5.51,
+        "opta": 32.5,
+        "temp": 15
+      }
+    },
+    "Derik": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.3464,
+        "lon": 40.2573
+      },
+      "aciklama": "Mardin'in Derik ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. İlçe, Güneydoğu Anadolu'nun etkisiyle sıcak yazlar ve düşük nem seviyelerine sahip olup, yüksek güneşlenme süreleriyle öne çıkar. Bu durum, Derik'in güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılıkla geçim sağlayan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Derik'in enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli bir katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.7,
+        "dni": 5.93,
+        "ghi": 5.18,
+        "dif": 1.54,
+        "gti": 5.92,
+        "opta": 32.5,
+        "temp": 17.1
+      }
+    },
+    "Mut": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.6514,
+        "lon": 33.4339
+      },
+      "aciklama": "Mersin'in Mut ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Akdeniz ikliminin etkisiyle genellikle güneşli günlerle doludur. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Mut'un güneş enerjisi projeleri için ideal bir zemin sunduğunu gösterir. Tarım ve hayvancılıkla öne çıkan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Mut'un enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir.",
+      "solar_data": {
+        "pvout": 4.72,
+        "dni": 5.84,
+        "ghi": 5.13,
+        "dif": 1.53,
+        "gti": 5.8,
+        "opta": 32,
+        "temp": 14.3
+      }
+    },
+    "Milas": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.3027,
+        "lon": 27.7804
+      },
+      "aciklama": "Muğla'nın Milas ilçesi, güneş enerjisi potansiyeli açısından büyük bir potansiyele sahiptir. Güney Ege'nin etkisiyle Akdeniz iklimine sahip olan ilçe, yıl boyunca yüksek güneşlenme sürelerine sahiptir. Bu, Milas'ı güneş enerjisi projeleri için mükemmel bir konum haline getirir. Tarım, turizm ve hayvancılık gibi sektörlerin yanı sıra, güneş enerjisi projeleri de ilçenin ekonomisine katkı sağlar. Güneş enerjisi panelleri, Milas'ın enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir fırsat sunar. Yenilenebilir enerji projeleri, bölgenin enerji bağımsızlığını güçlendirirken, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve sürdürülebilir bir enerji geleceği için önemli bir adım olabilir.",
+      "solar_data": {
+        "pvout": 4.48,
+        "dni": 5.27,
+        "ghi": 5.04,
+        "dif": 1.67,
+        "gti": 5.63,
+        "opta": 30,
+        "temp": 17.9
+      }
+    },
+    "Varto": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.1763,
+        "lon": 41.4455
+      },
+      "aciklama": "Muş'un Varto ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İç Anadolu Bölgesi'nin etkisiyle sıcak yazlar ve yüksek güneşlenme süreleri ile karakterizedir. Bu iklim koşulları, güneş enerjisi projeleri için uygun bir zemin sunar. Tarım ve hayvancılıkla geçim sağlayan bölge, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Varto'nun enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak sosyal ve altyapısal faktörler göz önünde bulundurularak güneş enerjisi projeleri planlanmalı ve yönetilmelidir.",
+      "solar_data": {
+        "pvout": 4.46,
+        "dni": 5.33,
+        "ghi": 4.78,
+        "dif": 1.49,
+        "gti": 5.46,
+        "opta": 33,
+        "temp": 6.9
+      }
+    },
+    "Kozaklı": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.21,
+        "lon": 34.8511
+      },
+      "aciklama": "Nevşehir'in Kozaklı ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. İç Anadolu Bölgesi'nin etkisiyle tipik karasal iklim koşullarına sahip olup, genellikle güneşli günlerle doludur. Yüksek güneşlenme süreleri ve geniş arazi kullanımı, Kozaklı'nın güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. İlçe, aynı zamanda termal turizmin önemli bir merkezi olarak bilinir ve bu tür tesislerin enerji ihtiyacını güneş enerjisi ile karşılayabilir, çevresel sürdürülebilirliği artırabilir. Yenilenebilir enerji projeleri, Kozaklı'nın enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli bir katkıda bulunabilir. Ancak güneş enerjisi projelerinin planlanması ve yönetimi, çevresel ve sosyal etkileri dikkate alarak yapılmalıdır.",
+      "solar_data": {
+        "pvout": 4.42,
+        "dni": 5.18,
+        "ghi": 4.72,
+        "dif": 1.64,
+        "gti": 5.44,
+        "opta": 33.5,
+        "temp": 12.3
+      }
+    },
+    "Bor": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.9214,
+        "lon": 34.5528
+      },
+      "aciklama": "Niğde'nin Bor ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İç Anadolu Bölgesi'nin etkisiyle karasal iklim koşullarına sahip olan ilçe, genellikle güneşli günlerle karakterizedir. Bu durum, Bor'un güneş enerjisi projeleri için uygun bir zemin sunduğunu gösterir. Tarım ve hayvancılıkla geçim sağlayan bölgede, güneş enerjisi çözümleri ile enerji ihtiyacını karşılamak ve çevresel sürdürülebilirliği artırmak adına büyük bir potansiyele sahiptir. Yenilenebilir enerji projeleri, Bor'un enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak güneş enerjisi projelerinin planlanması ve yönetimi, çevresel ve sosyal etkileri göz önünde bulundurularak yapılmalıdır.",
+      "solar_data": {
+        "pvout": 4.65,
+        "dni": 5.72,
+        "ghi": 4.98,
+        "dif": 1.53,
+        "gti": 5.77,
+        "opta": 33.5,
+        "temp": 11.6
+      }
+    },
+    "Fatsa": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.0405,
+        "lon": 37.4878
+      },
+      "aciklama": "Ordu'nun Fatsa ilçesi, güneş enerjisi potansiyeli açısından dikkate değer bir bölgedir. Karadeniz ikliminin etkisi altında olan ilçe, genellikle denizden nem alsa da güneşlenme süreleri de önemlidir. Sahip olduğu yüksek tepeler ve düzlükler, güneş enerjisi panelleri için uygun alanlar sunar. Fatsa'nın tarım ve turizm gibi sektörlerdeki enerji ihtiyacını güneş enerjisi ile karşılamak, çevresel sürdürülebilirliği artırmak için önemli bir fırsattır. Ayrıca güneş enerjisi projeleri, ilçenin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine katkıda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi önemlidir.",
+      "solar_data": {
+        "pvout": 3.23,
+        "dni": 2.96,
+        "ghi": 3.49,
+        "dif": 1.68,
+        "gti": 3.92,
+        "opta": 32,
+        "temp": 12.7
+      }
+    },
+    "Kadirli": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.3575,
+        "lon": 36.0907
+      },
+      "aciklama": "Osmaniye'nin Kadirli ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İç Akdeniz ikliminin etkisiyle sıcak ve kurak yazlarla karakterizedir. Bu iklim koşulları, Kadirli'nin güneş enerjisi projeleri için ideal bir zemin sunduğunu gösterir. Geniş arazi kullanımı ve yüksek güneşlenme süreleri, ilçenin güneş enerjisi üretiminde verimli olmasını sağlar. Kadirli, tarım ve sanayi alanlarında enerji ihtiyacını güneş enerjisi ile karşılayarak çevre dostu ve sürdürülebilir bir enerji geleceği oluşturabilir. Yenilenebilir enerji projeleri, ilçenin enerji bağımsızlığını artırabilir, ekonomik kalkınmaya katkı sağlayabilir ve çevresel sürdürülebilirliği destekleyebilir. Ancak projelerin çevresel etkileri ve toplumun kabulü göz önünde bulundurularak planlanmalı ve yönetilmelidir.",
+      "solar_data": {
+        "pvout": 4.21,
+        "dni": 4.76,
+        "ghi": 4.68,
+        "dif": 1.72,
+        "gti": 5.32,
+        "opta": 32,
+        "temp": 16.3
+      }
+    },
+    "Fındıklı": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.2703,
+        "lon": 41.1556
+      },
+      "aciklama": "Rize'nin Fındıklı ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Karadeniz ikliminin etkisi altında olan ilçe, genellikle yoğun yağışlarla ve bulutlu günlerle bilinir. Bu durum, güneş enerjisi projeleri için zorlayıcı bir ortam oluşturur. Diğer bölgelere göre daha düşük güneşlenme süreleri, güneş enerjisi panellerinin verimini azaltabilir. Fındıklı, genellikle tarım ve turizm gibi sektörlerle öne çıkar ve enerji ihtiyacını büyük ölçüde bu sektörlerden karşılar. Bu nedenle güneş enerjisi projeleri ilçede sınırlı bir rol oynayabilir. Ancak enerji verimliliği artışı ve teknolojik gelişmelerle ileride güneş enerjisi potansiyeli artabilir.",
+      "solar_data": {
+        "pvout": 3.22,
+        "dni": 2.54,
+        "ghi": 3.34,
+        "dif": 1.65,
+        "gti": 3.73,
+        "opta": 33,
+        "temp": 7.4
+      }
+    },
+    "Geyve": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.5214,
+        "lon": 30.296
+      },
+      "aciklama": "Sakarya'nın Geyve ilçesi, güneş enerjisi potansiyeli bakımından önemli bir bölgedir. Marmara Bölgesi'nin etkisiyle karasal iklim koşullarına sahip olan ilçe, yıl boyunca genellikle güneşli günlerle doludur. Yüksek güneşlenme süreleri ve uygun arazi kullanımı, Geyve'nin güneş enerjisi projeleri için ideal bir zemin sunduğunu gösterir. Tarım, hayvancılık ve sanayi gibi sektörlerin yanı sıra güneş enerjisi çözümleri ile enerji ihtiyacını karşılayarak çevresel sürdürülebilirliği artırabilir. Yenilenebilir enerji projeleri, Geyve'nin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak güneş enerjisi projelerinin planlanması ve yönetimi, çevresel ve sosyal etkileri dikkate alarak yapılmalıdır.",
+      "solar_data": {
+        "pvout": 3.64,
+        "dni": 3.74,
+        "ghi": 4.13,
+        "dif": 1.71,
+        "gti": 4.52,
+        "opta": 31.5,
+        "temp": 12.6
+      }
+    },
+    "Bafra": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.5515,
+        "lon": 35.9247
+      },
+      "aciklama": "Samsun'un Bafra ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. Karadeniz ikliminin etkisiyle nemli bir iklim yaşasa da yıl boyunca yeterli güneşlenme süreleri bulunmaktadır. Geniş arazi kullanımı ve düzlükler, güneş enerjisi panelleri için uygun alanlar sunar. Bafra, tarım, hayvancılık ve sanayi gibi sektörlerin enerji ihtiyacını karşılamak amacıyla güneş enerjisi projelerini uygulayarak çevresel sürdürülebilirliği artırabilir. Ayrıca yenilenebilir enerji projeleri, ilçenin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkıda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanmalı ve yönetilmelidir.",
+      "solar_data": {
+        "pvout": 3.57,
+        "dni": 3.42,
+        "ghi": 3.72,
+        "dif": 1.69,
+        "gti": 4.31,
+        "opta": 32,
+        "temp": 12.2
+      }
+    },
+    "Baykan": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.9727,
+        "lon": 41.7917
+      },
+      "aciklama": "Siirt'in Baykan ilçesi, güneş enerjisi potansiyeli açısından oldukça avantajlı bir konumdadır. Güneydoğu Anadolu Bölgesi'nde yer alan ilçe, genellikle sıcak ve güneşli bir iklimle karakterizedir. Yüksek güneşlenme süreleri ve uygun arazi kullanımı, Baykan'ın güneş enerjisi projeleri için uygun bir zemin sunduğunu göstermektedir. Bu projeler, ilçenin enerji ihtiyacını karşılamak, çevresel sürdürülebilirliği artırmak ve ekonomik kalkınmaya destek sağlamak açısından büyük potansiyele sahiptir. Ancak projelerin çevresel ve sosyal etkileri göz önünde bulundurularak planlanmalı ve yönetilmelidir.",
+      "solar_data": {
+        "pvout": 4.49,
+        "dni": 5.44,
+        "ghi": 4.95,
+        "dif": 1.56,
+        "gti": 5.63,
+        "opta": 31.5,
+        "temp": 14.7
+      }
+    },
+    "Gerze": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.8119,
+        "lon": 35.1736
+      },
+      "aciklama": "Sinop'un Gerze ilçesi, güneş enerjisi potansiyeli açısından sınırlıdır. Karadeniz ikliminin etkisiyle yıl boyunca güneşlenme süreleri kısıtlıdır. Bu nedenle güneş enerjisi projeleri için ideal bir bölge değildir. İlçe, tarım ve hayvancılıkla geçim sağlar ve enerji ihtiyacını bu sektörlerden karşılar. Güneş enerjisi projeleri, enerji bağımsızlığını artırabilir ve çevre dostu enerji üretimine katkı sağlayabilir, ancak sınırlı güneşlenme süreleri nedeniyle potansiyel düşüktür.",
+      "solar_data": {
+        "pvout": 3.54,
+        "dni": 3.56,
+        "ghi": 3.79,
+        "dif": 1.68,
+        "gti": 4.27,
+        "opta": 32,
+        "temp": 11.7
+      }
+    },
+    "Ulaş": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.4414,
+        "lon": 37.0276
+      },
+      "aciklama": "Sivas'ın Ulaş ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölgedir. İç Anadolu Bölgesi'nde yer alan ilçe, genellikle karasal iklim koşullarına sahiptir ve yıl boyunca bol güneşlenme süresine sahiptir. Geniş arazi kullanımı ve düzlükler, güneş enerjisi panelleri için uygun alanlar sunar. Ulaş, tarım ve hayvancılık gibi sektörlerin yanı sıra güneş enerjisi projeleri ile enerji ihtiyacını karşılayarak çevresel sürdürülebilirliği artırabilir. Yenilenebilir enerji projeleri, ilçenin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi gerekmektedir.",
+      "solar_data": {
+        "pvout": 4.35,
+        "dni": 5.16,
+        "ghi": 4.59,
+        "dif": 1.55,
+        "gti": 5.27,
+        "opta": 33.5,
+        "temp": 7.9
+      }
+    },
+    "Harran": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 36.8072,
+        "lon": 39.4872
+      },
+      "aciklama": "Şanlıurfa'nın Harran ilçesi, güneş enerjisi potansiyeli açısından oldukça uygun bir bölgedir. Sıcak ve güneşli bir iklimi vardır ve uzun güneşlenme sürelerine sahiptir. Bu nedenle güneş enerjisi projeleri için ideal bir konumdadır. Geniş arazi kullanımı ve düzlükler, güneş enerjisi panelleri için uygun alanlar sunar. Harran ilçesi, tarım ve hayvancılık gibi sektörlerin yanı sıra güneş enerjisi projeleri ile enerji ihtiyacını karşılayarak çevresel sürdürülebilirliği artırabilir. Bu projeler, ilçenin enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkıda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi önemlidir.",
+      "solar_data": {
+        "pvout": 4.74,
+        "dni": 6.06,
+        "ghi": 5.27,
+        "dif": 1.59,
+        "gti": 6.03,
+        "opta": 33,
+        "temp": 19
+      }
+    },
+    "İdil": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 37.3389,
+        "lon": 41.8897
+      },
+      "aciklama": "Şırnak'ın İdil ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölge. Güneydoğu Anadolu Bölgesi'nde bulunan ilçe, sıcak ve güneşli bir iklimle tanınır. Uzun güneşlenme süreleri ve geniş arazi kullanımı, güneş enerjisi projeleri için uygun bir ortam sunar. İdil, tarım ve hayvancılık gibi sektörlerin yanı sıra güneş enerjisi projeleri ile enerji ihtiyacını karşılayarak çevresel sürdürülebilirliği artırabilir. Bu projeler, enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve sürdürülebilir enerji altyapısına önemli bir katkıda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi gerekmektedir.",
+      "solar_data": {
+        "pvout": 4.61,
+        "dni": 5.59,
+        "ghi": 5.11,
+        "dif": 1.65,
+        "gti": 5.85,
+        "opta": 32,
+        "temp": 17.3
+      }
+    },
+    "Malkara": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.8873,
+        "lon": 426.908
+      },
+      "aciklama": "Tekirdağ'ın Malkara ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölge. İlçe, Marmara Bölgesi'nde yer alır ve iyi güneşlenme sürelerine sahiptir. Geniş arazi kullanımı ve düzlükler, güneş enerjisi projeleri için uygun alanlar sunar. Bu projeler, enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi gerekmektedir.        ",
+      "solar_data": {
+        "pvout": 3.9,
+        "dni": 4.09,
+        "ghi": 4.21,
+        "dif": 1.76,
+        "gti": 4.75,
+        "opta": 32,
+        "temp": 14.3
+      }
+    },
+    "Niksar": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.5978,
+        "lon": 36.9353
+      },
+      "aciklama": "Tokat'ın Niksar ilçesi, güneş enerjisi potansiyeli açısından uygun bir bölge. Karadeniz ikliminin etkisi altında olmasına rağmen yeterli güneşlenme sürelerine sahiptir. Geniş arazi kullanımı ve düzlükler, güneş enerjisi panelleri için uygun alanlar sunar. Niksar ilçesi, yenilenebilir enerji projeleri ile enerji ihtiyacını karşılayarak çevresel sürdürülebilirliği artırabilir. Bu projeler, enerji bağımsızlığını güçlendirebilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya destek sağlayabilir ve sürdürülebilir enerji altyapısına katkıda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri göz önünde bulundurularak planlanması ve yönetilmesi önemlidir.",
+      "solar_data": {
+        "pvout": 3.73,
+        "dni": 3.87,
+        "ghi": 4.0,
+        "dif": 1.68,
+        "gti": 4.42,
+        "opta": 32,
+        "temp": 9.7
+      }
+    },
+    "Vakfıkebir": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.0478,
+        "lon": 39.2751
+      },
+      "aciklama": "Trabzon'un Vakfıkebir ilçesi, güneş enerjisi potansiyeli açısından sınırlıdır. Karadeniz ikliminin etkisi altındadır ve yıl boyunca sık sık yağış almaktadır, bu da güneşlenme sürelerini kısıtlar. İlçede arazi kullanımı ve düzlükler sınırlıdır, bu nedenle güneş enerjisi projeleri için ideal bir alan sunmaz. Vakfıkebir ilçesi daha çok tarım ve hayvancılıkla geçim sağlar ve enerji ihtiyacını geleneksel kaynaklarla karşılar. Bu nedenle güneş enerjisi potansiyeli düşüktür ve yenilenebilir enerji projeleri için daha az uygun bir bölgedir.",
+      "solar_data": {
+        "pvout": 3.05,
+        "dni": 2.42,
+        "ghi": 2.95,
+        "dif": 1.64,
+        "gti": 3.17,
+        "opta": 33,
+        "temp": 9.1
+      }
+    },
+    "Ovacık": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.3681,
+        "lon": 39.2419
+      },
+      "aciklama": "Tunceli'nin Ovacık ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Doğu Anadolu Bölgesi'nde yer alan ilçe, yıl boyunca genellikle soğuk iklim koşullarına sahiptir ve kış aylarında kar yağışı oldukça yoğundur. Bu nedenle güneş enerjisi projeleri için uygun güneşlenme sürelerine sahip değildir. Ayrıca arazi kullanımı ve düzlükler de sınırlıdır. Ovacık ilçesi daha çok dağlık ve ormanlık bir yapıya sahiptir. Bu nedenle güneş enerjisi potansiyeli düşüktür ve yenilenebilir enerji projeleri için daha az uygun bir bölgedir.",
+      "solar_data": {
+        "pvout": 4.27,
+        "dni": 4.35,
+        "ghi": 4.47,
+        "dif": 1.46,
+        "gti": 5.24,
+        "opta": 32,
+        "temp": 7.3
+      }
+    },
+    "Özalp": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 38.6573,
+        "lon": 43.9767
+      },
+      "aciklama": "Van'ın Özalp ilçesi, güneş enerjisi potansiyeli açısından zengin bir bölgedir. Uzun güneşli günleri ve geniş düzlükleri sayesinde güneş enerjisi projeleri için ideal bir konumdadır. Bu projeler, enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine olumlu etkilerde bulunabilir. Ancak projelerin çevresel ve sosyal etkilerini dikkate alarak planlanması önemlidir.",
+      "solar_data": {
+        "pvout": 4.51,
+        "dni": 5.23,
+        "ghi": 4.81,
+        "dif": 1.67,
+        "gti": 5.51,
+        "opta": 34,
+        "temp": 5.6
+      }
+    },
+    "Armutlu": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 40.5478,
+        "lon": 28.8408
+      },
+      "aciklama": "Yalova'nın Armutlu ilçesi güneş enerjisi potansiyeli açısından zengin bir bölgedir. Güneşli iklimi ve geniş düzlükleri sayesinde güneş enerjisi projeleri için ideal bir konumdadır. Bu projeler, enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine olumlu katkılarda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması önemlidir.",
+      "solar_data": {
+        "pvout": 3.87,
+        "dni": 4.11,
+        "ghi": 4.21,
+        "dif": 1.69,
+        "gti": 4.75,
+        "opta": 30,
+        "temp": 13.4
+      }
+    },
+    "Sarıkaya": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 39.4864,
+        "lon": 35.3469
+      },
+      "aciklama": "Yozgat'ın Sarıkaya ilçesi, güneş enerjisi potansiyeli açısından sınırlıdır. İç Anadolu Bölgesi'nde bulunan ilçe, ılıman bir iklime sahip olmasına rağmen, güneşlenme süreleri ve güneş enerjisi için uygun arazi kullanımı konusunda kısıtlamalara sahiptir. Tarım ve hayvancılık ilçenin ana ekonomik faaliyetleridir ve enerji ihtiyacı geleneksel kaynaklarla karşılanır. Bu nedenle Sarıkaya, güneş enerjisi projeleri için henüz gelişmemiş bir potansiyele sahiptir ve yenilenebilir enerji projeleri için daha az uygun bir bölgedir. Ancak çevresel sürdürülebilirliği artırmak ve enerji verimliliğini artırmak için gelecekte potansiyelini değerlendirebilir.",
+      "solar_data": {
+        "pvout": 4.37,
+        "dni": 5.14,
+        "ghi": 4.65,
+        "dif": 1.6,
+        "gti": 5.37,
+        "opta": 33,
+        "temp": 10.6
+      }
+    },
+    "Çaycuma": {
+      "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
+      "location": {
+        "lat": 41.5066,
+        "lon": 32.0903
+      },
+      "aciklama": "Zonguldak'ın Çaycuma ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Karadeniz Bölgesi'nde yer alan ilçe, genellikle bulutlu ve yağışlı hava koşullarına sahiptir, bu da güneş enerjisi üretimi için uygun olmayabilir. Ayrıca arazi kullanımı ve düzlükler de kısıtlıdır. Çaycuma ilçesi, enerji ihtiyacını geleneksel kaynaklarla karşılar ve güneş enerjisi projeleri için henüz gelişmemiş bir potansiyele sahiptir. Yenilenebilir enerji projeleri çevresel etkileri göz önünde bulundurularak planlanmalı ve bölgeye özgü koşullar dikkate alınmalıdır.",
+      "solar_data": {
+        "pvout": 3.67,
+        "dni": 3.71,
+        "ghi": 3.98,
+        "dif": 1.68,
+        "gti": 4.52,
+        "opta": 32,
+        "temp": 13.6
+      }
     }
   }
-}
 }

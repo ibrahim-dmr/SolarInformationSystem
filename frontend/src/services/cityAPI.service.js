@@ -18,7 +18,7 @@ export const CityAPIService = async (url, clickedCity) => {
             if (response.ok) {
                 const data = await response.json();
                 if (data['response']) {
-                    console.log(JSON.parse(data["message"]));
+                    console.log(data["message"]);
                     return data['message'];
                 } else {
                     throw new Error("City error: " + data["message"]);

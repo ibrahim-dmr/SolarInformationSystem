@@ -15,7 +15,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { Radar } from 'react-chartjs-2';
-import {GetCityService} from "./cityAPI.service";
 import Button from "@mui/material/Button";
 
 const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData,handleIlceleriGoster, showIlceler}) => {
@@ -47,7 +46,7 @@ const CityLocation = ({lat, lng, show, setShow, ad, selected, apiData,handleIlce
 
     useEffect(() => {
         if (apiData) {
-            const jsonData = JSON.parse(apiData); // String'i JSON objesine dönüştür
+            const jsonData = apiData; // String'i JSON objesine dönüştür
             setilce1(jsonData.ilce1); // JSON objesinden ilce1 değerini al ve 'ilce1' state'ine at
             setilce2(jsonData.ilce2); // ilçe 2 verisini çekiyoruz
             setilce3(jsonData.ilce3); // ilçe 3 verisini çekiyoruz
