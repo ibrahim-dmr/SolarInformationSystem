@@ -18,7 +18,8 @@ export const DistrictAPIService = async (url, clickedDistrict) => {
             if (response.ok) {
                 const data = await response.json();
                 if (data['response']) {
-                    console.log(JSON.parse(data["message"]));
+                    console.log(data["message"]);
+                    // console.log(JSON.parse(data["message"]));
                     return data['message'];
                 } else {
                     throw new Error("District error: " + data["message"]);

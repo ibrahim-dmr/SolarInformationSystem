@@ -18,7 +18,8 @@ import { Radar } from 'react-chartjs-2';
 import {GetCityService} from "./cityAPI.service";
 import Button from "@mui/material/Button";
 
-const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir}) => {
+const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) => {
+    // ApiData direk json objesi içinden verileri direk anahtarını kullanarak alabilirsin. örnek apiData.pvout
 
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle

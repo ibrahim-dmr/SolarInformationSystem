@@ -18,7 +18,7 @@ exports.getCityInformation = (req, res, next) => {
         if(city){
             res.status(200).send({
                 response: true,
-                message: JSON.stringify(city.toJSON())
+                message: city.toJSON()
             });
             return;
         } else {
