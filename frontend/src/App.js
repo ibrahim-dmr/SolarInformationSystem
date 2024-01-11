@@ -256,9 +256,13 @@ export default function App() {
                                                            setCityData(result);
                                                        }
                                                    } else if (marker.icon === 'red_location.svg') {
+                                                       const result = await DistrictAPIService("http://localhost:3001/api/query/city", marker.ad);
+                                                       if (result !== false) {
                                                            setShowLocation(true);
                                                            console.log(showLocation);
                                                            setSelected(marker);
+                                                           setTownData(result);
+                                                       }
                                                    } else {
                                                        setShowLocation(true);
                                                        console.log(showLocation);
@@ -289,6 +293,7 @@ export default function App() {
                                 lng={selected.lng}
                                 ad={selected.ad}
                                 sehir={selected.sehir}
+                                apiData={townData}
                                 // Diğer gerekli prop'lar
                             />
                         ) : selected

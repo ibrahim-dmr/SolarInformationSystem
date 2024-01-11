@@ -18,7 +18,8 @@ import { Radar } from 'react-chartjs-2';
 import {GetCityService} from "./cityAPI.service";
 import Button from "@mui/material/Button";
 
-const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir}) => {
+const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir, apiData}) => {
+
 
     const handleClose = () => {
         setShow(false); // 'show' state'ini false yaparak Box'ı gizle
@@ -36,6 +37,24 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir}) => {
     const [gti, setGti] = useState(0); // gti için başlangıç değeri olarak 0
     const [opta, setOpta] = useState(0); // opta için başlangıç değeri olarak 0
     const [temp, setTemp] = useState(0); // temp için başlangıç değeri olarak 0
+    const [acıklama, setAcıklama] = useState(''); // acıklama değerini saklayacak state
+
+    useEffect(() => {
+        if (apiData) {
+            const jsonData = JSON.parse(apiData); // String'i JSON objesine dönüştür
+
+            setAcıklama(jsonData.explanation);
+
+            // Solar Veriler
+            setPvout(jsonData.pvout);
+            setDni(jsonData.dni);
+            setGhi(jsonData.ghi);
+            setDif(jsonData.dif);
+            setGti(jsonData.gti);
+            setOpta(jsonData.opta);
+            setTemp(jsonData.temp);
+        }
+    }, [apiData]); // apiData değiştiğinde useEffect tetiklenir
 
 
     const rows = [
@@ -177,7 +196,7 @@ const TownLocation = ({lat, lng, show, setShow, ad, selected, sehir}) => {
                         <Typography variant="body1"> <span style={{ fontStyle: 'italic', fontSize: '0.8rem' }}>{lat},{lng}</span></Typography>
                     </div>
                     <Typography variant="body1" sx={{ mt: 2 }}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda beatae dicta dolores eum fugit hic minima necessitatibus quibusdam rerum sequi suscipit, tempore vel. Accusamus at autem delectus dolorum eaque enim est excepturi inventore itaque, magni, molestias mollitia natus neque nesciunt nostrum obcaecati odit officia, optio quia quidem recusandae repellat vero!
+                        {acıklama}
                     </Typography>
                 </Box>
                 <Grid item xs>
