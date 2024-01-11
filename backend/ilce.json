@@ -275,8 +275,8 @@
     "Sincan": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {
-        "lat": 40.7581,
-        "lon": 36.3442
+        "lat": 39.9986,
+        "lon": 32.5814
       },
       "aciklama": "Ankara'nın Sincan ilçesi, güneş enerjisi potansiyeliyle öne çıkan bir bölgedir. Bölge, geniş düzlükleri ve düşük bulut örtüsü ile yıl boyunca yoğun güneş ışığına maruz kalmaktadır. Bu durum, Sincan'ı yüksek verimli güneş enerjisi üretimi için ideal kılar. İlçenin sanayi bölgeleri, enerji talebini arttırarak bölgeye güneş enerjisi projelerinin ekonomik olarak entegre edilmesine olanak tanır. Sincan, sürdürülebilir enerji çözümleri ve çevre dostu teknolojiyi teşvik eden bir merkez olma potansiyeli taşır.",
       "solar_data": {
@@ -1360,11 +1360,12 @@
         "temp": 17.3
       }
     },
+
     "Malkara": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {
         "lat": 40.8873,
-        "lon": 426.908
+        "lon": 26.908
       },
       "aciklama": "Tekirdağ'ın Malkara ilçesi, güneş enerjisi potansiyeli açısından önemli bir bölge. İlçe, Marmara Bölgesi'nde yer alır ve iyi güneşlenme sürelerine sahiptir. Geniş arazi kullanımı ve düzlükler, güneş enerjisi projeleri için uygun alanlar sunar. Bu projeler, enerji bağımsızlığını artırabilir, çevre dostu enerji üretimi ile ekonomik kalkınmaya katkı sağlayabilir ve bölgenin sürdürülebilir enerji geleceğine önemli katkılarda bulunabilir. Ancak projelerin çevresel ve sosyal etkileri dikkate alınarak planlanması ve yönetilmesi gerekmektedir.        ",
       "solar_data": {
@@ -1394,6 +1395,7 @@
         "temp": 9.7
       }
     },
+
     "Vakfıkebir": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {
@@ -1411,23 +1413,25 @@
         "temp": 9.1
       }
     },
-    "Ovacık": {
+
+    "Pertek": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {
-        "lat": 39.3681,
-        "lon": 39.2419
+        "lat": 38.9342,
+        "lon": 39.1672
       },
-      "aciklama": "Tunceli'nin Ovacık ilçesi, güneş enerjisi potansiyeli açısından sınırlı bir bölgedir. Doğu Anadolu Bölgesi'nde yer alan ilçe, yıl boyunca genellikle soğuk iklim koşullarına sahiptir ve kış aylarında kar yağışı oldukça yoğundur. Bu nedenle güneş enerjisi projeleri için uygun güneşlenme sürelerine sahip değildir. Ayrıca arazi kullanımı ve düzlükler de sınırlıdır. Ovacık ilçesi daha çok dağlık ve ormanlık bir yapıya sahiptir. Bu nedenle güneş enerjisi potansiyeli düşüktür ve yenilenebilir enerji projeleri için daha az uygun bir bölgedir.",
+      "aciklama": "Tunceli'nin Pertek ilçesi, güneş enerjisi açısından oldukça zengin bir potansiyele sahiptir. Bölgenin genellikle temiz ve açık hava koşulları, güneş panellerinin verimliliğini artırır. Pertek'in coğrafi konumu, güneş ışınlarını yıl boyunca etkili bir şekilde yakalamasına olanak tanır. Bu durum, yenilenebilir enerji kaynaklarına geçişte önemli bir adım olabilir. Ayrıca, güneş enerjisi, bölgedeki fosil yakıt bağımlılığını azaltarak çevresel etkileri de minimize edebilir. Güneş enerjisi yatırımları, Pertek'te sürdürülebilir ve çevre dostu bir enerji geleceği için önemli bir fırsat sunmaktadır.",
       "solar_data": {
-        "pvout": 4.27,
-        "dni": 4.35,
-        "ghi": 4.47,
-        "dif": 1.46,
-        "gti": 5.24,
+        "pvout": 4.49,
+        "dni": 5.56,
+        "ghi": 4.84,
+        "dif": 1.51,
+        "gti": 5.52,
         "opta": 32,
-        "temp": 7.3
+        "temp": 13.3
       }
     },
+
     "Özalp": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {
@@ -1445,6 +1449,7 @@
         "temp": 5.6
       }
     },
+
     "Armutlu": {
       "picture": "./ilçe_resimlerinin_olduğu_klasörün_ismi/ilçe_ismi.jpg",
       "location": {

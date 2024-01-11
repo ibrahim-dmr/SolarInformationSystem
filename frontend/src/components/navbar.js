@@ -49,6 +49,9 @@ const Navbar = ({panTo}) => {
         if(LoginAPIService("http://localhost:3001/api/auth/signin", username, password)) {
             resetForm();
             handleClose();
+            setInterval(()=>{
+                window.location.reload();
+            }, 1000);
             // ! DİKKAT ! eğer başarılı login olduysa sayfayı otomatik yenilemek gerekiyor
             // window.location.reload(); // Sayfayı yeniden yükler (Tüm sayfa yüklenir)
             // doğru yol sanırım react state managment kullanımı bunu nasıl yapacağımıza odaklanmalıyız

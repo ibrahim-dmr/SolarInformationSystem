@@ -137,8 +137,8 @@ app.get("/api/cities", (req, res) => {
 });
 
 app.get("/api/districts", (req, res) => {
-  console.log(dbDatas);
   jsonParseForDistricts(() => {
+    // console.log(dbDatas);
     db.ilceSequelize.sync({force: true}).then(async () => {
       District.bulkCreate(dbDatas).then(()=>{
         res.send({ express: 'Districts veritabanı oluşturuldu.' }); 

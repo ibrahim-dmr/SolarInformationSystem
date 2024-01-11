@@ -3,12 +3,15 @@ import { AppBar, Toolbar, Typography, Button, Backdrop, Box } from '@mui/materia
 import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { yellow } from '@mui/material/colors';
 import Search from "./search";
+import { delCookie } from '../common/delCookie.common';
 
 const LogoutNavbar = ({panTo}) => {
     const [open, setOpen] = useState(false);
 
     const handleClose = () => {
         setOpen(false);
+        delCookie();
+        window.location.reload();
     };
 
     const handleOpen = () => {
