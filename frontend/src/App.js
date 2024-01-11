@@ -332,7 +332,7 @@ export default function App() {
                                                            setCityData(result);
                                                        }
                                                    } else if (marker.icon === 'red_location.svg') {
-                                                       const result = await DistrictAPIService("http://localhost:3001/api/query/city", marker.ad);
+                                                       const result = await DistrictAPIService("http://localhost:3001/api/query/district", marker.ad);
                                                        if (result !== false) {
                                                            setShowLocation(true);
                                                            console.log(showLocation);
