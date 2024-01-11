@@ -10,6 +10,7 @@ import LogoutNavbar from './components/logoutNavbar';
 import Location from './services/location';
 import CityLocation from './services/cityLocation';
 import { CityAPIService } from './services/cityAPI.service';
+import { DistrictAPIService } from './services/districtAPI.sevice';
 import TownLocation from './services/townLocation'
 
 
@@ -43,6 +44,7 @@ export default function App() {
     const[selected,setSelected] = useState(null);
     const [showLocation, setShowLocation] = useState(false);
     const [cityData, setCityData] = useState(''); // Alınan veriyi saklamak için state
+    const [townData, setTownData] = useState(''); // Alınan veriyi saklamak için state
 
 
     const turkiyeSehirleri = [ //türkiyedeki tüm şehirleri tek tek çekmeliyiz
@@ -199,6 +201,10 @@ export default function App() {
         }
     }, [isLoaded]);
 
+    useEffect(() => {
+        // navbar kendi kendine yenileme
+        // navbarMiddleware state'inde değişiklik olduğunda tetiklenecek işlemlerde eklenebilir.
+    }, [navbarMiddleware]);
 
     const onMapClick = useCallback((event) => {
         setMarkers(current => [...current, {
@@ -225,6 +231,8 @@ export default function App() {
     if (loadError) return "Error loading Maps";
     if (!isLoaded) return "Loading Maps";
 
+
+
     return (
         <div>
             {navbarMiddleware ? ( <Navbar panTo={panTo}/>  ) : ( <LogoutNavbar  panTo={panTo}/>)}
@@ -248,8 +256,9 @@ export default function App() {
                                                            setCityData(result);
                                                        }
                                                    } else if (marker.icon === 'red_location.svg') {
-                                                       setShowLocation(true);
-                                                       setSelected(marker);
+                                                           setShowLocation(true);
+                                                           console.log(showLocation);
+                                                           setSelected(marker);
                                                    } else {
                                                        setShowLocation(true);
                                                        console.log(showLocation);
